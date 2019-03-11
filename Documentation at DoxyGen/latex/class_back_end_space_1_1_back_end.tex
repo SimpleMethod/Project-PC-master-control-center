@@ -1,0 +1,325 @@
+\hypertarget{class_back_end_space_1_1_back_end}{}\section{Dokumentacja klasy Back\+End\+Space\+:\+:Back\+End}
+\label{class_back_end_space_1_1_back_end}\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+Diagram dziedziczenia dla Back\+End\+Space\+:\+:Back\+End\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_back_end_space_1_1_back_end}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_back_end_space_1_1_back_end_ab6fe52b22e676d3809bcea4f94960a91}{Back\+End} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Stworzenie obiektu dla QT. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_back_end_space_1_1_back_end_a04f69b715de1c65b21873a46b70fcc27}{Create\+File} (Q\+String file)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_back_end_space_1_1_back_end_ab7c89f258fb3afaa6b2ef9d16b009560}{Check\+File\+Exist} (Q\+String file)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_back_end_space_1_1_back_end_a8008a4eb621a34d14f6ab9612c9e7e41}{Check\+D\+L\+Cis\+Installed} (App\+Id\+\_\+t ID)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_back_end_space_1_1_back_end_a9e8a3b46de916f38288dbcdcb4ae8c85}{Steam\+Lang} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_back_end_space_1_1_back_end_a3a85c4416c934c36b89aed4e371c82a8}{Select\+Language} (Q\+String Language\+Name)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_back_end_space_1_1_back_end_a1c2234acf04382bdaf5adf2921a0ae65}{Select\+Setting\+File} (Q\+String Language\+Name)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+Json\+Document \hyperlink{class_back_end_space_1_1_back_end_ad74f93f446a7bea2878efabf9246cda4}{Open\+Json\+File} (Q\+String filename)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_back_end_space_1_1_back_end_a6d55511e3ef074926f1729631fb7f047}{Select\+From\+Json} (Q\+String Search\+Name)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_back_end_space_1_1_back_end_ad0ad4e5408150784a6a0195776474c56}{Select\+From\+Array\+Json} (Q\+String Name\+Of\+Array, Q\+String Search\+Name)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_back_end_space_1_1_back_end_a6f9b97532b4b944b460093cf2376778b}{Scan\+C\+O\+M\+Port} (Q\+String Product\+ID)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_back_end_space_1_1_back_end_a1eb19f81437255ea4bf5cc1651f1047c}{Init\+Send\+Message\+To\+Port} (Q\+String Com\+Port, Q\+String message)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_back_end_space_1_1_back_end_a99031e7e8e436c26cc8c49ea73084f1b}{Send\+Message\+To\+Port} (Q\+String message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 19 pliku Back\+End.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_ab6fe52b22e676d3809bcea4f94960a91}\label{class_back_end_space_1_1_back_end_ab6fe52b22e676d3809bcea4f94960a91}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Back\+End@{Back\+End}}
+\index{Back\+End@{Back\+End}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Back\+End()}{BackEnd()}}
+{\footnotesize\ttfamily Back\+End\+::\+Back\+End (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Stworzenie obiektu dla QT. 
+
+Używamy aby zapobiec nie jawnej konwersji typu. 
+
+Definicja w linii 3 pliku Back\+End.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a8008a4eb621a34d14f6ab9612c9e7e41}\label{class_back_end_space_1_1_back_end_a8008a4eb621a34d14f6ab9612c9e7e41}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Check\+D\+L\+Cis\+Installed@{Check\+D\+L\+Cis\+Installed}}
+\index{Check\+D\+L\+Cis\+Installed@{Check\+D\+L\+Cis\+Installed}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Check\+D\+L\+Cis\+Installed()}{CheckDLCisInstalled()}}
+{\footnotesize\ttfamily bool Back\+End\+::\+Check\+D\+L\+Cis\+Installed (\begin{DoxyParamCaption}\item[{App\+Id\+\_\+t}]{ID }\end{DoxyParamCaption})}
+
+Metoda sprawdzająca, czy D\+LC jest zainstalowane 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+App\+Id\+\_\+t} & ID Numer Steam\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:bool Zwraca prawdę albo fałsz 
+\end{DoxyReturn}
+Sprawdzanie, czy D\+LC jest zainstalowane dzięki Steam\+A\+PI.
+
+Jeśli tak, to zwraca prawdę
+
+Jeśli nie, to zwraca fałsz 
+
+Definicja w linii 47 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_ab7c89f258fb3afaa6b2ef9d16b009560}\label{class_back_end_space_1_1_back_end_ab7c89f258fb3afaa6b2ef9d16b009560}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Check\+File\+Exist@{Check\+File\+Exist}}
+\index{Check\+File\+Exist@{Check\+File\+Exist}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Check\+File\+Exist()}{CheckFileExist()}}
+{\footnotesize\ttfamily bool Back\+End\+::\+Check\+File\+Exist (\begin{DoxyParamCaption}\item[{Q\+String}]{file }\end{DoxyParamCaption})}
+
+Metoda sprawdzająca, czy plik istnieje 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & file Nazwa pliku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:bool Zwraca prawdę albo fałsz 
+\end{DoxyReturn}
+Sprawdzanie, czy plik istnieje.
+
+Jeśli tak, to zwraca prawdę
+
+Jeśli nie, to zwraca fałsz 
+
+Definicja w linii 34 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a04f69b715de1c65b21873a46b70fcc27}\label{class_back_end_space_1_1_back_end_a04f69b715de1c65b21873a46b70fcc27}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Create\+File@{Create\+File}}
+\index{Create\+File@{Create\+File}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Create\+File()}{CreateFile()}}
+{\footnotesize\ttfamily bool Back\+End\+::\+Create\+File (\begin{DoxyParamCaption}\item[{Q\+String}]{file }\end{DoxyParamCaption})}
+
+Metoda tworzącay dowolny plik 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & file Nazwa pliku jaki należy stworzyć \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:bool Zwraca prawdę albo fałsz 
+\end{DoxyReturn}
+Przypisuje ściężkę danych do folderu aplikacji.
+
+Sprawdza, czy plik istnieje, jeśli nie to go tworzy.
+
+Przygotowanie do zapisania pliku.
+
+Sprawdzanie, czy jest dostęp do edycji pliku.
+
+Zapisywanie pliku
+
+Zamykanie pliku
+
+Sprawdzanie, czy plik został poprawnie zapisany. 
+
+Definicja w linii 8 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a1eb19f81437255ea4bf5cc1651f1047c}\label{class_back_end_space_1_1_back_end_a1eb19f81437255ea4bf5cc1651f1047c}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Init\+Send\+Message\+To\+Port@{Init\+Send\+Message\+To\+Port}}
+\index{Init\+Send\+Message\+To\+Port@{Init\+Send\+Message\+To\+Port}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Init\+Send\+Message\+To\+Port()}{InitSendMessageToPort()}}
+{\footnotesize\ttfamily void Back\+End\+::\+Init\+Send\+Message\+To\+Port (\begin{DoxyParamCaption}\item[{Q\+String}]{Com\+Port,  }\item[{Q\+String}]{message }\end{DoxyParamCaption})}
+
+Metoda inicjalizuje port C\+OM (Otwiera go) 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Com\+Port nazwa portu C\+OM \\
+\hline
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & message wiadomość do przesyłu \\
+\hline
+\end{DoxyParams}
+Użycie obiektu do połączenia się z urządzeniem i ustawienie wymaganych parametrów. 
+
+Definicja w linii 136 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_ad74f93f446a7bea2878efabf9246cda4}\label{class_back_end_space_1_1_back_end_ad74f93f446a7bea2878efabf9246cda4}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Open\+Json\+File@{Open\+Json\+File}}
+\index{Open\+Json\+File@{Open\+Json\+File}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Open\+Json\+File()}{OpenJsonFile()}}
+{\footnotesize\ttfamily Q\+Json\+Document Back\+End\+::\+Open\+Json\+File (\begin{DoxyParamCaption}\item[{Q\+String}]{filename }\end{DoxyParamCaption})}
+
+Metoda otwiera plik Json 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & filename nazwa pliku językowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+Json\+Document Zwraca dump pliku językowego 
+\end{DoxyReturn}
+Przypisuje ściężkę danych do folderu aplikacji.
+
+Sprawdzanie, czy jest dostęp do czytania pliku.
+
+Zapisuje całą zawartość pliku do zmiennej Data.
+
+Zamyka plik J\+S\+ON.
+
+Przypisuje zmiennej Raw\+Data zawartość pliku i koduje do U\+T\+F-\/8. 
+
+Definicja w linii 80 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a6f9b97532b4b944b460093cf2376778b}\label{class_back_end_space_1_1_back_end_a6f9b97532b4b944b460093cf2376778b}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Scan\+C\+O\+M\+Port@{Scan\+C\+O\+M\+Port}}
+\index{Scan\+C\+O\+M\+Port@{Scan\+C\+O\+M\+Port}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Scan\+C\+O\+M\+Port()}{ScanCOMPort()}}
+{\footnotesize\ttfamily Q\+String Back\+End\+::\+Scan\+C\+O\+M\+Port (\begin{DoxyParamCaption}\item[{Q\+String}]{Product\+ID }\end{DoxyParamCaption})}
+
+Metoda skanuje wszystkie porty C\+OM 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Product\+ID nazwa poszukiwanego produktu o podanym indentyfikatorze produktu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+String Zwraca nazwę portu C\+OM 
+\end{DoxyReturn}
+Sprawdzenie dostępnych portów.
+
+Jeżeli nie znaleziono portu, to przypisuje wartość 0.
+
+Pętla do sprawdzenia wszystkich portów C\+OM.
+
+Przypisanie do zmiennej {\bfseries description} numeru indentyfikacyjnego urządzenia.
+
+Przypisanie do zmiennej {\bfseries signal\+\_\+mainpage\+\_\+comport\+\_\+string} numeru portu C\+OM urządzenia.
+
+Zwraca numeru portu C\+OM urządzenia. 
+
+Definicja w linii 115 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_ad0ad4e5408150784a6a0195776474c56}\label{class_back_end_space_1_1_back_end_ad0ad4e5408150784a6a0195776474c56}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Select\+From\+Array\+Json@{Select\+From\+Array\+Json}}
+\index{Select\+From\+Array\+Json@{Select\+From\+Array\+Json}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Select\+From\+Array\+Json()}{SelectFromArrayJson()}}
+{\footnotesize\ttfamily Q\+String Back\+End\+::\+Select\+From\+Array\+Json (\begin{DoxyParamCaption}\item[{Q\+String}]{Name\+Of\+Array,  }\item[{Q\+String}]{Search\+Name }\end{DoxyParamCaption})}
+
+Metoda czyta plik Json i wybiera element {\bfseries znajdujący} się w klasie 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Name\+Of\+Array nazwa tablicy w pliku językowego \\
+\hline
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Search\+Name nazwa elemetnu w tablicy pliku językowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+Json\+Document Zwraca odpowiedną wartość z pliku 
+\end{DoxyReturn}
+Przypisuje zmiennej {\bfseries sett2} zawartość obiektu pliku językowego.
+
+Zwraca obiekt tablicy o podanej nazwie.
+
+Zwraca szukaną zawartość obiektu. 
+
+Definicja w linii 104 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a6d55511e3ef074926f1729631fb7f047}\label{class_back_end_space_1_1_back_end_a6d55511e3ef074926f1729631fb7f047}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Select\+From\+Json@{Select\+From\+Json}}
+\index{Select\+From\+Json@{Select\+From\+Json}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Select\+From\+Json()}{SelectFromJson()}}
+{\footnotesize\ttfamily Q\+String Back\+End\+::\+Select\+From\+Json (\begin{DoxyParamCaption}\item[{Q\+String}]{Search\+Name }\end{DoxyParamCaption})}
+
+Metoda czyta plik Json i wybiera element nie znajdujący się w klasie 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Search\+Name nazwa pliku językowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+Json\+Document Zwraca odpowiedną wartość z pliku 
+\end{DoxyReturn}
+Przypisuje zmiennej {\bfseries sett2} zawartość obiektu pliku językowego.
+
+Zwraca szukaną zawartość obiektu. 
+
+Definicja w linii 97 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a3a85c4416c934c36b89aed4e371c82a8}\label{class_back_end_space_1_1_back_end_a3a85c4416c934c36b89aed4e371c82a8}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Select\+Language@{Select\+Language}}
+\index{Select\+Language@{Select\+Language}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Select\+Language()}{SelectLanguage()}}
+{\footnotesize\ttfamily void Back\+End\+::\+Select\+Language (\begin{DoxyParamCaption}\item[{Q\+String}]{Language\+Name }\end{DoxyParamCaption})}
+
+Metoda przypisuje do zmiennej Raw\+Json\+Data całą zawartość pliku Json z odpowiednimi plikami językowymi \begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+String Zwraca tekst do przetłumaczenia 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Language\+Name nazwa języka \\
+\hline
+\end{DoxyParams}
+Otwieranie całego pliku Json i zapisywanie jego zawartości do zmiennej {\bfseries Raw\+Json\+Data}. 
+
+Definicja w linii 69 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a1c2234acf04382bdaf5adf2921a0ae65}\label{class_back_end_space_1_1_back_end_a1c2234acf04382bdaf5adf2921a0ae65}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Select\+Setting\+File@{Select\+Setting\+File}}
+\index{Select\+Setting\+File@{Select\+Setting\+File}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Select\+Setting\+File()}{SelectSettingFile()}}
+{\footnotesize\ttfamily void Back\+End\+::\+Select\+Setting\+File (\begin{DoxyParamCaption}\item[{Q\+String}]{Language\+Name }\end{DoxyParamCaption})}
+
+Metoda przypisuje do zmiennej Raw\+Json\+Data całą zawartość pliku Json z odpowiednimi plikami językowymi 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Language\+Name nazwa języka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+Json\+Document Zwraca dump pliku językowego 
+\end{DoxyReturn}
+Otwieranie całego pliku Json i zapisywanie jego zawartości do zmiennej {\bfseries Raw\+Json\+Data}. 
+
+Definicja w linii 75 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a99031e7e8e436c26cc8c49ea73084f1b}\label{class_back_end_space_1_1_back_end_a99031e7e8e436c26cc8c49ea73084f1b}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Send\+Message\+To\+Port@{Send\+Message\+To\+Port}}
+\index{Send\+Message\+To\+Port@{Send\+Message\+To\+Port}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Send\+Message\+To\+Port()}{SendMessageToPort()}}
+{\footnotesize\ttfamily void Back\+End\+::\+Send\+Message\+To\+Port (\begin{DoxyParamCaption}\item[{Q\+String}]{message }\end{DoxyParamCaption})}
+
+Metoda Pozwalająca na przesłanie wiadomości do portu C\+OM 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & Com\+Port nazwa portu C\+OM \\
+\hline
+\mbox{\tt in}  & {\em type\+:\+Q\+String} & message wiadomość do przesyłu \\
+\hline
+\end{DoxyParams}
+Użycie obiektu do wysłania wiadomości do urządzenia. 
+
+Definicja w linii 150 pliku Back\+End.\+cpp.
+
+\mbox{\Hypertarget{class_back_end_space_1_1_back_end_a9e8a3b46de916f38288dbcdcb4ae8c85}\label{class_back_end_space_1_1_back_end_a9e8a3b46de916f38288dbcdcb4ae8c85}} 
+\index{Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}!Steam\+Lang@{Steam\+Lang}}
+\index{Steam\+Lang@{Steam\+Lang}!Back\+End\+Space\+::\+Back\+End@{Back\+End\+Space\+::\+Back\+End}}
+\subsubsection{\texorpdfstring{Steam\+Lang()}{SteamLang()}}
+{\footnotesize\ttfamily Q\+String Back\+End\+::\+Steam\+Lang (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda sprawdzająca, jaki język został ustawiony \begin{DoxyReturn}{Zwraca}
+\mbox{[}out\mbox{]} type\+:Q\+String Zwraca identyfikator dla odpowiedniego języka 
+\end{DoxyReturn}
+Zwracanie ustawionego języka dzięki Steam\+A\+PI. 
+
+Definicja w linii 62 pliku Back\+End.\+cpp.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/Back\+End.\+h\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/Back\+End.\+cpp\end{DoxyCompactItemize}

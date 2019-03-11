@@ -1,0 +1,305 @@
+\hypertarget{group__avr__power}{}\section{$<$avr/power.h$>$\+: Power Reduction Management}
+\label{group__avr__power}\index{$<$avr/power.\+h$>$\+: Power Reduction Management@{$<$avr/power.\+h$>$\+: Power Reduction Management}}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{power_8h}{avr/power.h}>}
+\end{DoxyCode}
+
+
+Many A\+V\+Rs contain a Power Reduction Register (P\+RR) or Registers (P\+R\+Rx) that allow you to reduce power consumption by disabling or enabling various on-\/board peripherals as needed. Some devices have the X\+T\+AL Divide Control Register (X\+D\+IV) which offer similar functionality as System Clock Prescale Register (C\+L\+K\+PR).
+
+There are many macros in this header file that provide an easy interface to enable or disable on-\/board peripherals to reduce power. See the table below.
+
+\begin{DoxyNote}{Nota}
+Not all A\+VR devices have a Power Reduction Register (for example the A\+Tmega8). On those devices without a Power Reduction Register, the power reduction macros are not available..
+
+Not all A\+VR devices contain the same peripherals (for example, the L\+CD interface), or they will be named differently (for example, U\+S\+A\+RT and U\+S\+A\+R\+T0). Please consult your device\textquotesingle{}s datasheet, or the header file, to find out which macros are applicable to your device.
+
+For device using the X\+T\+AL Divide Control Register (X\+D\+IV), when prescaler is used, Timer/\+Counter0 can only be used in asynchronous mode. Keep in mind that Timer/\+Counter0 source shall be less than ¼th of peripheral clock. Therefore, when using a typical 32.\+768 k\+Hz crystal, one shall not scale the clock below 131.\+072 k\+Hz.
+\end{DoxyNote}
+\label{group__avr__power_avr_powermacros}%
+\Hypertarget{group__avr__power_avr_powermacros}%
+
+\footnotesize  \begin{center} \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+{\bfseries Power Macro} &{\bfseries Description} 
+
+\\\cline{1-2}
+power\+\_\+aca\+\_\+disable() &Disable the Analog Comparator on PortA. 
+
+\\\cline{1-2}
+power\+\_\+aca\+\_\+enable() &Enable the Analog Comparator on PortA. 
+
+\\\cline{1-2}
+power\+\_\+adc\+\_\+enable() &Enable the Analog to Digital Converter module. 
+
+\\\cline{1-2}
+power\+\_\+adc\+\_\+disable() &Disable the Analog to Digital Converter module. 
+
+\\\cline{1-2}
+power\+\_\+adca\+\_\+disable() &Disable the Analog to Digital Converter module on PortA 
+
+\\\cline{1-2}
+power\+\_\+adca\+\_\+enable() &Enable the Analog to Digital Converter module on PortA 
+
+\\\cline{1-2}
+power\+\_\+evsys\+\_\+disable() &Disable the E\+V\+S\+YS module 
+
+\\\cline{1-2}
+power\+\_\+evsys\+\_\+enable() &Enable the E\+V\+S\+YS module 
+
+\\\cline{1-2}
+power\+\_\+hiresc\+\_\+disable() &Disable the H\+I\+R\+ES module on PortC 
+
+\\\cline{1-2}
+power\+\_\+hiresc\+\_\+enable() &Enable the H\+I\+R\+ES module on PortC 
+
+\\\cline{1-2}
+power\+\_\+lcd\+\_\+enable() &Enable the L\+CD module. 
+
+\\\cline{1-2}
+power\+\_\+lcd\+\_\+disable(). &Disable the L\+CD module. 
+
+\\\cline{1-2}
+power\+\_\+pga\+\_\+enable() &Enable the Programmable Gain Amplifier module. 
+
+\\\cline{1-2}
+power\+\_\+pga\+\_\+disable() &Disable the Programmable Gain Amplifier module. 
+
+\\\cline{1-2}
+power\+\_\+pscr\+\_\+enable() &Enable the Reduced Power Stage Controller module. 
+
+\\\cline{1-2}
+power\+\_\+pscr\+\_\+disable() &Disable the Reduced Power Stage Controller module. 
+
+\\\cline{1-2}
+power\+\_\+psc0\+\_\+enable() &Enable the Power Stage Controller 0 module. 
+
+\\\cline{1-2}
+power\+\_\+psc0\+\_\+disable() &Disable the Power Stage Controller 0 module. 
+
+\\\cline{1-2}
+power\+\_\+psc1\+\_\+enable() &Enable the Power Stage Controller 1 module. 
+
+\\\cline{1-2}
+power\+\_\+psc1\+\_\+disable() &Disable the Power Stage Controller 1 module. 
+
+\\\cline{1-2}
+power\+\_\+psc2\+\_\+enable() &Enable the Power Stage Controller 2 module. 
+
+\\\cline{1-2}
+power\+\_\+psc2\+\_\+disable() &Disable the Power Stage Controller 2 module. 
+
+\\\cline{1-2}
+power\+\_\+ram0\+\_\+enable() &Enable the S\+R\+AM block 0 . 
+
+\\\cline{1-2}
+power\+\_\+ram0\+\_\+disable() &Disable the S\+R\+AM block 0.  
+
+\\\cline{1-2}
+power\+\_\+ram1\+\_\+enable() &Enable the S\+R\+AM block 1 . 
+
+\\\cline{1-2}
+power\+\_\+ram1\+\_\+disable() &Disable the S\+R\+AM block 1.  
+
+\\\cline{1-2}
+power\+\_\+ram2\+\_\+enable() &Enable the S\+R\+AM block 2 . 
+
+\\\cline{1-2}
+power\+\_\+ram2\+\_\+disable() &Disable the S\+R\+AM block 2.  
+
+\\\cline{1-2}
+power\+\_\+ram3\+\_\+enable() &Enable the S\+R\+AM block 3 . 
+
+\\\cline{1-2}
+power\+\_\+ram3\+\_\+disable() &Disable the S\+R\+AM block 3.  
+
+\\\cline{1-2}
+power\+\_\+rtc\+\_\+disable() &Disable the R\+TC module 
+
+\\\cline{1-2}
+power\+\_\+rtc\+\_\+enable() &Enable the R\+TC module 
+
+\\\cline{1-2}
+power\+\_\+spi\+\_\+enable() &Enable the Serial Peripheral Interface module. 
+
+\\\cline{1-2}
+power\+\_\+spi\+\_\+disable() &Disable the Serial Peripheral Interface module. 
+
+\\\cline{1-2}
+power\+\_\+spic\+\_\+disable() &Disable the S\+PI module on PortC 
+
+\\\cline{1-2}
+power\+\_\+spic\+\_\+enable() &Enable the S\+PI module on PortC 
+
+\\\cline{1-2}
+power\+\_\+spid\+\_\+disable() &Disable the S\+PI module on PortD 
+
+\\\cline{1-2}
+power\+\_\+spid\+\_\+enable() &Enable the S\+PI module on PortD 
+
+\\\cline{1-2}
+power\+\_\+tc0c\+\_\+disable() &Disable the T\+C0 module on PortC 
+
+\\\cline{1-2}
+power\+\_\+tc0c\+\_\+enable() &Enable the T\+C0 module on PortC 
+
+\\\cline{1-2}
+power\+\_\+tc0d\+\_\+disable() &Disable the T\+C0 module on PortD 
+
+\\\cline{1-2}
+power\+\_\+tc0d\+\_\+enable() &Enable the T\+C0 module on PortD 
+
+\\\cline{1-2}
+power\+\_\+tc0e\+\_\+disable() &Disable the T\+C0 module on PortE 
+
+\\\cline{1-2}
+power\+\_\+tc0e\+\_\+enable() &Enable the T\+C0 module on PortE 
+
+\\\cline{1-2}
+power\+\_\+tc0f\+\_\+disable() &Disable the T\+C0 module on PortF 
+
+\\\cline{1-2}
+power\+\_\+tc0f\+\_\+enable() &Enable the T\+C0 module on PortF 
+
+\\\cline{1-2}
+power\+\_\+tc1c\+\_\+disable() &Disable the T\+C1 module on PortC 
+
+\\\cline{1-2}
+power\+\_\+tc1c\+\_\+enable() &Enable the T\+C1 module on PortC 
+
+\\\cline{1-2}
+power\+\_\+twic\+\_\+disable() &Disable the Two Wire Interface module on PortC 
+
+\\\cline{1-2}
+power\+\_\+twic\+\_\+enable() &Enable the Two Wire Interface module on PortC 
+
+\\\cline{1-2}
+power\+\_\+twie\+\_\+disable() &Disable the Two Wire Interface module on PortE 
+
+\\\cline{1-2}
+power\+\_\+twie\+\_\+enable() &Enable the Two Wire Interface module on PortE 
+
+\\\cline{1-2}
+power\+\_\+timer0\+\_\+enable() &Enable the Timer 0 module. 
+
+\\\cline{1-2}
+power\+\_\+timer0\+\_\+disable() &Disable the Timer 0 module. 
+
+\\\cline{1-2}
+power\+\_\+timer1\+\_\+enable() &Enable the Timer 1 module. 
+
+\\\cline{1-2}
+power\+\_\+timer1\+\_\+disable() &Disable the Timer 1 module. 
+
+\\\cline{1-2}
+power\+\_\+timer2\+\_\+enable() &Enable the Timer 2 module. 
+
+\\\cline{1-2}
+power\+\_\+timer2\+\_\+disable() &Disable the Timer 2 module. 
+
+\\\cline{1-2}
+power\+\_\+timer3\+\_\+enable() &Enable the Timer 3 module. 
+
+\\\cline{1-2}
+power\+\_\+timer3\+\_\+disable() &Disable the Timer 3 module. 
+
+\\\cline{1-2}
+power\+\_\+timer4\+\_\+enable() &Enable the Timer 4 module. 
+
+\\\cline{1-2}
+power\+\_\+timer4\+\_\+disable() &Disable the Timer 4 module. 
+
+\\\cline{1-2}
+power\+\_\+timer5\+\_\+enable() &Enable the Timer 5 module. 
+
+\\\cline{1-2}
+power\+\_\+timer5\+\_\+disable() &Disable the Timer 5 module. 
+
+\\\cline{1-2}
+power\+\_\+twi\+\_\+enable() &Enable the Two Wire Interface module. 
+
+\\\cline{1-2}
+power\+\_\+twi\+\_\+disable() &Disable the Two Wire Interface module. 
+
+\\\cline{1-2}
+power\+\_\+usart\+\_\+enable() &Enable the U\+S\+A\+RT module. 
+
+\\\cline{1-2}
+power\+\_\+usart\+\_\+disable() &Disable the U\+S\+A\+RT module. 
+
+\\\cline{1-2}
+power\+\_\+usart0\+\_\+enable() &Enable the U\+S\+A\+RT 0 module. 
+
+\\\cline{1-2}
+power\+\_\+usart0\+\_\+disable() &Disable the U\+S\+A\+RT 0 module. 
+
+\\\cline{1-2}
+power\+\_\+usart1\+\_\+enable() &Enable the U\+S\+A\+RT 1 module. 
+
+\\\cline{1-2}
+power\+\_\+usart1\+\_\+disable() &Disable the U\+S\+A\+RT 1 module. 
+
+\\\cline{1-2}
+power\+\_\+usart2\+\_\+enable() &Enable the U\+S\+A\+RT 2 module. 
+
+\\\cline{1-2}
+power\+\_\+usart2\+\_\+disable() &Disable the U\+S\+A\+RT 2 module. 
+
+\\\cline{1-2}
+power\+\_\+usart3\+\_\+enable() &Enable the U\+S\+A\+RT 3 module. 
+
+\\\cline{1-2}
+power\+\_\+usart3\+\_\+disable() &Disable the U\+S\+A\+RT 3 module. 
+
+\\\cline{1-2}
+power\+\_\+usartc0\+\_\+disable() &Disable the U\+S\+A\+R\+T0 module on PortC 
+
+\\\cline{1-2}
+power\+\_\+usartc0\+\_\+enable() &Enable the U\+S\+A\+R\+T0 module on PortC 
+
+\\\cline{1-2}
+power\+\_\+usartd0\+\_\+disable() &Disable the U\+S\+A\+R\+T0 module on PortD 
+
+\\\cline{1-2}
+power\+\_\+usartd0\+\_\+enable() &Enable the U\+S\+A\+R\+T0 module on PortD 
+
+\\\cline{1-2}
+power\+\_\+usarte0\+\_\+disable() &Disable the U\+S\+A\+R\+T0 module on PortE 
+
+\\\cline{1-2}
+power\+\_\+usarte0\+\_\+enable() &Enable the U\+S\+A\+R\+T0 module on PortE 
+
+\\\cline{1-2}
+power\+\_\+usartf0\+\_\+disable() &Disable the U\+S\+A\+R\+T0 module on PortF 
+
+\\\cline{1-2}
+power\+\_\+usartf0\+\_\+enable() &Enable the U\+S\+A\+R\+T0 module on PortF 
+
+\\\cline{1-2}
+power\+\_\+usb\+\_\+enable() &Enable the U\+SB module. 
+
+\\\cline{1-2}
+power\+\_\+usb\+\_\+disable() &Disable the U\+SB module. 
+
+\\\cline{1-2}
+power\+\_\+usi\+\_\+enable() &Enable the Universal Serial Interface module. 
+
+\\\cline{1-2}
+power\+\_\+usi\+\_\+disable() &Disable the Universal Serial Interface module. 
+
+\\\cline{1-2}
+power\+\_\+vadc\+\_\+enable() &Enable the Voltage A\+DC module. 
+
+\\\cline{1-2}
+power\+\_\+vadc\+\_\+disable() &Disable the Voltage A\+DC module. 
+
+\\\cline{1-2}
+power\+\_\+all\+\_\+enable() &Enable all modules. 
+
+\\\cline{1-2}
+power\+\_\+all\+\_\+disable() &Disable all modules.  \\\cline{1-2}
+\end{longtabu}
+\end{center}  
+\normalsize  

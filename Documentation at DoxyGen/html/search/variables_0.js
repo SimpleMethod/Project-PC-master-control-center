@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['m_5fbdonotrefresh',['m_bDoNotRefresh',['../classgameserveritem__t.html#a6d322858126f5f3125ea8a7589ef9bce',1,'gameserveritem_t']]],
+  ['m_5fbhadsuccessfulresponse',['m_bHadSuccessfulResponse',['../classgameserveritem__t.html#afbcb314e49e004fd186f55ac9d0094ee',1,'gameserveritem_t']]],
+  ['m_5fbpassword',['m_bPassword',['../classgameserveritem__t.html#a2c9ff8bc276f576d63f8850288aa06cc',1,'gameserveritem_t']]],
+  ['m_5fbsecure',['m_bSecure',['../classgameserveritem__t.html#a3e4cc5a7f31facaf4218329a00888600',1,'gameserveritem_t']]],
+  ['m_5fnappid',['m_nAppID',['../classgameserveritem__t.html#a1570f474cde97c276735cff6dd9d3f79',1,'gameserveritem_t']]],
+  ['m_5fnbotplayers',['m_nBotPlayers',['../classgameserveritem__t.html#aadadb40a792ad18178e76d5b6b1dc909',1,'gameserveritem_t']]],
+  ['m_5fnetadr',['m_NetAdr',['../classgameserveritem__t.html#a2eb6dddf2404c1d56a5fbefc5bb447a8',1,'gameserveritem_t']]],
+  ['m_5fnmaxplayers',['m_nMaxPlayers',['../classgameserveritem__t.html#adb7b54e32669f205bacb7c766fa90ff3',1,'gameserveritem_t']]],
+  ['m_5fnping',['m_nPing',['../classgameserveritem__t.html#a1cac2eecd77845d91dccfdf6a28cbc56',1,'gameserveritem_t']]],
+  ['m_5fnplayers',['m_nPlayers',['../classgameserveritem__t.html#adb038abec9ad94d1631326e4d7bc7f09',1,'gameserveritem_t']]],
+  ['m_5fnserverversion',['m_nServerVersion',['../classgameserveritem__t.html#a1e6dbc6ed4bb005fc549fae132779b3f',1,'gameserveritem_t']]],
+  ['m_5fsteamid',['m_steamID',['../classgameserveritem__t.html#a2eae92d0752c4482bcd149a84bc59d02',1,'gameserveritem_t']]],
+  ['m_5fszgamedescription',['m_szGameDescription',['../classgameserveritem__t.html#a0c7ee14b176d1cd0208187267febb85d',1,'gameserveritem_t']]],
+  ['m_5fszgamedir',['m_szGameDir',['../classgameserveritem__t.html#a6a9703b2c9b6a7f3b847c7a321b409fb',1,'gameserveritem_t']]],
+  ['m_5fszgametags',['m_szGameTags',['../classgameserveritem__t.html#a1372815e9fb666d741ea23b66509d91f',1,'gameserveritem_t']]],
+  ['m_5fszmap',['m_szMap',['../classgameserveritem__t.html#af2308ac9d729d06bf0dde10e729ab417',1,'gameserveritem_t']]],
+  ['m_5fultimelastplayed',['m_ulTimeLastPlayed',['../classgameserveritem__t.html#a2ba4be71a125c17e9f7dfb4443895f6b',1,'gameserveritem_t']]]
+];

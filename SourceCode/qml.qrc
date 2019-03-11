@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>MainPage.qml</file>
+        <file>LedPage.qml</file>
+        <file>PageOled.qml</file>
+        <file>fontawesome-webfont.ttf</file>
+    </qresource>
+</RCC>

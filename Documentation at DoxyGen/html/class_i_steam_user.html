@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC Master Control Center: Dokumentacja klasy ISteamUser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC Master Control Center
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_i_steam_user.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_i_steam_user-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy ISteamUser<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a17e683a53cb649d324d0614bece5a539"><td class="memItemLeft" align="right" valign="top"><a id="a17e683a53cb649d324d0614bece5a539"></a>
+virtual HSteamUser&#160;</td><td class="memItemRight" valign="bottom"><b>GetHSteamUser</b> ()=0</td></tr>
+<tr class="separator:a17e683a53cb649d324d0614bece5a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e4a5e59dee5867f60732311fad2c4e"><td class="memItemLeft" align="right" valign="top"><a id="a29e4a5e59dee5867f60732311fad2c4e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>BLoggedOn</b> ()=0</td></tr>
+<tr class="separator:a29e4a5e59dee5867f60732311fad2c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7659a6147a7bd3c0acf4065c3bed36"><td class="memItemLeft" align="right" valign="top"><a id="a5a7659a6147a7bd3c0acf4065c3bed36"></a>
+virtual <a class="el" href="class_c_steam_i_d.html">CSteamID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSteamID</b> ()=0</td></tr>
+<tr class="separator:a5a7659a6147a7bd3c0acf4065c3bed36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab243e44f96ea3070d7973deaa013afbd"><td class="memItemLeft" align="right" valign="top"><a id="ab243e44f96ea3070d7973deaa013afbd"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>InitiateGameConnection</b> (void *pAuthBlob, int cbMaxAuthBlob, <a class="el" href="class_c_steam_i_d.html">CSteamID</a> steamIDGameServer, uint32 unIPServer, uint16 usPortServer, bool bSecure)=0</td></tr>
+<tr class="separator:ab243e44f96ea3070d7973deaa013afbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67de2694f5b1abb4b22612ea3a43e46c"><td class="memItemLeft" align="right" valign="top"><a id="a67de2694f5b1abb4b22612ea3a43e46c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>TerminateGameConnection</b> (uint32 unIPServer, uint16 usPortServer)=0</td></tr>
+<tr class="separator:a67de2694f5b1abb4b22612ea3a43e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8099764ca59d6557a6a6174faa3883"><td class="memItemLeft" align="right" valign="top"><a id="a4f8099764ca59d6557a6a6174faa3883"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>TrackAppUsageEvent</b> (<a class="el" href="class_c_game_i_d.html">CGameID</a> gameID, int eAppUsageEvent, const char *pchExtraInfo=&quot;&quot;)=0</td></tr>
+<tr class="separator:a4f8099764ca59d6557a6a6174faa3883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9338e70287a15571c8ffc998e49d338"><td class="memItemLeft" align="right" valign="top"><a id="ad9338e70287a15571c8ffc998e49d338"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserDataFolder</b> (char *pchBuffer, int cubBuffer)=0</td></tr>
+<tr class="separator:ad9338e70287a15571c8ffc998e49d338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2e7fa09cf2fc1da25ff8601b917978"><td class="memItemLeft" align="right" valign="top"><a id="a7f2e7fa09cf2fc1da25ff8601b917978"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartVoiceRecording</b> ()=0</td></tr>
+<tr class="separator:a7f2e7fa09cf2fc1da25ff8601b917978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c66f7f9a4b5c81ae16e1db7be286bff"><td class="memItemLeft" align="right" valign="top"><a id="a8c66f7f9a4b5c81ae16e1db7be286bff"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StopVoiceRecording</b> ()=0</td></tr>
+<tr class="separator:a8c66f7f9a4b5c81ae16e1db7be286bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83851fd1e3457c3752ddddd9d848ede4"><td class="memItemLeft" align="right" valign="top"><a id="a83851fd1e3457c3752ddddd9d848ede4"></a>
+virtual EVoiceResult&#160;</td><td class="memItemRight" valign="bottom"><b>GetAvailableVoice</b> (uint32 *pcbCompressed, uint32 *pcbUncompressed_Deprecated=0, uint32 nUncompressedVoiceDesiredSampleRate_Deprecated=0)=0</td></tr>
+<tr class="separator:a83851fd1e3457c3752ddddd9d848ede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7c2894e61f654f37ab0e628be1438b"><td class="memItemLeft" align="right" valign="top"><a id="a6c7c2894e61f654f37ab0e628be1438b"></a>
+virtual EVoiceResult&#160;</td><td class="memItemRight" valign="bottom"><b>GetVoice</b> (bool bWantCompressed, void *pDestBuffer, uint32 cbDestBufferSize, uint32 *nBytesWritten, bool bWantUncompressed_Deprecated=false, void *pUncompressedDestBuffer_Deprecated=0, uint32 cbUncompressedDestBufferSize_Deprecated=0, uint32 *nUncompressBytesWritten_Deprecated=0, uint32 nUncompressedVoiceDesiredSampleRate_Deprecated=0)=0</td></tr>
+<tr class="separator:a6c7c2894e61f654f37ab0e628be1438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae351f90e7f95f945baeef5d7cf7c6760"><td class="memItemLeft" align="right" valign="top"><a id="ae351f90e7f95f945baeef5d7cf7c6760"></a>
+virtual EVoiceResult&#160;</td><td class="memItemRight" valign="bottom"><b>DecompressVoice</b> (const void *pCompressed, uint32 cbCompressed, void *pDestBuffer, uint32 cbDestBufferSize, uint32 *nBytesWritten, uint32 nDesiredSampleRate)=0</td></tr>
+<tr class="separator:ae351f90e7f95f945baeef5d7cf7c6760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0b1a2069a471b88559995432ed5a01"><td class="memItemLeft" align="right" valign="top"><a id="a7f0b1a2069a471b88559995432ed5a01"></a>
+virtual uint32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVoiceOptimalSampleRate</b> ()=0</td></tr>
+<tr class="separator:a7f0b1a2069a471b88559995432ed5a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffd1e0131e3a74d961f6014a823a4cc"><td class="memItemLeft" align="right" valign="top"><a id="a5ffd1e0131e3a74d961f6014a823a4cc"></a>
+virtual HAuthTicket&#160;</td><td class="memItemRight" valign="bottom"><b>GetAuthSessionTicket</b> (void *pTicket, int cbMaxTicket, uint32 *pcbTicket)=0</td></tr>
+<tr class="separator:a5ffd1e0131e3a74d961f6014a823a4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f76c4da6eda398d1838a58f1ec4374"><td class="memItemLeft" align="right" valign="top"><a id="a43f76c4da6eda398d1838a58f1ec4374"></a>
+virtual EBeginAuthSessionResult&#160;</td><td class="memItemRight" valign="bottom"><b>BeginAuthSession</b> (const void *pAuthTicket, int cbAuthTicket, <a class="el" href="class_c_steam_i_d.html">CSteamID</a> steamID)=0</td></tr>
+<tr class="separator:a43f76c4da6eda398d1838a58f1ec4374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1f5a4bb8630ee630a09625e1abdba1"><td class="memItemLeft" align="right" valign="top"><a id="adc1f5a4bb8630ee630a09625e1abdba1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndAuthSession</b> (<a class="el" href="class_c_steam_i_d.html">CSteamID</a> steamID)=0</td></tr>
+<tr class="separator:adc1f5a4bb8630ee630a09625e1abdba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c278ab86639cc929816d8f3b7a17a77"><td class="memItemLeft" align="right" valign="top"><a id="a6c278ab86639cc929816d8f3b7a17a77"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelAuthTicket</b> (HAuthTicket hAuthTicket)=0</td></tr>
+<tr class="separator:a6c278ab86639cc929816d8f3b7a17a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925dc981e305be647259d138cfd362f6"><td class="memItemLeft" align="right" valign="top"><a id="a925dc981e305be647259d138cfd362f6"></a>
+virtual EUserHasLicenseForAppResult&#160;</td><td class="memItemRight" valign="bottom"><b>UserHasLicenseForApp</b> (<a class="el" href="class_c_steam_i_d.html">CSteamID</a> steamID, AppId_t appID)=0</td></tr>
+<tr class="separator:a925dc981e305be647259d138cfd362f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4dd088859b733337936c9766f7790f"><td class="memItemLeft" align="right" valign="top"><a id="acb4dd088859b733337936c9766f7790f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>BIsBehindNAT</b> ()=0</td></tr>
+<tr class="separator:acb4dd088859b733337936c9766f7790f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f6db96869e033a13b13e54f7ce2235"><td class="memItemLeft" align="right" valign="top"><a id="a07f6db96869e033a13b13e54f7ce2235"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AdvertiseGame</b> (<a class="el" href="class_c_steam_i_d.html">CSteamID</a> steamIDGameServer, uint32 unIPServer, uint16 usPortServer)=0</td></tr>
+<tr class="separator:a07f6db96869e033a13b13e54f7ce2235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac14d72bff3350b59605826992fc176"><td class="memItemLeft" align="right" valign="top"><a id="a1ac14d72bff3350b59605826992fc176"></a>
+virtual SteamAPICall_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequestEncryptedAppTicket</b> (void *pDataToInclude, int cbDataToInclude)=0</td></tr>
+<tr class="separator:a1ac14d72bff3350b59605826992fc176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5ea66df88fd0527d1a51179638d44a"><td class="memItemLeft" align="right" valign="top"><a id="a4c5ea66df88fd0527d1a51179638d44a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEncryptedAppTicket</b> (void *pTicket, int cbMaxTicket, uint32 *pcbTicket)=0</td></tr>
+<tr class="separator:a4c5ea66df88fd0527d1a51179638d44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afceb88c7b3241d23d3279650543d5d13"><td class="memItemLeft" align="right" valign="top"><a id="afceb88c7b3241d23d3279650543d5d13"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetGameBadgeLevel</b> (int nSeries, bool bFoil)=0</td></tr>
+<tr class="separator:afceb88c7b3241d23d3279650543d5d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b393de52cb73b353f8edba83838864"><td class="memItemLeft" align="right" valign="top"><a id="ae4b393de52cb73b353f8edba83838864"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlayerSteamLevel</b> ()=0</td></tr>
+<tr class="separator:ae4b393de52cb73b353f8edba83838864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4441998c39deed78c78f14a9ef29b7"><td class="memItemLeft" align="right" valign="top"><a id="a8e4441998c39deed78c78f14a9ef29b7"></a>
+virtual SteamAPICall_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequestStoreAuthURL</b> (const char *pchRedirectURL)=0</td></tr>
+<tr class="separator:a8e4441998c39deed78c78f14a9ef29b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26902fbfbde0bbc7583dab7952556995"><td class="memItemLeft" align="right" valign="top"><a id="a26902fbfbde0bbc7583dab7952556995"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>BIsPhoneVerified</b> ()=0</td></tr>
+<tr class="separator:a26902fbfbde0bbc7583dab7952556995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4415d7d98ebc44388c10e4834780f12"><td class="memItemLeft" align="right" valign="top"><a id="ab4415d7d98ebc44388c10e4834780f12"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>BIsTwoFactorEnabled</b> ()=0</td></tr>
+<tr class="separator:ab4415d7d98ebc44388c10e4834780f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77fdeee4d4445756ba4172621dfd327"><td class="memItemLeft" align="right" valign="top"><a id="ae77fdeee4d4445756ba4172621dfd327"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>BIsPhoneIdentifying</b> ()=0</td></tr>
+<tr class="separator:ae77fdeee4d4445756ba4172621dfd327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8347e6bebb66cbd17e03b7c47df5db14"><td class="memItemLeft" align="right" valign="top"><a id="a8347e6bebb66cbd17e03b7c47df5db14"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>BIsPhoneRequiringVerification</b> ()=0</td></tr>
+<tr class="separator:a8347e6bebb66cbd17e03b7c47df5db14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="isteamuser_8h_source.html#l00038">38</a> pliku <a class="el" href="isteamuser_8h_source.html">isteamuser.h</a>.</p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/Pathfinder/Projekt_cpp/Pre-Alpha Relase/PC_Master_Control_Center/<a class="el" href="isteamuser_8h_source.html">isteamuser.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_i_steam_user.html">ISteamUser</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

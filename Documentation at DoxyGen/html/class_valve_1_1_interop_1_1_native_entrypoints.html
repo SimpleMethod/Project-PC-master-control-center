@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC Master Control Center: Dokumentacja klasy Valve.Interop.NativeEntrypoints</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC Master Control Center
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_valve_1_1_interop_1_1_native_entrypoints.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_valve_1_1_interop_1_1_native_entrypoints-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Valve.Interop.NativeEntrypoints</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a38cb9efb36cfac8a650107c541d76b71"><td class="memItemLeft" align="right" valign="top"><a id="a38cb9efb36cfac8a650107c541d76b71"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_UserStatsReceived_t_Callback</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_user_stats_received__t.html">UserStatsReceived_t</a> pUserStatsReceived_t)</td></tr>
+<tr class="separator:a38cb9efb36cfac8a650107c541d76b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a9072241321e7dd8164ee262e0fcb6"><td class="memItemLeft" align="right" valign="top"><a id="a75a9072241321e7dd8164ee262e0fcb6"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CUserStatsReceived_t_SetCallback</b> (SteamAPI_UserStatsReceived_t_Callback func)</td></tr>
+<tr class="separator:a75a9072241321e7dd8164ee262e0fcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf38c085f08cf286e3b862b2797ee71e"><td class="memItemLeft" align="right" valign="top"><a id="aaf38c085f08cf286e3b862b2797ee71e"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CUserStatsReceived_t_RemoveCallback</b> (ulong handle)</td></tr>
+<tr class="separator:aaf38c085f08cf286e3b862b2797ee71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253e5c43f304d6cf4419925928b4c40a"><td class="memItemLeft" align="right" valign="top"><a id="a253e5c43f304d6cf4419925928b4c40a"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GetOPFSettingsResult_t_Callback</b> (GetOPFSettingsResult_t pGetOPFSettingsResult_t)</td></tr>
+<tr class="separator:a253e5c43f304d6cf4419925928b4c40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae042e11f5d88375055ae5670c21feb87"><td class="memItemLeft" align="right" valign="top"><a id="ae042e11f5d88375055ae5670c21feb87"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGetOPFSettingsResult_t_SetCallback</b> (SteamAPI_GetOPFSettingsResult_t_Callback func)</td></tr>
+<tr class="separator:ae042e11f5d88375055ae5670c21feb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da6a098a14ca63d9993806b121f2c78"><td class="memItemLeft" align="right" valign="top"><a id="a6da6a098a14ca63d9993806b121f2c78"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGetOPFSettingsResult_t_RemoveCallback</b> (ulong handle)</td></tr>
+<tr class="separator:a6da6a098a14ca63d9993806b121f2c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2eba2c113882d2179ad7825ba50358"><td class="memItemLeft" align="right" valign="top"><a id="a0e2eba2c113882d2179ad7825ba50358"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageFileReadAsyncComplete_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_file_read_async_complete__t.html">RemoteStorageFileReadAsyncComplete_t</a> pRemoteStorageFileReadAsyncComplete_t, bool bIOFailure)</td></tr>
+<tr class="separator:a0e2eba2c113882d2179ad7825ba50358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb3ce43376d9468f784da34ff311052"><td class="memItemLeft" align="right" valign="top"><a id="a1bb3ce43376d9468f784da34ff311052"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageFileReadAsyncComplete_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageFileReadAsyncComplete_t_CallResult func)</td></tr>
+<tr class="separator:a1bb3ce43376d9468f784da34ff311052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885b4d08c97025a6ad117b722732f5d9"><td class="memItemLeft" align="right" valign="top"><a id="a885b4d08c97025a6ad117b722732f5d9"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageFileReadAsyncComplete_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a885b4d08c97025a6ad117b722732f5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7f5f470f3fc8f2543b9c45ae4a3321"><td class="memItemLeft" align="right" valign="top"><a id="a0a7f5f470f3fc8f2543b9c45ae4a3321"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageGetPublishedItemVoteDetailsResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_get_published_item_vote_details_result__t.html">RemoteStorageGetPublishedItemVoteDetailsResult_t</a> pRemoteStorageGetPublishedItemVoteDetailsResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a0a7f5f470f3fc8f2543b9c45ae4a3321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14fd9222751e76ebc478b7ff140b890"><td class="memItemLeft" align="right" valign="top"><a id="aa14fd9222751e76ebc478b7ff140b890"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageGetPublishedItemVoteDetailsResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageGetPublishedItemVoteDetailsResult_t_CallResult func)</td></tr>
+<tr class="separator:aa14fd9222751e76ebc478b7ff140b890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b880f1aaa965139d34ae933d053d45"><td class="memItemLeft" align="right" valign="top"><a id="a16b880f1aaa965139d34ae933d053d45"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageGetPublishedItemVoteDetailsResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a16b880f1aaa965139d34ae933d053d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c6715cfbf4aa5d8de32580553d9a2d"><td class="memItemLeft" align="right" valign="top"><a id="a25c6715cfbf4aa5d8de32580553d9a2d"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_FileDetailsResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_file_details_result__t.html">FileDetailsResult_t</a> pFileDetailsResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a25c6715cfbf4aa5d8de32580553d9a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84aacf0a87b1244f45567746e7524070"><td class="memItemLeft" align="right" valign="top"><a id="a84aacf0a87b1244f45567746e7524070"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFileDetailsResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_FileDetailsResult_t_CallResult func)</td></tr>
+<tr class="separator:a84aacf0a87b1244f45567746e7524070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083be6ea5c9ea941e15691fdc9b2a9d8"><td class="memItemLeft" align="right" valign="top"><a id="a083be6ea5c9ea941e15691fdc9b2a9d8"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFileDetailsResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a083be6ea5c9ea941e15691fdc9b2a9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7dabedc69f46965b6c6284afc99e379"><td class="memItemLeft" align="right" valign="top"><a id="ac7dabedc69f46965b6c6284afc99e379"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GSStatsStored_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_g_s_stats_stored__t.html">GSStatsStored_t</a> pGSStatsStored_t, bool bIOFailure)</td></tr>
+<tr class="separator:ac7dabedc69f46965b6c6284afc99e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06276acfbf578aafe4e9e21ed76997e"><td class="memItemLeft" align="right" valign="top"><a id="ae06276acfbf578aafe4e9e21ed76997e"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGSStatsStored_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GSStatsStored_t_CallResult func)</td></tr>
+<tr class="separator:ae06276acfbf578aafe4e9e21ed76997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a7f11078e5bb086f56d3f08d6b27b3"><td class="memItemLeft" align="right" valign="top"><a id="a03a7f11078e5bb086f56d3f08d6b27b3"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGSStatsStored_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a03a7f11078e5bb086f56d3f08d6b27b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc12766ed22d61e6757cd411f133a44"><td class="memItemLeft" align="right" valign="top"><a id="a3dc12766ed22d61e6757cd411f133a44"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_StartPlaytimeTrackingResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_start_playtime_tracking_result__t.html">StartPlaytimeTrackingResult_t</a> pStartPlaytimeTrackingResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a3dc12766ed22d61e6757cd411f133a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19cb50eb57c782f2ad1c85c0666c869b"><td class="memItemLeft" align="right" valign="top"><a id="a19cb50eb57c782f2ad1c85c0666c869b"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CStartPlaytimeTrackingResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_StartPlaytimeTrackingResult_t_CallResult func)</td></tr>
+<tr class="separator:a19cb50eb57c782f2ad1c85c0666c869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192d34c245c77304337e9cbb4312c348"><td class="memItemLeft" align="right" valign="top"><a id="a192d34c245c77304337e9cbb4312c348"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CStartPlaytimeTrackingResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a192d34c245c77304337e9cbb4312c348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31551301967d5ad1e00e24cec610d79"><td class="memItemLeft" align="right" valign="top"><a id="af31551301967d5ad1e00e24cec610d79"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_FriendsGetFollowerCount_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_friends_get_follower_count__t.html">FriendsGetFollowerCount_t</a> pFriendsGetFollowerCount_t, bool bIOFailure)</td></tr>
+<tr class="separator:af31551301967d5ad1e00e24cec610d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a6e2b88f0e0bcf296bb33809d8fc02"><td class="memItemLeft" align="right" valign="top"><a id="ad5a6e2b88f0e0bcf296bb33809d8fc02"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFriendsGetFollowerCount_t_SetCallResult</b> (ulong hAPICall, SteamAPI_FriendsGetFollowerCount_t_CallResult func)</td></tr>
+<tr class="separator:ad5a6e2b88f0e0bcf296bb33809d8fc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadbdc83fafcf6250c7c2c6d87fe6ea38"><td class="memItemLeft" align="right" valign="top"><a id="aadbdc83fafcf6250c7c2c6d87fe6ea38"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFriendsGetFollowerCount_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:aadbdc83fafcf6250c7c2c6d87fe6ea38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358ce24d2bf05228ee50ed0484b3e8e9"><td class="memItemLeft" align="right" valign="top"><a id="a358ce24d2bf05228ee50ed0484b3e8e9"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_FriendsIsFollowing_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_friends_is_following__t.html">FriendsIsFollowing_t</a> pFriendsIsFollowing_t, bool bIOFailure)</td></tr>
+<tr class="separator:a358ce24d2bf05228ee50ed0484b3e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82fcb804d170983f940499c91ae585c"><td class="memItemLeft" align="right" valign="top"><a id="ad82fcb804d170983f940499c91ae585c"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFriendsIsFollowing_t_SetCallResult</b> (ulong hAPICall, SteamAPI_FriendsIsFollowing_t_CallResult func)</td></tr>
+<tr class="separator:ad82fcb804d170983f940499c91ae585c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89aafd67d332262e54dd8b6b66ae93cd"><td class="memItemLeft" align="right" valign="top"><a id="a89aafd67d332262e54dd8b6b66ae93cd"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFriendsIsFollowing_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a89aafd67d332262e54dd8b6b66ae93cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b1044cc15cd5941aca97e29ea494d1"><td class="memItemLeft" align="right" valign="top"><a id="ac7b1044cc15cd5941aca97e29ea494d1"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LobbyMatchList_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_lobby_match_list__t.html">LobbyMatchList_t</a> pLobbyMatchList_t, bool bIOFailure)</td></tr>
+<tr class="separator:ac7b1044cc15cd5941aca97e29ea494d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebef8d4e9fc2662aeb5beab8dcd774c"><td class="memItemLeft" align="right" valign="top"><a id="a8ebef8d4e9fc2662aeb5beab8dcd774c"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLobbyMatchList_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LobbyMatchList_t_CallResult func)</td></tr>
+<tr class="separator:a8ebef8d4e9fc2662aeb5beab8dcd774c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0965d77519417091889472fd406bbaba"><td class="memItemLeft" align="right" valign="top"><a id="a0965d77519417091889472fd406bbaba"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLobbyMatchList_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a0965d77519417091889472fd406bbaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75c05c486be4e976619949a7950ee3d"><td class="memItemLeft" align="right" valign="top"><a id="ab75c05c486be4e976619949a7950ee3d"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageUpdatePublishedFileResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_update_published_file_result__t.html">RemoteStorageUpdatePublishedFileResult_t</a> pRemoteStorageUpdatePublishedFileResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:ab75c05c486be4e976619949a7950ee3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467da5ca184b0be5292f67b3893c1481"><td class="memItemLeft" align="right" valign="top"><a id="a467da5ca184b0be5292f67b3893c1481"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageUpdatePublishedFileResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageUpdatePublishedFileResult_t_CallResult func)</td></tr>
+<tr class="separator:a467da5ca184b0be5292f67b3893c1481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e8eaae52d9d857f7f5dd07a256f702"><td class="memItemLeft" align="right" valign="top"><a id="a04e8eaae52d9d857f7f5dd07a256f702"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageUpdatePublishedFileResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a04e8eaae52d9d857f7f5dd07a256f702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23afc3e409a187af5ea8e1e34fd05dc1"><td class="memItemLeft" align="right" valign="top"><a id="a23afc3e409a187af5ea8e1e34fd05dc1"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_StoreAuthURLResponse_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_store_auth_u_r_l_response__t.html">StoreAuthURLResponse_t</a> pStoreAuthURLResponse_t, bool bIOFailure)</td></tr>
+<tr class="separator:a23afc3e409a187af5ea8e1e34fd05dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8187c24aefdd4d1bb97c2e8c02ff631"><td class="memItemLeft" align="right" valign="top"><a id="af8187c24aefdd4d1bb97c2e8c02ff631"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CStoreAuthURLResponse_t_SetCallResult</b> (ulong hAPICall, SteamAPI_StoreAuthURLResponse_t_CallResult func)</td></tr>
+<tr class="separator:af8187c24aefdd4d1bb97c2e8c02ff631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab618b81bbff28a8dcd8c120d8e5810b9"><td class="memItemLeft" align="right" valign="top"><a id="ab618b81bbff28a8dcd8c120d8e5810b9"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CStoreAuthURLResponse_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ab618b81bbff28a8dcd8c120d8e5810b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c3d715ba977751034b9e5fbcc4fff1"><td class="memItemLeft" align="right" valign="top"><a id="a04c3d715ba977751034b9e5fbcc4fff1"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LobbyCreated_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_lobby_created__t.html">LobbyCreated_t</a> pLobbyCreated_t, bool bIOFailure)</td></tr>
+<tr class="separator:a04c3d715ba977751034b9e5fbcc4fff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81781117ba4b04f3f9eb9febb80fb67a"><td class="memItemLeft" align="right" valign="top"><a id="a81781117ba4b04f3f9eb9febb80fb67a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLobbyCreated_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LobbyCreated_t_CallResult func)</td></tr>
+<tr class="separator:a81781117ba4b04f3f9eb9febb80fb67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21b414412201901b558edc43d156f46"><td class="memItemLeft" align="right" valign="top"><a id="ab21b414412201901b558edc43d156f46"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLobbyCreated_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ab21b414412201901b558edc43d156f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add401e5d099da67e6ee263da0712ac6f"><td class="memItemLeft" align="right" valign="top"><a id="add401e5d099da67e6ee263da0712ac6f"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageFileWriteAsyncComplete_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_file_write_async_complete__t.html">RemoteStorageFileWriteAsyncComplete_t</a> pRemoteStorageFileWriteAsyncComplete_t, bool bIOFailure)</td></tr>
+<tr class="separator:add401e5d099da67e6ee263da0712ac6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbec9d972dfb4cab23dbb1aeaef58e8"><td class="memItemLeft" align="right" valign="top"><a id="a7dbec9d972dfb4cab23dbb1aeaef58e8"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageFileWriteAsyncComplete_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageFileWriteAsyncComplete_t_CallResult func)</td></tr>
+<tr class="separator:a7dbec9d972dfb4cab23dbb1aeaef58e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865770cef688860b4184889e171c4d90"><td class="memItemLeft" align="right" valign="top"><a id="a865770cef688860b4184889e171c4d90"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageFileWriteAsyncComplete_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a865770cef688860b4184889e171c4d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c5cb14a27faade3b15acd0ca9f33cd"><td class="memItemLeft" align="right" valign="top"><a id="ac7c5cb14a27faade3b15acd0ca9f33cd"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageDeletePublishedFileResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_delete_published_file_result__t.html">RemoteStorageDeletePublishedFileResult_t</a> pRemoteStorageDeletePublishedFileResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:ac7c5cb14a27faade3b15acd0ca9f33cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0b4dbb7cd6cf5bc1ae042d83172a1d"><td class="memItemLeft" align="right" valign="top"><a id="a0d0b4dbb7cd6cf5bc1ae042d83172a1d"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageDeletePublishedFileResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageDeletePublishedFileResult_t_CallResult func)</td></tr>
+<tr class="separator:a0d0b4dbb7cd6cf5bc1ae042d83172a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afded03bd7a1274a5b672400bdb097e74"><td class="memItemLeft" align="right" valign="top"><a id="afded03bd7a1274a5b672400bdb097e74"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageDeletePublishedFileResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:afded03bd7a1274a5b672400bdb097e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443ae6d1a16cfd172c6a4c3094ab98d5"><td class="memItemLeft" align="right" valign="top"><a id="a443ae6d1a16cfd172c6a4c3094ab98d5"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageGetPublishedFileDetailsResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_get_published_file_details_result__t.html">RemoteStorageGetPublishedFileDetailsResult_t</a> pRemoteStorageGetPublishedFileDetailsResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a443ae6d1a16cfd172c6a4c3094ab98d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9a323e2d100bbc9311ad6323d70ef0"><td class="memItemLeft" align="right" valign="top"><a id="a4c9a323e2d100bbc9311ad6323d70ef0"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageGetPublishedFileDetailsResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageGetPublishedFileDetailsResult_t_CallResult func)</td></tr>
+<tr class="separator:a4c9a323e2d100bbc9311ad6323d70ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8201a33d64c08c6ccd969cd72a395907"><td class="memItemLeft" align="right" valign="top"><a id="a8201a33d64c08c6ccd969cd72a395907"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageGetPublishedFileDetailsResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a8201a33d64c08c6ccd969cd72a395907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea15528cf3b6b0759b57bdd028a243e6"><td class="memItemLeft" align="right" valign="top"><a id="aea15528cf3b6b0759b57bdd028a243e6"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_AddUGCDependencyResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_add_u_g_c_dependency_result__t.html">AddUGCDependencyResult_t</a> pAddUGCDependencyResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aea15528cf3b6b0759b57bdd028a243e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48061d72d76131563172c26bfb063041"><td class="memItemLeft" align="right" valign="top"><a id="a48061d72d76131563172c26bfb063041"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CAddUGCDependencyResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_AddUGCDependencyResult_t_CallResult func)</td></tr>
+<tr class="separator:a48061d72d76131563172c26bfb063041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb77501d5dd46b553d955b24a136637"><td class="memItemLeft" align="right" valign="top"><a id="accb77501d5dd46b553d955b24a136637"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CAddUGCDependencyResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:accb77501d5dd46b553d955b24a136637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0810e00e3b918aba0fccb379d99f859"><td class="memItemLeft" align="right" valign="top"><a id="ad0810e00e3b918aba0fccb379d99f859"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageDownloadUGCResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_download_u_g_c_result__t.html">RemoteStorageDownloadUGCResult_t</a> pRemoteStorageDownloadUGCResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:ad0810e00e3b918aba0fccb379d99f859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee33341723e8f9c998ff1f73b5954c45"><td class="memItemLeft" align="right" valign="top"><a id="aee33341723e8f9c998ff1f73b5954c45"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageDownloadUGCResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageDownloadUGCResult_t_CallResult func)</td></tr>
+<tr class="separator:aee33341723e8f9c998ff1f73b5954c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e662a34824d54886c5373ec623563f"><td class="memItemLeft" align="right" valign="top"><a id="a53e662a34824d54886c5373ec623563f"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageDownloadUGCResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a53e662a34824d54886c5373ec623563f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2ec26b6f0fc9e82ab779af2043bfde"><td class="memItemLeft" align="right" valign="top"><a id="abe2ec26b6f0fc9e82ab779af2043bfde"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_SteamUGCQueryCompleted_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_steam_u_g_c_query_completed__t.html">SteamUGCQueryCompleted_t</a> pSteamUGCQueryCompleted_t, bool bIOFailure)</td></tr>
+<tr class="separator:abe2ec26b6f0fc9e82ab779af2043bfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d713c48ad3a8277a6c28affee40f4d7"><td class="memItemLeft" align="right" valign="top"><a id="a1d713c48ad3a8277a6c28affee40f4d7"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSteamUGCQueryCompleted_t_SetCallResult</b> (ulong hAPICall, SteamAPI_SteamUGCQueryCompleted_t_CallResult func)</td></tr>
+<tr class="separator:a1d713c48ad3a8277a6c28affee40f4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345aeed7584311c6f93ae1253396e170"><td class="memItemLeft" align="right" valign="top"><a id="a345aeed7584311c6f93ae1253396e170"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSteamUGCQueryCompleted_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a345aeed7584311c6f93ae1253396e170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de0629a35526f82edbac5c51acc3e6e"><td class="memItemLeft" align="right" valign="top"><a id="a7de0629a35526f82edbac5c51acc3e6e"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageFileShareResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_file_share_result__t.html">RemoteStorageFileShareResult_t</a> pRemoteStorageFileShareResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a7de0629a35526f82edbac5c51acc3e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab861f8ba58df978f0c69cc2fdac0a53a"><td class="memItemLeft" align="right" valign="top"><a id="ab861f8ba58df978f0c69cc2fdac0a53a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageFileShareResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageFileShareResult_t_CallResult func)</td></tr>
+<tr class="separator:ab861f8ba58df978f0c69cc2fdac0a53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74bc77f5f35daccabd8167b9524ffb6"><td class="memItemLeft" align="right" valign="top"><a id="ac74bc77f5f35daccabd8167b9524ffb6"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageFileShareResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ac74bc77f5f35daccabd8167b9524ffb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a7c805aee4dfdff70b06c193bd35ac"><td class="memItemLeft" align="right" valign="top"><a id="ab5a7c805aee4dfdff70b06c193bd35ac"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LobbyEnter_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_lobby_enter__t.html">LobbyEnter_t</a> pLobbyEnter_t, bool bIOFailure)</td></tr>
+<tr class="separator:ab5a7c805aee4dfdff70b06c193bd35ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d9e30a20d74ba30295a18b9c1aa106"><td class="memItemLeft" align="right" valign="top"><a id="a61d9e30a20d74ba30295a18b9c1aa106"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLobbyEnter_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LobbyEnter_t_CallResult func)</td></tr>
+<tr class="separator:a61d9e30a20d74ba30295a18b9c1aa106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1ee930566b49979a38f19a1823bd55"><td class="memItemLeft" align="right" valign="top"><a id="a7c1ee930566b49979a38f19a1823bd55"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLobbyEnter_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a7c1ee930566b49979a38f19a1823bd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030dcd88e4578eb5c4a36da8b1d8e1cd"><td class="memItemLeft" align="right" valign="top"><a id="a030dcd88e4578eb5c4a36da8b1d8e1cd"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_SubmitItemUpdateResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_submit_item_update_result__t.html">SubmitItemUpdateResult_t</a> pSubmitItemUpdateResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a030dcd88e4578eb5c4a36da8b1d8e1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3c74d1b37f01c7f08fd3691742ad0a"><td class="memItemLeft" align="right" valign="top"><a id="a7a3c74d1b37f01c7f08fd3691742ad0a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSubmitItemUpdateResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_SubmitItemUpdateResult_t_CallResult func)</td></tr>
+<tr class="separator:a7a3c74d1b37f01c7f08fd3691742ad0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18141f4c73510df36c4cfdcff78302e9"><td class="memItemLeft" align="right" valign="top"><a id="a18141f4c73510df36c4cfdcff78302e9"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSubmitItemUpdateResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a18141f4c73510df36c4cfdcff78302e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817d00a7c744d7274c13fb59887e8257"><td class="memItemLeft" align="right" valign="top"><a id="a817d00a7c744d7274c13fb59887e8257"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_NumberOfCurrentPlayers_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_number_of_current_players__t.html">NumberOfCurrentPlayers_t</a> pNumberOfCurrentPlayers_t, bool bIOFailure)</td></tr>
+<tr class="separator:a817d00a7c744d7274c13fb59887e8257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd04b27109d34b5ed8c1f5e6161b2e9"><td class="memItemLeft" align="right" valign="top"><a id="aedd04b27109d34b5ed8c1f5e6161b2e9"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CNumberOfCurrentPlayers_t_SetCallResult</b> (ulong hAPICall, SteamAPI_NumberOfCurrentPlayers_t_CallResult func)</td></tr>
+<tr class="separator:aedd04b27109d34b5ed8c1f5e6161b2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e233362c0583d04bd153cac814612b"><td class="memItemLeft" align="right" valign="top"><a id="af4e233362c0583d04bd153cac814612b"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CNumberOfCurrentPlayers_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:af4e233362c0583d04bd153cac814612b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8936eec924b009d0f98af65317f55ad8"><td class="memItemLeft" align="right" valign="top"><a id="a8936eec924b009d0f98af65317f55ad8"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GSStatsReceived_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_g_s_stats_received__t.html">GSStatsReceived_t</a> pGSStatsReceived_t, bool bIOFailure)</td></tr>
+<tr class="separator:a8936eec924b009d0f98af65317f55ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c2d36e2d7340c403087b30e617bcf6"><td class="memItemLeft" align="right" valign="top"><a id="ab0c2d36e2d7340c403087b30e617bcf6"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGSStatsReceived_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GSStatsReceived_t_CallResult func)</td></tr>
+<tr class="separator:ab0c2d36e2d7340c403087b30e617bcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a00f7b71b856557985ea0cb195c082"><td class="memItemLeft" align="right" valign="top"><a id="a19a00f7b71b856557985ea0cb195c082"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGSStatsReceived_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a19a00f7b71b856557985ea0cb195c082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9f6db2148799ab3287efa8e48f95b3"><td class="memItemLeft" align="right" valign="top"><a id="adb9f6db2148799ab3287efa8e48f95b3"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_HTML_BrowserReady_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_h_t_m_l___browser_ready__t.html">HTML_BrowserReady_t</a> pHTML_BrowserReady_t, bool bIOFailure)</td></tr>
+<tr class="separator:adb9f6db2148799ab3287efa8e48f95b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a3a0c9f5f4bb9009e6e6e445167e4f"><td class="memItemLeft" align="right" valign="top"><a id="a39a3a0c9f5f4bb9009e6e6e445167e4f"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CHTML_BrowserReady_t_SetCallResult</b> (ulong hAPICall, SteamAPI_HTML_BrowserReady_t_CallResult func)</td></tr>
+<tr class="separator:a39a3a0c9f5f4bb9009e6e6e445167e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af978465df9983500780618a999dd793a"><td class="memItemLeft" align="right" valign="top"><a id="af978465df9983500780618a999dd793a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CHTML_BrowserReady_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:af978465df9983500780618a999dd793a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e4f757b2db935da5687814a90801e7"><td class="memItemLeft" align="right" valign="top"><a id="a61e4f757b2db935da5687814a90801e7"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LeaderboardScoresDownloaded_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_leaderboard_scores_downloaded__t.html">LeaderboardScoresDownloaded_t</a> pLeaderboardScoresDownloaded_t, bool bIOFailure)</td></tr>
+<tr class="separator:a61e4f757b2db935da5687814a90801e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8569f236cb2d7092ea921995f1f90ab"><td class="memItemLeft" align="right" valign="top"><a id="ad8569f236cb2d7092ea921995f1f90ab"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardScoresDownloaded_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LeaderboardScoresDownloaded_t_CallResult func)</td></tr>
+<tr class="separator:ad8569f236cb2d7092ea921995f1f90ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a830e582bda25120d9a3c126dd06b30"><td class="memItemLeft" align="right" valign="top"><a id="a4a830e582bda25120d9a3c126dd06b30"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardScoresDownloaded_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a4a830e582bda25120d9a3c126dd06b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1ba9ef1391b5c4efd3422efe715b1d"><td class="memItemLeft" align="right" valign="top"><a id="a4c1ba9ef1391b5c4efd3422efe715b1d"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageUpdateUserPublishedItemVoteResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_update_user_published_item_vote_result__t.html">RemoteStorageUpdateUserPublishedItemVoteResult_t</a> pRemoteStorageUpdateUserPublishedItemVoteResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a4c1ba9ef1391b5c4efd3422efe715b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37eca16a91ecf7ef110a31b0984a2534"><td class="memItemLeft" align="right" valign="top"><a id="a37eca16a91ecf7ef110a31b0984a2534"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageUpdateUserPublishedItemVoteResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageUpdateUserPublishedItemVoteResult_t_CallResult func)</td></tr>
+<tr class="separator:a37eca16a91ecf7ef110a31b0984a2534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01653c8b3ca3bd166564084f0b97315f"><td class="memItemLeft" align="right" valign="top"><a id="a01653c8b3ca3bd166564084f0b97315f"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageUpdateUserPublishedItemVoteResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a01653c8b3ca3bd166564084f0b97315f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f023252a8001f75575a47e47df6f75"><td class="memItemLeft" align="right" valign="top"><a id="aa2f023252a8001f75575a47e47df6f75"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageEnumerateUserSubscribedFilesResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_enumerate_user_subscribed_files_result__t.html">RemoteStorageEnumerateUserSubscribedFilesResult_t</a> pRemoteStorageEnumerateUserSubscribedFilesResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aa2f023252a8001f75575a47e47df6f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d856db0c34b2e1c23f1d495f1e14758"><td class="memItemLeft" align="right" valign="top"><a id="a6d856db0c34b2e1c23f1d495f1e14758"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumerateUserSubscribedFilesResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageEnumerateUserSubscribedFilesResult_t_CallResult func)</td></tr>
+<tr class="separator:a6d856db0c34b2e1c23f1d495f1e14758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b1f5fa078f8cc5036449c746db961c"><td class="memItemLeft" align="right" valign="top"><a id="a18b1f5fa078f8cc5036449c746db961c"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumerateUserSubscribedFilesResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a18b1f5fa078f8cc5036449c746db961c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29465552681dc2712d8b941e1fb4166a"><td class="memItemLeft" align="right" valign="top"><a id="a29465552681dc2712d8b941e1fb4166a"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_CreateItemResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_create_item_result__t.html">CreateItemResult_t</a> pCreateItemResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a29465552681dc2712d8b941e1fb4166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea53df6cd32b0c48b944d4b6e6639013"><td class="memItemLeft" align="right" valign="top"><a id="aea53df6cd32b0c48b944d4b6e6639013"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CCreateItemResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_CreateItemResult_t_CallResult func)</td></tr>
+<tr class="separator:aea53df6cd32b0c48b944d4b6e6639013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370dd27c15113a4989dccabda8cc5bd7"><td class="memItemLeft" align="right" valign="top"><a id="a370dd27c15113a4989dccabda8cc5bd7"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CCreateItemResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a370dd27c15113a4989dccabda8cc5bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bf09f1feae00268c4b9c01504af34f"><td class="memItemLeft" align="right" valign="top"><a id="a98bf09f1feae00268c4b9c01504af34f"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_DeleteItemResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_delete_item_result__t.html">DeleteItemResult_t</a> pDeleteItemResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a98bf09f1feae00268c4b9c01504af34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48120a2d6caf3bd9a9ac888c8bf0e07a"><td class="memItemLeft" align="right" valign="top"><a id="a48120a2d6caf3bd9a9ac888c8bf0e07a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CDeleteItemResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_DeleteItemResult_t_CallResult func)</td></tr>
+<tr class="separator:a48120a2d6caf3bd9a9ac888c8bf0e07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffb1a3331f3f2fcadd7e213f5f4da90"><td class="memItemLeft" align="right" valign="top"><a id="a7ffb1a3331f3f2fcadd7e213f5f4da90"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CDeleteItemResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a7ffb1a3331f3f2fcadd7e213f5f4da90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57e922c354a2ad3ced976af76913975"><td class="memItemLeft" align="right" valign="top"><a id="ab57e922c354a2ad3ced976af76913975"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_SetUserItemVoteResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_set_user_item_vote_result__t.html">SetUserItemVoteResult_t</a> pSetUserItemVoteResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:ab57e922c354a2ad3ced976af76913975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60985a9fa7e2aa3921fbd3f6f9742bd7"><td class="memItemLeft" align="right" valign="top"><a id="a60985a9fa7e2aa3921fbd3f6f9742bd7"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSetUserItemVoteResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_SetUserItemVoteResult_t_CallResult func)</td></tr>
+<tr class="separator:a60985a9fa7e2aa3921fbd3f6f9742bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85a95db5a161546eb0f19aa8e109214"><td class="memItemLeft" align="right" valign="top"><a id="ab85a95db5a161546eb0f19aa8e109214"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSetUserItemVoteResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ab85a95db5a161546eb0f19aa8e109214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66005169c0b411b0901c617f6fca2f80"><td class="memItemLeft" align="right" valign="top"><a id="a66005169c0b411b0901c617f6fca2f80"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_ComputeNewPlayerCompatibilityResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_compute_new_player_compatibility_result__t.html">ComputeNewPlayerCompatibilityResult_t</a> pComputeNewPlayerCompatibilityResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a66005169c0b411b0901c617f6fca2f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d67aaa1f7cdbbeb00c8990681ed9b5e"><td class="memItemLeft" align="right" valign="top"><a id="a6d67aaa1f7cdbbeb00c8990681ed9b5e"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CComputeNewPlayerCompatibilityResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_ComputeNewPlayerCompatibilityResult_t_CallResult func)</td></tr>
+<tr class="separator:a6d67aaa1f7cdbbeb00c8990681ed9b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895caa8e49c16c31e5868efecd1a2926"><td class="memItemLeft" align="right" valign="top"><a id="a895caa8e49c16c31e5868efecd1a2926"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CComputeNewPlayerCompatibilityResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a895caa8e49c16c31e5868efecd1a2926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11af1b5079f8c58af9df62dda913057"><td class="memItemLeft" align="right" valign="top"><a id="ae11af1b5079f8c58af9df62dda913057"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LeaderboardScoreUploaded_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_leaderboard_score_uploaded__t.html">LeaderboardScoreUploaded_t</a> pLeaderboardScoreUploaded_t, bool bIOFailure)</td></tr>
+<tr class="separator:ae11af1b5079f8c58af9df62dda913057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23650c3b1a4b0c57c19edcc85e8d3bf6"><td class="memItemLeft" align="right" valign="top"><a id="a23650c3b1a4b0c57c19edcc85e8d3bf6"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardScoreUploaded_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LeaderboardScoreUploaded_t_CallResult func)</td></tr>
+<tr class="separator:a23650c3b1a4b0c57c19edcc85e8d3bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb86c4d2a8ef23c9265799b652681c0"><td class="memItemLeft" align="right" valign="top"><a id="aceb86c4d2a8ef23c9265799b652681c0"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardScoreUploaded_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:aceb86c4d2a8ef23c9265799b652681c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7965fe428f261236a46dbead68fa84"><td class="memItemLeft" align="right" valign="top"><a id="ace7965fe428f261236a46dbead68fa84"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GlobalAchievementPercentagesReady_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_global_achievement_percentages_ready__t.html">GlobalAchievementPercentagesReady_t</a> pGlobalAchievementPercentagesReady_t, bool bIOFailure)</td></tr>
+<tr class="separator:ace7965fe428f261236a46dbead68fa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b994115e413329bca8818f6fee45cb2"><td class="memItemLeft" align="right" valign="top"><a id="a3b994115e413329bca8818f6fee45cb2"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGlobalAchievementPercentagesReady_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GlobalAchievementPercentagesReady_t_CallResult func)</td></tr>
+<tr class="separator:a3b994115e413329bca8818f6fee45cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122bd9e3c1861d13f9b4d333f9893715"><td class="memItemLeft" align="right" valign="top"><a id="a122bd9e3c1861d13f9b4d333f9893715"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGlobalAchievementPercentagesReady_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a122bd9e3c1861d13f9b4d333f9893715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f9581d1b6431de74a5b2ed487f60c0"><td class="memItemLeft" align="right" valign="top"><a id="a91f9581d1b6431de74a5b2ed487f60c0"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GlobalStatsReceived_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_global_stats_received__t.html">GlobalStatsReceived_t</a> pGlobalStatsReceived_t, bool bIOFailure)</td></tr>
+<tr class="separator:a91f9581d1b6431de74a5b2ed487f60c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33df33759366e6fae17100f5e7d2c594"><td class="memItemLeft" align="right" valign="top"><a id="a33df33759366e6fae17100f5e7d2c594"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGlobalStatsReceived_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GlobalStatsReceived_t_CallResult func)</td></tr>
+<tr class="separator:a33df33759366e6fae17100f5e7d2c594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4c4ea64e58a07b22c396b6009e9303"><td class="memItemLeft" align="right" valign="top"><a id="a7f4c4ea64e58a07b22c396b6009e9303"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGlobalStatsReceived_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a7f4c4ea64e58a07b22c396b6009e9303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ca15c7e32f40ea0485b002ff7e1012"><td class="memItemLeft" align="right" valign="top"><a id="ae2ca15c7e32f40ea0485b002ff7e1012"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageEnumeratePublishedFilesByUserActionResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_enumerate_published_files_by_user_action_result__t.html">RemoteStorageEnumeratePublishedFilesByUserActionResult_t</a> pRemoteStorageEnumeratePublishedFilesByUserActionResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:ae2ca15c7e32f40ea0485b002ff7e1012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b05ebb454a70c9e550a65dcfccb1440"><td class="memItemLeft" align="right" valign="top"><a id="a9b05ebb454a70c9e550a65dcfccb1440"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumeratePublishedFilesByUserActionResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageEnumeratePublishedFilesByUserActionResult_t_CallResult func)</td></tr>
+<tr class="separator:a9b05ebb454a70c9e550a65dcfccb1440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fcd95329160897e599468c01a59a1d"><td class="memItemLeft" align="right" valign="top"><a id="aa0fcd95329160897e599468c01a59a1d"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumeratePublishedFilesByUserActionResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:aa0fcd95329160897e599468c01a59a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9940dc202a9d69167122ccecab93c9"><td class="memItemLeft" align="right" valign="top"><a id="a2f9940dc202a9d69167122ccecab93c9"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_ClanOfficerListResponse_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_clan_officer_list_response__t.html">ClanOfficerListResponse_t</a> pClanOfficerListResponse_t, bool bIOFailure)</td></tr>
+<tr class="separator:a2f9940dc202a9d69167122ccecab93c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed49d147760c75337c0ce633e108a5d7"><td class="memItemLeft" align="right" valign="top"><a id="aed49d147760c75337c0ce633e108a5d7"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CClanOfficerListResponse_t_SetCallResult</b> (ulong hAPICall, SteamAPI_ClanOfficerListResponse_t_CallResult func)</td></tr>
+<tr class="separator:aed49d147760c75337c0ce633e108a5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6db07eeeaf43588dcff9a042520f1c"><td class="memItemLeft" align="right" valign="top"><a id="a3c6db07eeeaf43588dcff9a042520f1c"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CClanOfficerListResponse_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a3c6db07eeeaf43588dcff9a042520f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1de6dcbd9fcfcb31ca9ee8379177cf7"><td class="memItemLeft" align="right" valign="top"><a id="ac1de6dcbd9fcfcb31ca9ee8379177cf7"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStoragePublishFileProgress_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_publish_file_progress__t.html">RemoteStoragePublishFileProgress_t</a> pRemoteStoragePublishFileProgress_t, bool bIOFailure)</td></tr>
+<tr class="separator:ac1de6dcbd9fcfcb31ca9ee8379177cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7058ea6fd64168332ed31b1d433754"><td class="memItemLeft" align="right" valign="top"><a id="a2b7058ea6fd64168332ed31b1d433754"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStoragePublishFileProgress_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStoragePublishFileProgress_t_CallResult func)</td></tr>
+<tr class="separator:a2b7058ea6fd64168332ed31b1d433754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace465ec871b38b172bdf2a59d92e0a91"><td class="memItemLeft" align="right" valign="top"><a id="ace465ec871b38b172bdf2a59d92e0a91"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStoragePublishFileProgress_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ace465ec871b38b172bdf2a59d92e0a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ea31b5f18b55fbeac4d1e5a1123e57"><td class="memItemLeft" align="right" valign="top"><a id="a64ea31b5f18b55fbeac4d1e5a1123e57"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageEnumerateWorkshopFilesResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_enumerate_workshop_files_result__t.html">RemoteStorageEnumerateWorkshopFilesResult_t</a> pRemoteStorageEnumerateWorkshopFilesResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a64ea31b5f18b55fbeac4d1e5a1123e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82245a43b4793c07733eb1dcebaa6618"><td class="memItemLeft" align="right" valign="top"><a id="a82245a43b4793c07733eb1dcebaa6618"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumerateWorkshopFilesResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageEnumerateWorkshopFilesResult_t_CallResult func)</td></tr>
+<tr class="separator:a82245a43b4793c07733eb1dcebaa6618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bdd2b15c5e460815db16f6dcdd8bdc"><td class="memItemLeft" align="right" valign="top"><a id="a48bdd2b15c5e460815db16f6dcdd8bdc"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumerateWorkshopFilesResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a48bdd2b15c5e460815db16f6dcdd8bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb02cebd0ae451b26005f21d252955fa"><td class="memItemLeft" align="right" valign="top"><a id="acb02cebd0ae451b26005f21d252955fa"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoveUGCDependencyResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remove_u_g_c_dependency_result__t.html">RemoveUGCDependencyResult_t</a> pRemoveUGCDependencyResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:acb02cebd0ae451b26005f21d252955fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fa123415adce43d3791d09e14df4a0"><td class="memItemLeft" align="right" valign="top"><a id="ae7fa123415adce43d3791d09e14df4a0"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoveUGCDependencyResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoveUGCDependencyResult_t_CallResult func)</td></tr>
+<tr class="separator:ae7fa123415adce43d3791d09e14df4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8955958740e03eeb9ed668fbf5b89a"><td class="memItemLeft" align="right" valign="top"><a id="a1a8955958740e03eeb9ed668fbf5b89a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoveUGCDependencyResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a1a8955958740e03eeb9ed668fbf5b89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a965e82d38da85033efed80261d0a5a"><td class="memItemLeft" align="right" valign="top"><a id="a3a965e82d38da85033efed80261d0a5a"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GSReputation_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_g_s_reputation__t.html">GSReputation_t</a> pGSReputation_t, bool bIOFailure)</td></tr>
+<tr class="separator:a3a965e82d38da85033efed80261d0a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f58e498a5d5de5347d935921002f8a"><td class="memItemLeft" align="right" valign="top"><a id="a78f58e498a5d5de5347d935921002f8a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGSReputation_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GSReputation_t_CallResult func)</td></tr>
+<tr class="separator:a78f58e498a5d5de5347d935921002f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271596026869a7ebb1ba87f705964d69"><td class="memItemLeft" align="right" valign="top"><a id="a271596026869a7ebb1ba87f705964d69"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGSReputation_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a271596026869a7ebb1ba87f705964d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c4eaf9ad2790dae5b8a14d4a118c6e"><td class="memItemLeft" align="right" valign="top"><a id="ae8c4eaf9ad2790dae5b8a14d4a118c6e"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_UserFavoriteItemsListChanged_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_user_favorite_items_list_changed__t.html">UserFavoriteItemsListChanged_t</a> pUserFavoriteItemsListChanged_t, bool bIOFailure)</td></tr>
+<tr class="separator:ae8c4eaf9ad2790dae5b8a14d4a118c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f2fbe5e5889802dfa07db830134c16"><td class="memItemLeft" align="right" valign="top"><a id="a82f2fbe5e5889802dfa07db830134c16"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CUserFavoriteItemsListChanged_t_SetCallResult</b> (ulong hAPICall, SteamAPI_UserFavoriteItemsListChanged_t_CallResult func)</td></tr>
+<tr class="separator:a82f2fbe5e5889802dfa07db830134c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809ce8b3425b691414792b35e61e1479"><td class="memItemLeft" align="right" valign="top"><a id="a809ce8b3425b691414792b35e61e1479"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CUserFavoriteItemsListChanged_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a809ce8b3425b691414792b35e61e1479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c8259d4e88d54f6ff7a29465fddc3f"><td class="memItemLeft" align="right" valign="top"><a id="a31c8259d4e88d54f6ff7a29465fddc3f"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_AddAppDependencyResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_add_app_dependency_result__t.html">AddAppDependencyResult_t</a> pAddAppDependencyResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a31c8259d4e88d54f6ff7a29465fddc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7671164e4ad6fbab146caa2a4e04573"><td class="memItemLeft" align="right" valign="top"><a id="aa7671164e4ad6fbab146caa2a4e04573"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CAddAppDependencyResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_AddAppDependencyResult_t_CallResult func)</td></tr>
+<tr class="separator:aa7671164e4ad6fbab146caa2a4e04573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2c8325d9366167d6772e247f4da2d6"><td class="memItemLeft" align="right" valign="top"><a id="add2c8325d9366167d6772e247f4da2d6"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CAddAppDependencyResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:add2c8325d9366167d6772e247f4da2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30e838bcf7c324d739760c4820b0185"><td class="memItemLeft" align="right" valign="top"><a id="ab30e838bcf7c324d739760c4820b0185"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_EncryptedAppTicketResponse_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_encrypted_app_ticket_response__t.html">EncryptedAppTicketResponse_t</a> pEncryptedAppTicketResponse_t, bool bIOFailure)</td></tr>
+<tr class="separator:ab30e838bcf7c324d739760c4820b0185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab310acfc667f55d3a074c4c6ddd146d5"><td class="memItemLeft" align="right" valign="top"><a id="ab310acfc667f55d3a074c4c6ddd146d5"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CEncryptedAppTicketResponse_t_SetCallResult</b> (ulong hAPICall, SteamAPI_EncryptedAppTicketResponse_t_CallResult func)</td></tr>
+<tr class="separator:ab310acfc667f55d3a074c4c6ddd146d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba73d0bf5a777ccabfc6e3427468b3bb"><td class="memItemLeft" align="right" valign="top"><a id="aba73d0bf5a777ccabfc6e3427468b3bb"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CEncryptedAppTicketResponse_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:aba73d0bf5a777ccabfc6e3427468b3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2913286069495b0d54c3d540490dd22c"><td class="memItemLeft" align="right" valign="top"><a id="a2913286069495b0d54c3d540490dd22c"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageSetUserPublishedFileActionResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_set_user_published_file_action_result__t.html">RemoteStorageSetUserPublishedFileActionResult_t</a> pRemoteStorageSetUserPublishedFileActionResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a2913286069495b0d54c3d540490dd22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692603a06aad94153511db961b474a49"><td class="memItemLeft" align="right" valign="top"><a id="a692603a06aad94153511db961b474a49"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageSetUserPublishedFileActionResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageSetUserPublishedFileActionResult_t_CallResult func)</td></tr>
+<tr class="separator:a692603a06aad94153511db961b474a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c4df49814e003f87a7b7c2ec0553a2"><td class="memItemLeft" align="right" valign="top"><a id="ae5c4df49814e003f87a7b7c2ec0553a2"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageSetUserPublishedFileActionResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ae5c4df49814e003f87a7b7c2ec0553a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab187506c34ab02b2823daef85e3e7f"><td class="memItemLeft" align="right" valign="top"><a id="aaab187506c34ab02b2823daef85e3e7f"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_StopPlaytimeTrackingResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_stop_playtime_tracking_result__t.html">StopPlaytimeTrackingResult_t</a> pStopPlaytimeTrackingResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aaab187506c34ab02b2823daef85e3e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4858646111635ce7c0233b29b800ffbd"><td class="memItemLeft" align="right" valign="top"><a id="a4858646111635ce7c0233b29b800ffbd"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CStopPlaytimeTrackingResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_StopPlaytimeTrackingResult_t_CallResult func)</td></tr>
+<tr class="separator:a4858646111635ce7c0233b29b800ffbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ed3905fa38027271c16ea3ca97cfc7"><td class="memItemLeft" align="right" valign="top"><a id="a01ed3905fa38027271c16ea3ca97cfc7"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CStopPlaytimeTrackingResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a01ed3905fa38027271c16ea3ca97cfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b1889e31c70ea46ebe7fea3ba905af"><td class="memItemLeft" align="right" valign="top"><a id="a28b1889e31c70ea46ebe7fea3ba905af"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageEnumerateUserPublishedFilesResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_enumerate_user_published_files_result__t.html">RemoteStorageEnumerateUserPublishedFilesResult_t</a> pRemoteStorageEnumerateUserPublishedFilesResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a28b1889e31c70ea46ebe7fea3ba905af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5365ab2dd03786063257e5e933ef8af3"><td class="memItemLeft" align="right" valign="top"><a id="a5365ab2dd03786063257e5e933ef8af3"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumerateUserPublishedFilesResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageEnumerateUserPublishedFilesResult_t_CallResult func)</td></tr>
+<tr class="separator:a5365ab2dd03786063257e5e933ef8af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1ca8aba92a335b6073c47aa76d365d"><td class="memItemLeft" align="right" valign="top"><a id="abd1ca8aba92a335b6073c47aa76d365d"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageEnumerateUserPublishedFilesResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:abd1ca8aba92a335b6073c47aa76d365d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac04c09b884c6879d9295a56a7d80eb"><td class="memItemLeft" align="right" valign="top"><a id="a2ac04c09b884c6879d9295a56a7d80eb"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_FriendsEnumerateFollowingList_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_friends_enumerate_following_list__t.html">FriendsEnumerateFollowingList_t</a> pFriendsEnumerateFollowingList_t, bool bIOFailure)</td></tr>
+<tr class="separator:a2ac04c09b884c6879d9295a56a7d80eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6594238615f68bc457218129473dd9"><td class="memItemLeft" align="right" valign="top"><a id="a9d6594238615f68bc457218129473dd9"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFriendsEnumerateFollowingList_t_SetCallResult</b> (ulong hAPICall, SteamAPI_FriendsEnumerateFollowingList_t_CallResult func)</td></tr>
+<tr class="separator:a9d6594238615f68bc457218129473dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239a1c3b1893f60b129ff05fbc5bb0e1"><td class="memItemLeft" align="right" valign="top"><a id="a239a1c3b1893f60b129ff05fbc5bb0e1"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CFriendsEnumerateFollowingList_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a239a1c3b1893f60b129ff05fbc5bb0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab64adca59941a455912d97590068059"><td class="memItemLeft" align="right" valign="top"><a id="aab64adca59941a455912d97590068059"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageSubscribePublishedFileResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_subscribe_published_file_result__t.html">RemoteStorageSubscribePublishedFileResult_t</a> pRemoteStorageSubscribePublishedFileResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aab64adca59941a455912d97590068059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddcb902179c1221d0712ce873899494"><td class="memItemLeft" align="right" valign="top"><a id="a2ddcb902179c1221d0712ce873899494"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageSubscribePublishedFileResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageSubscribePublishedFileResult_t_CallResult func)</td></tr>
+<tr class="separator:a2ddcb902179c1221d0712ce873899494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d376a11a936696ad0ac30e4bc0fc83"><td class="memItemLeft" align="right" valign="top"><a id="a45d376a11a936696ad0ac30e4bc0fc83"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageSubscribePublishedFileResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a45d376a11a936696ad0ac30e4bc0fc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad484d5786a868c35e9b4811606abbb1"><td class="memItemLeft" align="right" valign="top"><a id="aad484d5786a868c35e9b4811606abbb1"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GetUserItemVoteResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_get_user_item_vote_result__t.html">GetUserItemVoteResult_t</a> pGetUserItemVoteResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aad484d5786a868c35e9b4811606abbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df2a44ad3dc857b8b7d770141c3c624"><td class="memItemLeft" align="right" valign="top"><a id="a0df2a44ad3dc857b8b7d770141c3c624"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGetUserItemVoteResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GetUserItemVoteResult_t_CallResult func)</td></tr>
+<tr class="separator:a0df2a44ad3dc857b8b7d770141c3c624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6543b1a9e9ab5d55ea570c3584f3cfae"><td class="memItemLeft" align="right" valign="top"><a id="a6543b1a9e9ab5d55ea570c3584f3cfae"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGetUserItemVoteResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a6543b1a9e9ab5d55ea570c3584f3cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce5af8751a47c7d2f7fe594f23a22cd"><td class="memItemLeft" align="right" valign="top"><a id="adce5af8751a47c7d2f7fe594f23a22cd"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_AssociateWithClanResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_associate_with_clan_result__t.html">AssociateWithClanResult_t</a> pAssociateWithClanResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:adce5af8751a47c7d2f7fe594f23a22cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e626b6dabe62fb7285c4cf6702dd027"><td class="memItemLeft" align="right" valign="top"><a id="a6e626b6dabe62fb7285c4cf6702dd027"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CAssociateWithClanResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_AssociateWithClanResult_t_CallResult func)</td></tr>
+<tr class="separator:a6e626b6dabe62fb7285c4cf6702dd027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d087efb16823fdea3d50dd04bfadc0"><td class="memItemLeft" align="right" valign="top"><a id="a85d087efb16823fdea3d50dd04bfadc0"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CAssociateWithClanResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a85d087efb16823fdea3d50dd04bfadc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26cf6c0a7c443e912f1830f152a6f41"><td class="memItemLeft" align="right" valign="top"><a id="af26cf6c0a7c443e912f1830f152a6f41"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LeaderboardUGCSet_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_leaderboard_u_g_c_set__t.html">LeaderboardUGCSet_t</a> pLeaderboardUGCSet_t, bool bIOFailure)</td></tr>
+<tr class="separator:af26cf6c0a7c443e912f1830f152a6f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8cf97e0c1e3082e0faa27002faab5a"><td class="memItemLeft" align="right" valign="top"><a id="a9a8cf97e0c1e3082e0faa27002faab5a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardUGCSet_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LeaderboardUGCSet_t_CallResult func)</td></tr>
+<tr class="separator:a9a8cf97e0c1e3082e0faa27002faab5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdd2b2826bfc8f9eb1f94fea335800d"><td class="memItemLeft" align="right" valign="top"><a id="a4cdd2b2826bfc8f9eb1f94fea335800d"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardUGCSet_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a4cdd2b2826bfc8f9eb1f94fea335800d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b6073c014e808181592be20b27b458"><td class="memItemLeft" align="right" valign="top"><a id="a33b6073c014e808181592be20b27b458"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_CheckFileSignature_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_check_file_signature__t.html">CheckFileSignature_t</a> pCheckFileSignature_t, bool bIOFailure)</td></tr>
+<tr class="separator:a33b6073c014e808181592be20b27b458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b7e8759a44a2587ea60124be6058a3"><td class="memItemLeft" align="right" valign="top"><a id="a47b7e8759a44a2587ea60124be6058a3"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CCheckFileSignature_t_SetCallResult</b> (ulong hAPICall, SteamAPI_CheckFileSignature_t_CallResult func)</td></tr>
+<tr class="separator:a47b7e8759a44a2587ea60124be6058a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05c1c23b34c7be809e481c093003b19"><td class="memItemLeft" align="right" valign="top"><a id="ad05c1c23b34c7be809e481c093003b19"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CCheckFileSignature_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ad05c1c23b34c7be809e481c093003b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864119dd886b9e71236987c4d1ec8982"><td class="memItemLeft" align="right" valign="top"><a id="a864119dd886b9e71236987c4d1ec8982"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_GetAppDependenciesResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_get_app_dependencies_result__t.html">GetAppDependenciesResult_t</a> pGetAppDependenciesResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a864119dd886b9e71236987c4d1ec8982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b8d4203e150cce7101ddfb4240a903"><td class="memItemLeft" align="right" valign="top"><a id="a64b8d4203e150cce7101ddfb4240a903"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGetAppDependenciesResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_GetAppDependenciesResult_t_CallResult func)</td></tr>
+<tr class="separator:a64b8d4203e150cce7101ddfb4240a903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aaa55eec64a1cbb7235c9727b25ecd6"><td class="memItemLeft" align="right" valign="top"><a id="a5aaa55eec64a1cbb7235c9727b25ecd6"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CGetAppDependenciesResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a5aaa55eec64a1cbb7235c9727b25ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada5194d71a0e4b8b799c12ff169a0b1"><td class="memItemLeft" align="right" valign="top"><a id="aada5194d71a0e4b8b799c12ff169a0b1"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoteStorageUnsubscribePublishedFileResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remote_storage_unsubscribe_published_file_result__t.html">RemoteStorageUnsubscribePublishedFileResult_t</a> pRemoteStorageUnsubscribePublishedFileResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aada5194d71a0e4b8b799c12ff169a0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2be080ae1a14c40b8d8ab4074d4d4bc"><td class="memItemLeft" align="right" valign="top"><a id="ae2be080ae1a14c40b8d8ab4074d4d4bc"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageUnsubscribePublishedFileResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoteStorageUnsubscribePublishedFileResult_t_CallResult func)</td></tr>
+<tr class="separator:ae2be080ae1a14c40b8d8ab4074d4d4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65b93c0510dc31ef765a8adbbe29e95"><td class="memItemLeft" align="right" valign="top"><a id="ac65b93c0510dc31ef765a8adbbe29e95"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoteStorageUnsubscribePublishedFileResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ac65b93c0510dc31ef765a8adbbe29e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec82c0c77c054a6878f4f1866318701"><td class="memItemLeft" align="right" valign="top"><a id="a9ec82c0c77c054a6878f4f1866318701"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_SetPersonaNameResponse_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_set_persona_name_response__t.html">SetPersonaNameResponse_t</a> pSetPersonaNameResponse_t, bool bIOFailure)</td></tr>
+<tr class="separator:a9ec82c0c77c054a6878f4f1866318701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5a095a35bc15ee7cb637efb1acbfed"><td class="memItemLeft" align="right" valign="top"><a id="a3c5a095a35bc15ee7cb637efb1acbfed"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSetPersonaNameResponse_t_SetCallResult</b> (ulong hAPICall, SteamAPI_SetPersonaNameResponse_t_CallResult func)</td></tr>
+<tr class="separator:a3c5a095a35bc15ee7cb637efb1acbfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac79dec514068f93485abab55e66317d"><td class="memItemLeft" align="right" valign="top"><a id="aac79dec514068f93485abab55e66317d"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSetPersonaNameResponse_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:aac79dec514068f93485abab55e66317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2326a5c0c7c304b1bc90c4482b90b0c2"><td class="memItemLeft" align="right" valign="top"><a id="a2326a5c0c7c304b1bc90c4482b90b0c2"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_RemoveAppDependencyResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_remove_app_dependency_result__t.html">RemoveAppDependencyResult_t</a> pRemoveAppDependencyResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:a2326a5c0c7c304b1bc90c4482b90b0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce4523d0787fd4b8101a221798e0d6b"><td class="memItemLeft" align="right" valign="top"><a id="abce4523d0787fd4b8101a221798e0d6b"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoveAppDependencyResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_RemoveAppDependencyResult_t_CallResult func)</td></tr>
+<tr class="separator:abce4523d0787fd4b8101a221798e0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6439c8b1dce850b75bfb0bcec3f7e065"><td class="memItemLeft" align="right" valign="top"><a id="a6439c8b1dce850b75bfb0bcec3f7e065"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CRemoveAppDependencyResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a6439c8b1dce850b75bfb0bcec3f7e065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503d947bd7158c16c206108d67d4abf6"><td class="memItemLeft" align="right" valign="top"><a id="a503d947bd7158c16c206108d67d4abf6"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_UserStatsReceived_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_user_stats_received__t.html">UserStatsReceived_t</a> pUserStatsReceived_t, bool bIOFailure)</td></tr>
+<tr class="separator:a503d947bd7158c16c206108d67d4abf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae96fbc2080e4a85c0e9a162d8dfe44f"><td class="memItemLeft" align="right" valign="top"><a id="aae96fbc2080e4a85c0e9a162d8dfe44f"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CUserStatsReceived_t_SetCallResult</b> (ulong hAPICall, SteamAPI_UserStatsReceived_t_CallResult func)</td></tr>
+<tr class="separator:aae96fbc2080e4a85c0e9a162d8dfe44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01f238120d2bd83eb63393fc28da85d"><td class="memItemLeft" align="right" valign="top"><a id="ab01f238120d2bd83eb63393fc28da85d"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CUserStatsReceived_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:ab01f238120d2bd83eb63393fc28da85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d58da26df3ab97f31efb1096b7d2b8"><td class="memItemLeft" align="right" valign="top"><a id="a39d58da26df3ab97f31efb1096b7d2b8"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_SteamInventoryEligiblePromoItemDefIDs_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_steam_inventory_eligible_promo_item_def_i_ds__t.html">SteamInventoryEligiblePromoItemDefIDs_t</a> pSteamInventoryEligiblePromoItemDefIDs_t, bool bIOFailure)</td></tr>
+<tr class="separator:a39d58da26df3ab97f31efb1096b7d2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03578ad30c75eda9e2214ff115091727"><td class="memItemLeft" align="right" valign="top"><a id="a03578ad30c75eda9e2214ff115091727"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSteamInventoryEligiblePromoItemDefIDs_t_SetCallResult</b> (ulong hAPICall, SteamAPI_SteamInventoryEligiblePromoItemDefIDs_t_CallResult func)</td></tr>
+<tr class="separator:a03578ad30c75eda9e2214ff115091727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d944c6cccd6639925402dd85d2a5d5"><td class="memItemLeft" align="right" valign="top"><a id="a23d944c6cccd6639925402dd85d2a5d5"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CSteamInventoryEligiblePromoItemDefIDs_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a23d944c6cccd6639925402dd85d2a5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d2a1da20a5fac244d98b7b33858b33"><td class="memItemLeft" align="right" valign="top"><a id="ae4d2a1da20a5fac244d98b7b33858b33"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_JoinClanChatRoomCompletionResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_join_clan_chat_room_completion_result__t.html">JoinClanChatRoomCompletionResult_t</a> pJoinClanChatRoomCompletionResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:ae4d2a1da20a5fac244d98b7b33858b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800439f098cce8f77c554aca4ac3d31f"><td class="memItemLeft" align="right" valign="top"><a id="a800439f098cce8f77c554aca4ac3d31f"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CJoinClanChatRoomCompletionResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_JoinClanChatRoomCompletionResult_t_CallResult func)</td></tr>
+<tr class="separator:a800439f098cce8f77c554aca4ac3d31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda8ad58da2f7513bc1b4f7a41b8bdcf"><td class="memItemLeft" align="right" valign="top"><a id="acda8ad58da2f7513bc1b4f7a41b8bdcf"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CJoinClanChatRoomCompletionResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:acda8ad58da2f7513bc1b4f7a41b8bdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d1db728fd3c834f3cc40cb83b48861"><td class="memItemLeft" align="right" valign="top"><a id="aa8d1db728fd3c834f3cc40cb83b48861"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SteamAPI_LeaderboardFindResult_t_CallResult</b> (<a class="el" href="struct_valve_1_1_steamworks_1_1_leaderboard_find_result__t.html">LeaderboardFindResult_t</a> pLeaderboardFindResult_t, bool bIOFailure)</td></tr>
+<tr class="separator:aa8d1db728fd3c834f3cc40cb83b48861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03de0ceae0f0641fe5f1bd26cad437a"><td class="memItemLeft" align="right" valign="top"><a id="ab03de0ceae0f0641fe5f1bd26cad437a"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardFindResult_t_SetCallResult</b> (ulong hAPICall, SteamAPI_LeaderboardFindResult_t_CallResult func)</td></tr>
+<tr class="separator:ab03de0ceae0f0641fe5f1bd26cad437a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ef469ddc4c13fb87534bda3fbbb742"><td class="memItemLeft" align="right" valign="top"><a id="a42ef469ddc4c13fb87534bda3fbbb742"></a>
+static ulong&#160;</td><td class="memItemRight" valign="bottom"><b>CLeaderboardFindResult_t_RemoveCallResult</b> (ulong handle)</td></tr>
+<tr class="separator:a42ef469ddc4c13fb87534bda3fbbb742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="steam__api__interop_8cs_source.html#l00016">16</a> pliku <a class="el" href="steam__api__interop_8cs_source.html">steam_api_interop.cs</a>.</p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/Pathfinder/Projekt_cpp/Pre-Alpha Relase/PC_Master_Control_Center/<a class="el" href="steam__api__interop_8cs_source.html">steam_api_interop.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_valve.html">Valve</a></li><li class="navelem"><a class="el" href="namespace_valve_1_1_interop.html">Interop</a></li><li class="navelem"><a class="el" href="class_valve_1_1_interop_1_1_native_entrypoints.html">NativeEntrypoints</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

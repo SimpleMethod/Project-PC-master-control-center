@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC Master Control Center: Dokumentacja klasy Valve.Steamworks.ISteamScreenshots</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC Master Control Center
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_valve_1_1_steamworks_1_1_i_steam_screenshots.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_valve_1_1_steamworks_1_1_i_steam_screenshots-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Valve.Steamworks.ISteamScreenshots<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagram dziedziczenia dla Valve.Steamworks.ISteamScreenshots</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_valve_1_1_steamworks_1_1_i_steam_screenshots.png" usemap="#Valve.Steamworks.ISteamScreenshots_map" alt=""/>
+  <map id="Valve.Steamworks.ISteamScreenshots_map" name="Valve.Steamworks.ISteamScreenshots_map">
+<area href="class_valve_1_1_steamworks_1_1_c_steam_screenshots.html" alt="Valve.Steamworks.CSteamScreenshots" shape="rect" coords="0,56,233,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a30cb9c9e22c0145ccb7e844b004c18ec"><td class="memItemLeft" align="right" valign="top"><a id="a30cb9c9e22c0145ccb7e844b004c18ec"></a>
+abstract IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetIntPtr</b> ()</td></tr>
+<tr class="separator:a30cb9c9e22c0145ccb7e844b004c18ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab522b5bce4b593cb0e77fe62ab759d1d"><td class="memItemLeft" align="right" valign="top"><a id="ab522b5bce4b593cb0e77fe62ab759d1d"></a>
+abstract uint&#160;</td><td class="memItemRight" valign="bottom"><b>WriteScreenshot</b> (IntPtr pubRGB, uint cubRGB, int nWidth, int nHeight)</td></tr>
+<tr class="separator:ab522b5bce4b593cb0e77fe62ab759d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbefec332b225c85f389a4cfd94ec23"><td class="memItemLeft" align="right" valign="top"><a id="a2fbefec332b225c85f389a4cfd94ec23"></a>
+abstract uint&#160;</td><td class="memItemRight" valign="bottom"><b>AddScreenshotToLibrary</b> (string pchFilename, string pchThumbnailFilename, int nWidth, int nHeight)</td></tr>
+<tr class="separator:a2fbefec332b225c85f389a4cfd94ec23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5a2618e93eae0a73c6daf1b9b2d812"><td class="memItemLeft" align="right" valign="top"><a id="a8f5a2618e93eae0a73c6daf1b9b2d812"></a>
+abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerScreenshot</b> ()</td></tr>
+<tr class="separator:a8f5a2618e93eae0a73c6daf1b9b2d812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e9b7f64677765b85f1f6199dd4da78"><td class="memItemLeft" align="right" valign="top"><a id="a34e9b7f64677765b85f1f6199dd4da78"></a>
+abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>HookScreenshots</b> (bool bHook)</td></tr>
+<tr class="separator:a34e9b7f64677765b85f1f6199dd4da78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6c64025fcc0917ce4699cd89fc93f1"><td class="memItemLeft" align="right" valign="top"><a id="a5f6c64025fcc0917ce4699cd89fc93f1"></a>
+abstract bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocation</b> (uint hScreenshot, string pchLocation)</td></tr>
+<tr class="separator:a5f6c64025fcc0917ce4699cd89fc93f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ffb9f3c3743bc81d76b21145fe010d"><td class="memItemLeft" align="right" valign="top"><a id="ac9ffb9f3c3743bc81d76b21145fe010d"></a>
+abstract bool&#160;</td><td class="memItemRight" valign="bottom"><b>TagUser</b> (uint hScreenshot, ulong steamID)</td></tr>
+<tr class="separator:ac9ffb9f3c3743bc81d76b21145fe010d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebe388e2f10f44c96575f2894543824"><td class="memItemLeft" align="right" valign="top"><a id="a1ebe388e2f10f44c96575f2894543824"></a>
+abstract bool&#160;</td><td class="memItemRight" valign="bottom"><b>TagPublishedFile</b> (uint hScreenshot, ulong unPublishedFileID)</td></tr>
+<tr class="separator:a1ebe388e2f10f44c96575f2894543824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071b5c9d6249e57732bbe22d8ab9d8ac"><td class="memItemLeft" align="right" valign="top"><a id="a071b5c9d6249e57732bbe22d8ab9d8ac"></a>
+abstract bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScreenshotsHooked</b> ()</td></tr>
+<tr class="separator:a071b5c9d6249e57732bbe22d8ab9d8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69859907112ec0be2850d555d86b25c"><td class="memItemLeft" align="right" valign="top"><a id="aa69859907112ec0be2850d555d86b25c"></a>
+abstract uint&#160;</td><td class="memItemRight" valign="bottom"><b>AddVRScreenshotToLibrary</b> (uint eType, string pchFilename, string pchVRFilename)</td></tr>
+<tr class="separator:aa69859907112ec0be2850d555d86b25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="steam__api__interop_8cs_source.html#l02156">2156</a> pliku <a class="el" href="steam__api__interop_8cs_source.html">steam_api_interop.cs</a>.</p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/Pathfinder/Projekt_cpp/Pre-Alpha Relase/PC_Master_Control_Center/<a class="el" href="steam__api__interop_8cs_source.html">steam_api_interop.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_valve.html">Valve</a></li><li class="navelem"><a class="el" href="namespace_valve_1_1_steamworks.html">Steamworks</a></li><li class="navelem"><a class="el" href="class_valve_1_1_steamworks_1_1_i_steam_screenshots.html">ISteamScreenshots</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

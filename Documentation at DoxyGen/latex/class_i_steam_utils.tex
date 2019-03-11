@@ -1,0 +1,104 @@
+\hypertarget{class_i_steam_utils}{}\section{Dokumentacja klasy I\+Steam\+Utils}
+\label{class_i_steam_utils}\index{I\+Steam\+Utils@{I\+Steam\+Utils}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_afd6e42591223d603ee36b3614fe8f87c}\label{class_i_steam_utils_afd6e42591223d603ee36b3614fe8f87c}} 
+virtual uint32 {\bfseries Get\+Seconds\+Since\+App\+Active} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a146505b28989619a292d5e6405f86abe}\label{class_i_steam_utils_a146505b28989619a292d5e6405f86abe}} 
+virtual uint32 {\bfseries Get\+Seconds\+Since\+Computer\+Active} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_ab43bc9b258f3742cb5d09660d7cf7446}\label{class_i_steam_utils_ab43bc9b258f3742cb5d09660d7cf7446}} 
+virtual E\+Universe {\bfseries Get\+Connected\+Universe} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a0002cdef3d913b0ab024d023e3cef831}\label{class_i_steam_utils_a0002cdef3d913b0ab024d023e3cef831}} 
+virtual uint32 {\bfseries Get\+Server\+Real\+Time} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_adfec6d1673d1f893ac04995f566b139e}\label{class_i_steam_utils_adfec6d1673d1f893ac04995f566b139e}} 
+virtual const char $\ast$ {\bfseries Get\+I\+P\+Country} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a831105a543f93c49c152a80b30078099}\label{class_i_steam_utils_a831105a543f93c49c152a80b30078099}} 
+virtual bool {\bfseries Get\+Image\+Size} (int i\+Image, uint32 $\ast$pn\+Width, uint32 $\ast$pn\+Height)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a097977ac0c242380be19d5e91676f219}\label{class_i_steam_utils_a097977ac0c242380be19d5e91676f219}} 
+virtual bool {\bfseries Get\+Image\+R\+G\+BA} (int i\+Image, uint8 $\ast$pub\+Dest, int n\+Dest\+Buffer\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a448aef5550d6d1983404e09f4e81a72e}\label{class_i_steam_utils_a448aef5550d6d1983404e09f4e81a72e}} 
+virtual bool {\bfseries Get\+C\+S\+E\+R\+I\+P\+Port} (uint32 $\ast$un\+IP, uint16 $\ast$us\+Port)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a1cee42b53209deb6ab735f612ef01f0c}\label{class_i_steam_utils_a1cee42b53209deb6ab735f612ef01f0c}} 
+virtual uint8 {\bfseries Get\+Current\+Battery\+Power} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a6ab494a421d0220b196ced7cd3e0fbba}\label{class_i_steam_utils_a6ab494a421d0220b196ced7cd3e0fbba}} 
+virtual uint32 {\bfseries Get\+App\+ID} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a1740a92ab814e9132ae06b5925408bd0}\label{class_i_steam_utils_a1740a92ab814e9132ae06b5925408bd0}} 
+virtual void {\bfseries Set\+Overlay\+Notification\+Position} (E\+Notification\+Position e\+Notification\+Position)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_ab890ecbf78b1e84db17c51b5998680ca}\label{class_i_steam_utils_ab890ecbf78b1e84db17c51b5998680ca}} 
+virtual bool {\bfseries Is\+A\+P\+I\+Call\+Completed} (Steam\+A\+P\+I\+Call\+\_\+t h\+Steam\+A\+P\+I\+Call, bool $\ast$pb\+Failed)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a40acce158f33543b3a0aa5d1deffcd21}\label{class_i_steam_utils_a40acce158f33543b3a0aa5d1deffcd21}} 
+virtual E\+Steam\+A\+P\+I\+Call\+Failure {\bfseries Get\+A\+P\+I\+Call\+Failure\+Reason} (Steam\+A\+P\+I\+Call\+\_\+t h\+Steam\+A\+P\+I\+Call)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_ab3449ee1977e394786075135f1d7617f}\label{class_i_steam_utils_ab3449ee1977e394786075135f1d7617f}} 
+virtual bool {\bfseries Get\+A\+P\+I\+Call\+Result} (Steam\+A\+P\+I\+Call\+\_\+t h\+Steam\+A\+P\+I\+Call, void $\ast$p\+Callback, int cub\+Callback, int i\+Callback\+Expected, bool $\ast$pb\+Failed)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a3fe65aaf04da204adc13e5c569875b1b}\label{class_i_steam_utils_a3fe65aaf04da204adc13e5c569875b1b}} 
+virtual uint32 {\bfseries Get\+I\+P\+C\+Call\+Count} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_ab78c11723eebfc4d8d931f4e4b2bb7d8}\label{class_i_steam_utils_ab78c11723eebfc4d8d931f4e4b2bb7d8}} 
+virtual void {\bfseries Set\+Warning\+Message\+Hook} (Steam\+A\+P\+I\+Warning\+Message\+Hook\+\_\+t p\+Function)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a4daed74c0dcca45da507913a4577028c}\label{class_i_steam_utils_a4daed74c0dcca45da507913a4577028c}} 
+virtual bool {\bfseries Is\+Overlay\+Enabled} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a4590d2cda9dee5626e3b438fc3678ffd}\label{class_i_steam_utils_a4590d2cda9dee5626e3b438fc3678ffd}} 
+virtual bool {\bfseries B\+Overlay\+Needs\+Present} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a1baceda3ba820c08f62263523de0931f}\label{class_i_steam_utils_a1baceda3ba820c08f62263523de0931f}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Check\+File\+Signature} (const char $\ast$sz\+File\+Name)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a2a7e6ae072711fe0611dd1d6aa3ed4fa}\label{class_i_steam_utils_a2a7e6ae072711fe0611dd1d6aa3ed4fa}} 
+virtual bool {\bfseries Show\+Gamepad\+Text\+Input} (E\+Gamepad\+Text\+Input\+Mode e\+Input\+Mode, E\+Gamepad\+Text\+Input\+Line\+Mode e\+Line\+Input\+Mode, const char $\ast$pch\+Description, uint32 un\+Char\+Max, const char $\ast$pch\+Existing\+Text)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a809a5472105c1d9175eccf7224af2d7a}\label{class_i_steam_utils_a809a5472105c1d9175eccf7224af2d7a}} 
+virtual uint32 {\bfseries Get\+Entered\+Gamepad\+Text\+Length} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a487ddbbe9c404d61a445ff70d8360928}\label{class_i_steam_utils_a487ddbbe9c404d61a445ff70d8360928}} 
+virtual bool {\bfseries Get\+Entered\+Gamepad\+Text\+Input} (char $\ast$pch\+Text, uint32 cch\+Text)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a0e22f9a75f3e869b351bb630aa3cc699}\label{class_i_steam_utils_a0e22f9a75f3e869b351bb630aa3cc699}} 
+virtual const char $\ast$ {\bfseries Get\+Steam\+U\+I\+Language} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a53c51ba1d343e9f4dbba5bfd553f5a37}\label{class_i_steam_utils_a53c51ba1d343e9f4dbba5bfd553f5a37}} 
+virtual bool {\bfseries Is\+Steam\+Running\+In\+VR} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a3d198c6ed15819d645b241eaefb0a73e}\label{class_i_steam_utils_a3d198c6ed15819d645b241eaefb0a73e}} 
+virtual void {\bfseries Set\+Overlay\+Notification\+Inset} (int n\+Horizontal\+Inset, int n\+Vertical\+Inset)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a2ccc311f3f111d1d5287fbf1bb0e2ffe}\label{class_i_steam_utils_a2ccc311f3f111d1d5287fbf1bb0e2ffe}} 
+virtual bool {\bfseries Is\+Steam\+In\+Big\+Picture\+Mode} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_ae080f6900d0a88801596f4adcfa27d57}\label{class_i_steam_utils_ae080f6900d0a88801596f4adcfa27d57}} 
+virtual void {\bfseries Start\+V\+R\+Dashboard} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_a4fe76da84e53bdd7e752c946eb068395}\label{class_i_steam_utils_a4fe76da84e53bdd7e752c946eb068395}} 
+virtual bool {\bfseries Is\+V\+R\+Headset\+Streaming\+Enabled} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_utils_ac349084ad680d42a8314f4974e2a8e40}\label{class_i_steam_utils_ac349084ad680d42a8314f4974e2a8e40}} 
+virtual void {\bfseries Set\+V\+R\+Headset\+Streaming\+Enabled} (bool b\+Enabled)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 54 pliku isteamutils.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamutils.\+h\end{DoxyCompactItemize}

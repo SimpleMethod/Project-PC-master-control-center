@@ -1,0 +1,155 @@
+\hypertarget{class_c_steam_i_d}{}\section{Dokumentacja klasy C\+Steam\+ID}
+\label{class_c_steam_i_d}\index{C\+Steam\+ID@{C\+Steam\+ID}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_aee9a6d20f4e904294ff5ca8f9d0f2521}\label{class_c_steam_i_d_aee9a6d20f4e904294ff5ca8f9d0f2521}} 
+{\bfseries C\+Steam\+ID} (uint32 un\+Account\+ID, E\+Universe e\+Universe, E\+Account\+Type e\+Account\+Type)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a66dea50fbae98a10058e86e5597fe396}\label{class_c_steam_i_d_a66dea50fbae98a10058e86e5597fe396}} 
+{\bfseries C\+Steam\+ID} (uint32 un\+Account\+ID, unsigned int un\+Account\+Instance, E\+Universe e\+Universe, E\+Account\+Type e\+Account\+Type)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ab8c5add9368077f0217ea8d03e7c5743}\label{class_c_steam_i_d_ab8c5add9368077f0217ea8d03e7c5743}} 
+{\bfseries C\+Steam\+ID} (uint64 ul\+Steam\+ID)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a46fe032f5da0e7c19154527224a28a3b}\label{class_c_steam_i_d_a46fe032f5da0e7c19154527224a28a3b}} 
+void {\bfseries Set} (uint32 un\+Account\+ID, E\+Universe e\+Universe, E\+Account\+Type e\+Account\+Type)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a1f511324c499386ae942ddcca19a78cf}\label{class_c_steam_i_d_a1f511324c499386ae942ddcca19a78cf}} 
+void {\bfseries Instanced\+Set} (uint32 un\+Account\+ID, uint32 un\+Instance, E\+Universe e\+Universe, E\+Account\+Type e\+Account\+Type)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a6721be10705e28d39da873a0c136054b}\label{class_c_steam_i_d_a6721be10705e28d39da873a0c136054b}} 
+void {\bfseries Full\+Set} (uint64 ul\+Identifier, E\+Universe e\+Universe, E\+Account\+Type e\+Account\+Type)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a072df3ce585dc3e5c7e43e8668c46c78}\label{class_c_steam_i_d_a072df3ce585dc3e5c7e43e8668c46c78}} 
+void {\bfseries Set\+From\+Uint64} (uint64 ul\+Steam\+ID)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ab71588633495f381bcc780722c2cdbda}\label{class_c_steam_i_d_ab71588633495f381bcc780722c2cdbda}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a2a0bce0053828f4d34663e01be2c40f3}\label{class_c_steam_i_d_a2a0bce0053828f4d34663e01be2c40f3}} 
+uint64 {\bfseries Convert\+To\+Uint64} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a7310fc2d58e9ee6f0b05bc37a196a42f}\label{class_c_steam_i_d_a7310fc2d58e9ee6f0b05bc37a196a42f}} 
+uint64 {\bfseries Get\+Static\+Account\+Key} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a5a29e95bab1b880434b79248a9cafb76}\label{class_c_steam_i_d_a5a29e95bab1b880434b79248a9cafb76}} 
+void {\bfseries Create\+Blank\+Anon\+Logon} (E\+Universe e\+Universe)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_affb4c54f7b3c16815b1befbb7ef860c1}\label{class_c_steam_i_d_affb4c54f7b3c16815b1befbb7ef860c1}} 
+void {\bfseries Create\+Blank\+Anon\+User\+Logon} (E\+Universe e\+Universe)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a433ff2eedb9fef4e2743fd677f6ad6f9}\label{class_c_steam_i_d_a433ff2eedb9fef4e2743fd677f6ad6f9}} 
+bool {\bfseries B\+Blank\+Anon\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a7bf411fea66a0bce8a7920c47114b44c}\label{class_c_steam_i_d_a7bf411fea66a0bce8a7920c47114b44c}} 
+bool {\bfseries B\+Game\+Server\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a13bacae5e7f0c7ebf59d9c95e10042e9}\label{class_c_steam_i_d_a13bacae5e7f0c7ebf59d9c95e10042e9}} 
+bool {\bfseries B\+Persistent\+Game\+Server\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a1a84226a66eaf71d7a7fd69266928d01}\label{class_c_steam_i_d_a1a84226a66eaf71d7a7fd69266928d01}} 
+bool {\bfseries B\+Anon\+Game\+Server\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_abbdc9c84055e3265dbaa94d8880a0d81}\label{class_c_steam_i_d_abbdc9c84055e3265dbaa94d8880a0d81}} 
+bool {\bfseries B\+Content\+Server\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_aab186653a385070597aef66294baa08f}\label{class_c_steam_i_d_aab186653a385070597aef66294baa08f}} 
+bool {\bfseries B\+Clan\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a105f757c4fd1a46990b6146359720977}\label{class_c_steam_i_d_a105f757c4fd1a46990b6146359720977}} 
+bool {\bfseries B\+Chat\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a11d9937ee2fe53635d90f984d91c2fe2}\label{class_c_steam_i_d_a11d9937ee2fe53635d90f984d91c2fe2}} 
+bool {\bfseries Is\+Lobby} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ac0b95721d449cfee9361f220771b42ac}\label{class_c_steam_i_d_ac0b95721d449cfee9361f220771b42ac}} 
+bool {\bfseries B\+Individual\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a5fbe10e5f97138a72c8567bdb4ce8821}\label{class_c_steam_i_d_a5fbe10e5f97138a72c8567bdb4ce8821}} 
+bool {\bfseries B\+Anon\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_afed71fb948a0b4d9181e4b321e2c5b09}\label{class_c_steam_i_d_afed71fb948a0b4d9181e4b321e2c5b09}} 
+bool {\bfseries B\+Anon\+User\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a1c0603a945b3ea0366c8de2b79058230}\label{class_c_steam_i_d_a1c0603a945b3ea0366c8de2b79058230}} 
+bool {\bfseries B\+Console\+User\+Account} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ac13793c8698c2b16e63a67c00a517413}\label{class_c_steam_i_d_ac13793c8698c2b16e63a67c00a517413}} 
+void {\bfseries Set\+Account\+ID} (uint32 un\+Account\+ID)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a37af4231ff27a0d38cd40185f8e8b971}\label{class_c_steam_i_d_a37af4231ff27a0d38cd40185f8e8b971}} 
+void {\bfseries Set\+Account\+Instance} (uint32 un\+Instance)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a114440392aba5cc7f62ebdc3983c54d4}\label{class_c_steam_i_d_a114440392aba5cc7f62ebdc3983c54d4}} 
+void {\bfseries Clear\+Individual\+Instance} ()
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a7c8b30561f318a662e5fffc05127ac6c}\label{class_c_steam_i_d_a7c8b30561f318a662e5fffc05127ac6c}} 
+bool {\bfseries Has\+No\+Individual\+Instance} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ad9448c037b8c15dec052ad569f1e610e}\label{class_c_steam_i_d_ad9448c037b8c15dec052ad569f1e610e}} 
+Account\+I\+D\+\_\+t {\bfseries Get\+Account\+ID} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a9049bae00363a22b65f790ec14f3bcdf}\label{class_c_steam_i_d_a9049bae00363a22b65f790ec14f3bcdf}} 
+uint32 {\bfseries Get\+Un\+Account\+Instance} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ad22f73a9ba4474d1a70a7e5813f5b67a}\label{class_c_steam_i_d_ad22f73a9ba4474d1a70a7e5813f5b67a}} 
+E\+Account\+Type {\bfseries Get\+E\+Account\+Type} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a2b784380c7060266164d43dc028a0f86}\label{class_c_steam_i_d_a2b784380c7060266164d43dc028a0f86}} 
+E\+Universe {\bfseries Get\+E\+Universe} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a8cde52a2039167bdf27bb250b4a6bf0b}\label{class_c_steam_i_d_a8cde52a2039167bdf27bb250b4a6bf0b}} 
+void {\bfseries Set\+E\+Universe} (E\+Universe e\+Universe)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ac69aac831ab818d1575859c3cf995e4f}\label{class_c_steam_i_d_ac69aac831ab818d1575859c3cf995e4f}} 
+bool {\bfseries Is\+Valid} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a6bbdb7c51fa76f795404d7ebb33c1732}\label{class_c_steam_i_d_a6bbdb7c51fa76f795404d7ebb33c1732}} 
+{\bfseries C\+Steam\+ID} (const char $\ast$pch\+Steam\+ID, E\+Universe e\+Default\+Universe=k\+\_\+\+E\+Universe\+Invalid)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_af814bb71d845c1dddb1720a9a77f581d}\label{class_c_steam_i_d_af814bb71d845c1dddb1720a9a77f581d}} 
+const char $\ast$ {\bfseries Render} () const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a27556e1b84489fd80cb5dafa2048a6bb}\label{class_c_steam_i_d_a27556e1b84489fd80cb5dafa2048a6bb}} 
+void {\bfseries Set\+From\+String} (const char $\ast$pch\+Steam\+ID, E\+Universe e\+Default\+Universe)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a4149d7cf64072a585c9ef201bbf88f0f}\label{class_c_steam_i_d_a4149d7cf64072a585c9ef201bbf88f0f}} 
+bool {\bfseries Set\+From\+String\+Strict} (const char $\ast$pch\+Steam\+ID, E\+Universe e\+Default\+Universe)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_af28dc382ff4cafc37c1b277f8e421dd3}\label{class_c_steam_i_d_af28dc382ff4cafc37c1b277f8e421dd3}} 
+bool {\bfseries Set\+From\+Steam2\+String} (const char $\ast$pch\+Steam2\+ID, E\+Universe e\+Universe)
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a07e1e51fab05038a6d91a75613f114ad}\label{class_c_steam_i_d_a07e1e51fab05038a6d91a75613f114ad}} 
+bool {\bfseries operator==} (const \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} \&val) const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_aa118771571ca5083aa5a1aebc6fbeac3}\label{class_c_steam_i_d_aa118771571ca5083aa5a1aebc6fbeac3}} 
+bool {\bfseries operator!=} (const \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} \&val) const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a502b2bb9721916521d48f225f1f36fc7}\label{class_c_steam_i_d_a502b2bb9721916521d48f225f1f36fc7}} 
+bool {\bfseries operator$<$} (const \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} \&val) const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_ae70956c9d68e59b0b3e551e27a72a359}\label{class_c_steam_i_d_ae70956c9d68e59b0b3e551e27a72a359}} 
+bool {\bfseries operator$>$} (const \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} \&val) const
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a0ad3c05a76f65c5af5338d7b5a9d0f1e}\label{class_c_steam_i_d_a0ad3c05a76f65c5af5338d7b5a9d0f1e}} 
+bool {\bfseries B\+Valid\+External\+Steam\+ID} () const
+\end{DoxyCompactItemize}
+\subsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_steam_i_d_a8298a87b2205ac5b3866052fa378542c}\label{class_c_steam_i_d_a8298a87b2205ac5b3866052fa378542c}} 
+static const char $\ast$ {\bfseries Render} (uint64 ul\+Steam\+ID)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 537 pliku steamclientpublic.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steamclientpublic.\+h\end{DoxyCompactItemize}

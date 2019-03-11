@@ -1,0 +1,197 @@
+\hypertarget{class_i_steam_h_t_m_l_surface}{}\section{Dokumentacja klasy I\+Steam\+H\+T\+M\+L\+Surface}
+\label{class_i_steam_h_t_m_l_surface}\index{I\+Steam\+H\+T\+M\+L\+Surface@{I\+Steam\+H\+T\+M\+L\+Surface}}
+\subsection*{Typy publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a116b20c2ab69e90338abc523de0a09fd}\label{class_i_steam_h_t_m_l_surface_a116b20c2ab69e90338abc523de0a09fd}} 
+enum {\bfseries E\+H\+T\+M\+L\+Mouse\+Button} \{ {\bfseries e\+H\+T\+M\+L\+Mouse\+Button\+\_\+\+Left} = 0, 
+{\bfseries e\+H\+T\+M\+L\+Mouse\+Button\+\_\+\+Right} = 1, 
+{\bfseries e\+H\+T\+M\+L\+Mouse\+Button\+\_\+\+Middle} = 2
+ \}
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a4a9ceb3013cded62abe82b1b89749db6}\label{class_i_steam_h_t_m_l_surface_a4a9ceb3013cded62abe82b1b89749db6}} 
+enum {\bfseries E\+Mouse\+Cursor} \{ \newline
+{\bfseries dc\+\_\+user} = 0, 
+{\bfseries dc\+\_\+none}, 
+{\bfseries dc\+\_\+arrow}, 
+{\bfseries dc\+\_\+ibeam}, 
+\newline
+{\bfseries dc\+\_\+hourglass}, 
+{\bfseries dc\+\_\+waitarrow}, 
+{\bfseries dc\+\_\+crosshair}, 
+{\bfseries dc\+\_\+up}, 
+\newline
+{\bfseries dc\+\_\+sizenw}, 
+{\bfseries dc\+\_\+sizese}, 
+{\bfseries dc\+\_\+sizene}, 
+{\bfseries dc\+\_\+sizesw}, 
+\newline
+{\bfseries dc\+\_\+sizew}, 
+{\bfseries dc\+\_\+sizee}, 
+{\bfseries dc\+\_\+sizen}, 
+{\bfseries dc\+\_\+sizes}, 
+\newline
+{\bfseries dc\+\_\+sizewe}, 
+{\bfseries dc\+\_\+sizens}, 
+{\bfseries dc\+\_\+sizeall}, 
+{\bfseries dc\+\_\+no}, 
+\newline
+{\bfseries dc\+\_\+hand}, 
+{\bfseries dc\+\_\+blank}, 
+{\bfseries dc\+\_\+middle\+\_\+pan}, 
+{\bfseries dc\+\_\+north\+\_\+pan}, 
+\newline
+{\bfseries dc\+\_\+north\+\_\+east\+\_\+pan}, 
+{\bfseries dc\+\_\+east\+\_\+pan}, 
+{\bfseries dc\+\_\+south\+\_\+east\+\_\+pan}, 
+{\bfseries dc\+\_\+south\+\_\+pan}, 
+\newline
+{\bfseries dc\+\_\+south\+\_\+west\+\_\+pan}, 
+{\bfseries dc\+\_\+west\+\_\+pan}, 
+{\bfseries dc\+\_\+north\+\_\+west\+\_\+pan}, 
+{\bfseries dc\+\_\+alias}, 
+\newline
+{\bfseries dc\+\_\+cell}, 
+{\bfseries dc\+\_\+colresize}, 
+{\bfseries dc\+\_\+copycur}, 
+{\bfseries dc\+\_\+verticaltext}, 
+\newline
+{\bfseries dc\+\_\+rowresize}, 
+{\bfseries dc\+\_\+zoomin}, 
+{\bfseries dc\+\_\+zoomout}, 
+{\bfseries dc\+\_\+help}, 
+\newline
+{\bfseries dc\+\_\+custom}, 
+{\bfseries dc\+\_\+last}
+ \}
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a099a4ad38c6f926829aceb4b13ca9124}\label{class_i_steam_h_t_m_l_surface_a099a4ad38c6f926829aceb4b13ca9124}} 
+enum {\bfseries E\+H\+T\+M\+L\+Key\+Modifiers} \{ {\bfseries k\+\_\+e\+H\+T\+M\+L\+Key\+Modifier\+\_\+\+None} = 0, 
+{\bfseries k\+\_\+e\+H\+T\+M\+L\+Key\+Modifier\+\_\+\+Alt\+Down} = 1 $<$$<$ 0, 
+{\bfseries k\+\_\+e\+H\+T\+M\+L\+Key\+Modifier\+\_\+\+Ctrl\+Down} = 1 $<$$<$ 1, 
+{\bfseries k\+\_\+e\+H\+T\+M\+L\+Key\+Modifier\+\_\+\+Shift\+Down} = 1 $<$$<$ 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a1bd2c165e2cdd316e4f227a6adf3d98b}\label{class_i_steam_h_t_m_l_surface_a1bd2c165e2cdd316e4f227a6adf3d98b}} 
+virtual bool {\bfseries Init} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a0e44754a153eca6ebd9cd4e8d7d60ccc}\label{class_i_steam_h_t_m_l_surface_a0e44754a153eca6ebd9cd4e8d7d60ccc}} 
+virtual bool {\bfseries Shutdown} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_ae44cef213b858f70df2a4142cec93356}\label{class_i_steam_h_t_m_l_surface_ae44cef213b858f70df2a4142cec93356}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Create\+Browser} (const char $\ast$pch\+User\+Agent, const char $\ast$pch\+User\+C\+SS)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a6033a643a13112972847fc73532b1fe8}\label{class_i_steam_h_t_m_l_surface_a6033a643a13112972847fc73532b1fe8}} 
+virtual void {\bfseries Remove\+Browser} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a1d5a21a85db5535b4a05fbab739539e2}\label{class_i_steam_h_t_m_l_surface_a1d5a21a85db5535b4a05fbab739539e2}} 
+virtual void {\bfseries Load\+U\+RL} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, const char $\ast$pch\+U\+RL, const char $\ast$pch\+Post\+Data)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a740f1a05a2774324954a5b31f204cdca}\label{class_i_steam_h_t_m_l_surface_a740f1a05a2774324954a5b31f204cdca}} 
+virtual void {\bfseries Set\+Size} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, uint32 un\+Width, uint32 un\+Height)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a1753fec92347e999535eb1dc595a41f5}\label{class_i_steam_h_t_m_l_surface_a1753fec92347e999535eb1dc595a41f5}} 
+virtual void {\bfseries Stop\+Load} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a38f7f6daf4023170f6cffd1d651db32c}\label{class_i_steam_h_t_m_l_surface_a38f7f6daf4023170f6cffd1d651db32c}} 
+virtual void {\bfseries Reload} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a70870c78a35e0916c1b9dd1240d15996}\label{class_i_steam_h_t_m_l_surface_a70870c78a35e0916c1b9dd1240d15996}} 
+virtual void {\bfseries Go\+Back} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_aac6ff06787667a32fceb04985d6c486c}\label{class_i_steam_h_t_m_l_surface_aac6ff06787667a32fceb04985d6c486c}} 
+virtual void {\bfseries Go\+Forward} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_aef7bc3d2ce1fd82c02f6a89e78266095}\label{class_i_steam_h_t_m_l_surface_aef7bc3d2ce1fd82c02f6a89e78266095}} 
+virtual void {\bfseries Add\+Header} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, const char $\ast$pch\+Key, const char $\ast$pch\+Value)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a6bdc98a34ff569232f6668dadb0648a6}\label{class_i_steam_h_t_m_l_surface_a6bdc98a34ff569232f6668dadb0648a6}} 
+virtual void {\bfseries Execute\+Javascript} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, const char $\ast$pch\+Script)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a724ad6ccdbb026c08c14fd534ef658cf}\label{class_i_steam_h_t_m_l_surface_a724ad6ccdbb026c08c14fd534ef658cf}} 
+virtual void {\bfseries Mouse\+Up} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, E\+H\+T\+M\+L\+Mouse\+Button e\+Mouse\+Button)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_ae3956fc0d0c5994e5912c540ebc1bc81}\label{class_i_steam_h_t_m_l_surface_ae3956fc0d0c5994e5912c540ebc1bc81}} 
+virtual void {\bfseries Mouse\+Down} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, E\+H\+T\+M\+L\+Mouse\+Button e\+Mouse\+Button)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_ac03609b36de485199a10db0b3e10437e}\label{class_i_steam_h_t_m_l_surface_ac03609b36de485199a10db0b3e10437e}} 
+virtual void {\bfseries Mouse\+Double\+Click} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, E\+H\+T\+M\+L\+Mouse\+Button e\+Mouse\+Button)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_adcfad4756dd83a4301ebebffa4f72572}\label{class_i_steam_h_t_m_l_surface_adcfad4756dd83a4301ebebffa4f72572}} 
+virtual void {\bfseries Mouse\+Move} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, int x, int y)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a7b234824c28b9625b86736586878dd52}\label{class_i_steam_h_t_m_l_surface_a7b234824c28b9625b86736586878dd52}} 
+virtual void {\bfseries Mouse\+Wheel} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, int32 n\+Delta)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_aa942c45c6905a6f092a6f2b2d5f6611a}\label{class_i_steam_h_t_m_l_surface_aa942c45c6905a6f092a6f2b2d5f6611a}} 
+virtual void {\bfseries Key\+Down} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, uint32 n\+Native\+Key\+Code, E\+H\+T\+M\+L\+Key\+Modifiers e\+H\+T\+M\+L\+Key\+Modifiers)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a6c7a4a2faf6a4d1938fc58af0368d99f}\label{class_i_steam_h_t_m_l_surface_a6c7a4a2faf6a4d1938fc58af0368d99f}} 
+virtual void {\bfseries Key\+Up} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, uint32 n\+Native\+Key\+Code, E\+H\+T\+M\+L\+Key\+Modifiers e\+H\+T\+M\+L\+Key\+Modifiers)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_aa93de957632e7fd281294013eee63639}\label{class_i_steam_h_t_m_l_surface_aa93de957632e7fd281294013eee63639}} 
+virtual void {\bfseries Key\+Char} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, uint32 c\+Unicode\+Char, E\+H\+T\+M\+L\+Key\+Modifiers e\+H\+T\+M\+L\+Key\+Modifiers)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a4c8950ae7f524118fbde433c77339594}\label{class_i_steam_h_t_m_l_surface_a4c8950ae7f524118fbde433c77339594}} 
+virtual void {\bfseries Set\+Horizontal\+Scroll} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, uint32 n\+Absolute\+Pixel\+Scroll)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a7f15a9fb1e164b74554c1a1800dde128}\label{class_i_steam_h_t_m_l_surface_a7f15a9fb1e164b74554c1a1800dde128}} 
+virtual void {\bfseries Set\+Vertical\+Scroll} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, uint32 n\+Absolute\+Pixel\+Scroll)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a4c3734b512aad5b5c992bfc37368ffa5}\label{class_i_steam_h_t_m_l_surface_a4c3734b512aad5b5c992bfc37368ffa5}} 
+virtual void {\bfseries Set\+Key\+Focus} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, bool b\+Has\+Key\+Focus)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a2368589678c2f2d510bab360169a77a5}\label{class_i_steam_h_t_m_l_surface_a2368589678c2f2d510bab360169a77a5}} 
+virtual void {\bfseries View\+Source} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a8880e87740ef539e588535dfc54b2e8b}\label{class_i_steam_h_t_m_l_surface_a8880e87740ef539e588535dfc54b2e8b}} 
+virtual void {\bfseries Copy\+To\+Clipboard} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a8923f897b61da1a9f04aecf318581b31}\label{class_i_steam_h_t_m_l_surface_a8923f897b61da1a9f04aecf318581b31}} 
+virtual void {\bfseries Paste\+From\+Clipboard} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a22fdef649c5e93065f6ac45a23c30530}\label{class_i_steam_h_t_m_l_surface_a22fdef649c5e93065f6ac45a23c30530}} 
+virtual void {\bfseries Find} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, const char $\ast$pch\+Search\+Str, bool b\+Currently\+In\+Find, bool b\+Reverse)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_afaf9dd99a4f51d7ad77620ba0a3d01df}\label{class_i_steam_h_t_m_l_surface_afaf9dd99a4f51d7ad77620ba0a3d01df}} 
+virtual void {\bfseries Stop\+Find} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_aa98e035eb1ea88e31152dee37778a2d9}\label{class_i_steam_h_t_m_l_surface_aa98e035eb1ea88e31152dee37778a2d9}} 
+virtual void {\bfseries Get\+Link\+At\+Position} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, int x, int y)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a096761fa5e8192de18bd2b01eb1a4736}\label{class_i_steam_h_t_m_l_surface_a096761fa5e8192de18bd2b01eb1a4736}} 
+virtual void {\bfseries Set\+Cookie} (const char $\ast$pch\+Hostname, const char $\ast$pch\+Key, const char $\ast$pch\+Value, const char $\ast$pch\+Path=\char`\"{}/\char`\"{}, R\+Time32 n\+Expires=0, bool b\+Secure=false, bool b\+H\+T\+T\+P\+Only=false)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_ad0ac9b5af995492c4f86df37744931de}\label{class_i_steam_h_t_m_l_surface_ad0ac9b5af995492c4f86df37744931de}} 
+virtual void {\bfseries Set\+Page\+Scale\+Factor} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, float fl\+Zoom, int n\+PointX, int n\+PointY)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_aabfc7673e6f7dfddcc1002d3a4865de6}\label{class_i_steam_h_t_m_l_surface_aabfc7673e6f7dfddcc1002d3a4865de6}} 
+virtual void {\bfseries Set\+Background\+Mode} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, bool b\+Background\+Mode)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_ac288b2ccc4cc03e9f435748ea1928a96}\label{class_i_steam_h_t_m_l_surface_ac288b2ccc4cc03e9f435748ea1928a96}} 
+virtual void {\bfseries Set\+D\+P\+I\+Scaling\+Factor} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, float fl\+D\+P\+I\+Scaling)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_ab53e70f8779fab06069f782b8777d845}\label{class_i_steam_h_t_m_l_surface_ab53e70f8779fab06069f782b8777d845}} 
+virtual void {\bfseries Allow\+Start\+Request} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, bool b\+Allowed)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_a916bbdca59de2a048b850a12d17e15d9}\label{class_i_steam_h_t_m_l_surface_a916bbdca59de2a048b850a12d17e15d9}} 
+virtual void {\bfseries J\+S\+Dialog\+Response} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, bool b\+Result)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_h_t_m_l_surface_af40eb06df1b74a6b5706dbf9cc7748f6}\label{class_i_steam_h_t_m_l_surface_af40eb06df1b74a6b5706dbf9cc7748f6}} 
+virtual void {\bfseries File\+Load\+Dialog\+Response} (H\+H\+T\+M\+L\+Browser un\+Browser\+Handle, const char $\ast$$\ast$pch\+Selected\+Files)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 21 pliku isteamhtmlsurface.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamhtmlsurface.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+I\+Steam\+Client}
+\label{class_valve_1_1_steamworks_1_1_i_steam_client}\index{Valve.\+Steamworks.\+I\+Steam\+Client@{Valve.\+Steamworks.\+I\+Steam\+Client}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+I\+Steam\+Client\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_i_steam_client}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a89f2b94b10fb162175b201dbc8b5ae1a}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a89f2b94b10fb162175b201dbc8b5ae1a}} 
+abstract Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aa101a23fe8850a35815ea18579e5d393}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aa101a23fe8850a35815ea18579e5d393}} 
+abstract uint {\bfseries Create\+Steam\+Pipe} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a9ff5cf21692d028cebe85e8ca5daacf9}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a9ff5cf21692d028cebe85e8ca5daacf9}} 
+abstract bool {\bfseries B\+Release\+Steam\+Pipe} (uint h\+Steam\+Pipe)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a3c4201b27b18b35eff16a2d11173f0ad}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a3c4201b27b18b35eff16a2d11173f0ad}} 
+abstract uint {\bfseries Connect\+To\+Global\+User} (uint h\+Steam\+Pipe)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aeaee1708f23069b6fddfc5625ec17c4d}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aeaee1708f23069b6fddfc5625ec17c4d}} 
+abstract uint {\bfseries Create\+Local\+User} (ref uint ph\+Steam\+Pipe, uint e\+Account\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_ac6b5a8ef96593b68ddaa20727c47b1c7}\label{class_valve_1_1_steamworks_1_1_i_steam_client_ac6b5a8ef96593b68ddaa20727c47b1c7}} 
+abstract void {\bfseries Release\+User} (uint h\+Steam\+Pipe, uint h\+User)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_abb0b1a376f182532b967e1ae6f4439f1}\label{class_valve_1_1_steamworks_1_1_i_steam_client_abb0b1a376f182532b967e1ae6f4439f1}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_user}{I\+Steam\+User} {\bfseries Get\+I\+Steam\+User} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_ac00b1c3b645f5c0a03ebeba28ccd4262}\label{class_valve_1_1_steamworks_1_1_i_steam_client_ac00b1c3b645f5c0a03ebeba28ccd4262}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_game_server}{I\+Steam\+Game\+Server} {\bfseries Get\+I\+Steam\+Game\+Server} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a5ccf65996877625852645d98caa74cb1}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a5ccf65996877625852645d98caa74cb1}} 
+abstract void {\bfseries Set\+Local\+I\+P\+Binding} (uint un\+IP, char us\+Port)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aca99b7e6173d04b4c1b0f8abda52f0ba}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aca99b7e6173d04b4c1b0f8abda52f0ba}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_friends}{I\+Steam\+Friends} {\bfseries Get\+I\+Steam\+Friends} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a8ddb5fe72c521bfcc08c5cb1e61bb83f}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a8ddb5fe72c521bfcc08c5cb1e61bb83f}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_utils}{I\+Steam\+Utils} {\bfseries Get\+I\+Steam\+Utils} (uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a4131ec4b66dcacf0cdb30059d794ec76}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a4131ec4b66dcacf0cdb30059d794ec76}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_matchmaking}{I\+Steam\+Matchmaking} {\bfseries Get\+I\+Steam\+Matchmaking} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aaa22ca34bb892e22712f7cebf6f3ecfe}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aaa22ca34bb892e22712f7cebf6f3ecfe}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_servers}{I\+Steam\+Matchmaking\+Servers} {\bfseries Get\+I\+Steam\+Matchmaking\+Servers} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aca16fa10d00fbe3e9a73faa221e9bc82}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aca16fa10d00fbe3e9a73faa221e9bc82}} 
+abstract Int\+Ptr {\bfseries Get\+I\+Steam\+Generic\+Interface} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a76f255df0ff9f7796317045bb3ad973a}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a76f255df0ff9f7796317045bb3ad973a}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_user_stats}{I\+Steam\+User\+Stats} {\bfseries Get\+I\+Steam\+User\+Stats} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a5052facd9e3effddd383e468f7413381}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a5052facd9e3effddd383e468f7413381}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_game_server_stats}{I\+Steam\+Game\+Server\+Stats} {\bfseries Get\+I\+Steam\+Game\+Server\+Stats} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_ad95bd01bd0c9c831638f225981e8cc2b}\label{class_valve_1_1_steamworks_1_1_i_steam_client_ad95bd01bd0c9c831638f225981e8cc2b}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_apps}{I\+Steam\+Apps} {\bfseries Get\+I\+Steam\+Apps} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aa6e3627d0eb28df7c009000ba6901f76}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aa6e3627d0eb28df7c009000ba6901f76}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_networking}{I\+Steam\+Networking} {\bfseries Get\+I\+Steam\+Networking} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aa4f61cb9c372f7730d224be2687cc034}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aa4f61cb9c372f7730d224be2687cc034}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_remote_storage}{I\+Steam\+Remote\+Storage} {\bfseries Get\+I\+Steam\+Remote\+Storage} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aa5b8b625e9aa81b4085d14b1ff49d555}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aa5b8b625e9aa81b4085d14b1ff49d555}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_screenshots}{I\+Steam\+Screenshots} {\bfseries Get\+I\+Steam\+Screenshots} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a1afef6a2d0455b007ef868261902db61}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a1afef6a2d0455b007ef868261902db61}} 
+abstract uint {\bfseries Get\+I\+P\+C\+Call\+Count} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a9c99caf5ce6e08283e9cda987329cc0e}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a9c99caf5ce6e08283e9cda987329cc0e}} 
+abstract void {\bfseries Set\+Warning\+Message\+Hook} (Int\+Ptr p\+Function)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_af6e8b69ac807f67aa9b01f1fe3dc875d}\label{class_valve_1_1_steamworks_1_1_i_steam_client_af6e8b69ac807f67aa9b01f1fe3dc875d}} 
+abstract bool {\bfseries B\+Shutdown\+If\+All\+Pipes\+Closed} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aba1349315dcd3cb8405e48fe11ec40f9}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aba1349315dcd3cb8405e48fe11ec40f9}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p}{I\+Steam\+H\+T\+TP} {\bfseries Get\+I\+Steam\+H\+T\+TP} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_af6d0bbf0ff1d355a2cf84620d29ecd4b}\label{class_valve_1_1_steamworks_1_1_i_steam_client_af6d0bbf0ff1d355a2cf84620d29ecd4b}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_unified_messages}{I\+Steam\+Unified\+Messages} {\bfseries Get\+I\+Steam\+Unified\+Messages} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a0013c58ffdf9e79b4d48c8660a951d46}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a0013c58ffdf9e79b4d48c8660a951d46}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_controller}{I\+Steam\+Controller} {\bfseries Get\+I\+Steam\+Controller} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_ad5b1bddf7c83de151c4e8ec7f67c582f}\label{class_valve_1_1_steamworks_1_1_i_steam_client_ad5b1bddf7c83de151c4e8ec7f67c582f}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_u_g_c}{I\+Steam\+U\+GC} {\bfseries Get\+I\+Steam\+U\+GC} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_ab2aa297a72ecdb731916318b89db2827}\label{class_valve_1_1_steamworks_1_1_i_steam_client_ab2aa297a72ecdb731916318b89db2827}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_app_list}{I\+Steam\+App\+List} {\bfseries Get\+I\+Steam\+App\+List} (uint h\+Steam\+User, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a53e8d804fff94a3d7827c8965740346b}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a53e8d804fff94a3d7827c8965740346b}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_music}{I\+Steam\+Music} {\bfseries Get\+I\+Steam\+Music} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a8b6144b1890f43e2d71991127255c30d}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a8b6144b1890f43e2d71991127255c30d}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_music_remote}{I\+Steam\+Music\+Remote} {\bfseries Get\+I\+Steam\+Music\+Remote} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a8b6a5c868fa8c38d687869deed664062}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a8b6a5c868fa8c38d687869deed664062}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_h_t_m_l_surface}{I\+Steam\+H\+T\+M\+L\+Surface} {\bfseries Get\+I\+Steam\+H\+T\+M\+L\+Surface} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_a98fa8b46394b021c680c29cef221b003}\label{class_valve_1_1_steamworks_1_1_i_steam_client_a98fa8b46394b021c680c29cef221b003}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_inventory}{I\+Steam\+Inventory} {\bfseries Get\+I\+Steam\+Inventory} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_aa8ff02cfbdc9cd94262196d1974bdf76}\label{class_valve_1_1_steamworks_1_1_i_steam_client_aa8ff02cfbdc9cd94262196d1974bdf76}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_video}{I\+Steam\+Video} {\bfseries Get\+I\+Steam\+Video} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_client_ad9f8880b4d264a15cc6f6b13217f8420}\label{class_valve_1_1_steamworks_1_1_i_steam_client_ad9f8880b4d264a15cc6f6b13217f8420}} 
+abstract \hyperlink{class_valve_1_1_steamworks_1_1_i_steam_parental_settings}{I\+Steam\+Parental\+Settings} {\bfseries Get\+I\+Steam\+Parental\+Settings} (uint h\+Steamuser, uint h\+Steam\+Pipe, string pch\+Version)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 1699 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

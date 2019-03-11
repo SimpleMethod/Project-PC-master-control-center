@@ -1,0 +1,95 @@
+\hypertarget{class_i_steam_controller}{}\section{Dokumentacja klasy I\+Steam\+Controller}
+\label{class_i_steam_controller}\index{I\+Steam\+Controller@{I\+Steam\+Controller}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a2637db8d967b343d38b6ad3cc9382815}\label{class_i_steam_controller_a2637db8d967b343d38b6ad3cc9382815}} 
+virtual bool {\bfseries Init} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a890b4d6da07a7f082d97a599a453ba82}\label{class_i_steam_controller_a890b4d6da07a7f082d97a599a453ba82}} 
+virtual bool {\bfseries Shutdown} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a648bba21ca5b9a1543c378a9fdda84e3}\label{class_i_steam_controller_a648bba21ca5b9a1543c378a9fdda84e3}} 
+virtual void {\bfseries Run\+Frame} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_abe484713118bf029423d35d6e0f2f308}\label{class_i_steam_controller_abe484713118bf029423d35d6e0f2f308}} 
+virtual int {\bfseries Get\+Connected\+Controllers} (Controller\+Handle\+\_\+t $\ast$handles\+Out)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_af20ed753cb0f55fa58e988c9a35f0b7c}\label{class_i_steam_controller_af20ed753cb0f55fa58e988c9a35f0b7c}} 
+virtual bool {\bfseries Show\+Binding\+Panel} (Controller\+Handle\+\_\+t controller\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a532c1d2e1af82b7659a957e60e8ff833}\label{class_i_steam_controller_a532c1d2e1af82b7659a957e60e8ff833}} 
+virtual Controller\+Action\+Set\+Handle\+\_\+t {\bfseries Get\+Action\+Set\+Handle} (const char $\ast$psz\+Action\+Set\+Name)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a0524cff763ac0e766e3a17d90205d359}\label{class_i_steam_controller_a0524cff763ac0e766e3a17d90205d359}} 
+virtual void {\bfseries Activate\+Action\+Set} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Action\+Set\+Handle\+\_\+t action\+Set\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a1e42054a69a75f0e4829eb3889a1824d}\label{class_i_steam_controller_a1e42054a69a75f0e4829eb3889a1824d}} 
+virtual Controller\+Action\+Set\+Handle\+\_\+t {\bfseries Get\+Current\+Action\+Set} (Controller\+Handle\+\_\+t controller\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_afd95482937befad6b990f4057ba904cf}\label{class_i_steam_controller_afd95482937befad6b990f4057ba904cf}} 
+virtual Controller\+Digital\+Action\+Handle\+\_\+t {\bfseries Get\+Digital\+Action\+Handle} (const char $\ast$psz\+Action\+Name)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_ae5453dfb7bebddb25a3b0944177d2771}\label{class_i_steam_controller_ae5453dfb7bebddb25a3b0944177d2771}} 
+virtual \hyperlink{struct_controller_digital_action_data__t}{Controller\+Digital\+Action\+Data\+\_\+t} {\bfseries Get\+Digital\+Action\+Data} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Digital\+Action\+Handle\+\_\+t digital\+Action\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_aad5112eb0d9dfa7e8f1a80019d9051e7}\label{class_i_steam_controller_aad5112eb0d9dfa7e8f1a80019d9051e7}} 
+virtual int {\bfseries Get\+Digital\+Action\+Origins} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Action\+Set\+Handle\+\_\+t action\+Set\+Handle, Controller\+Digital\+Action\+Handle\+\_\+t digital\+Action\+Handle, E\+Controller\+Action\+Origin $\ast$origins\+Out)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a134a7b57651b9139793a531c33d59c92}\label{class_i_steam_controller_a134a7b57651b9139793a531c33d59c92}} 
+virtual Controller\+Analog\+Action\+Handle\+\_\+t {\bfseries Get\+Analog\+Action\+Handle} (const char $\ast$psz\+Action\+Name)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a3504851a3279626207ac5785593e0595}\label{class_i_steam_controller_a3504851a3279626207ac5785593e0595}} 
+virtual \hyperlink{struct_controller_analog_action_data__t}{Controller\+Analog\+Action\+Data\+\_\+t} {\bfseries Get\+Analog\+Action\+Data} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Analog\+Action\+Handle\+\_\+t analog\+Action\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_af0c0efd7c0afeffca32f7bd6feada903}\label{class_i_steam_controller_af0c0efd7c0afeffca32f7bd6feada903}} 
+virtual int {\bfseries Get\+Analog\+Action\+Origins} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Action\+Set\+Handle\+\_\+t action\+Set\+Handle, Controller\+Analog\+Action\+Handle\+\_\+t analog\+Action\+Handle, E\+Controller\+Action\+Origin $\ast$origins\+Out)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a84f64593ec2d40cecfde61915464bf34}\label{class_i_steam_controller_a84f64593ec2d40cecfde61915464bf34}} 
+virtual void {\bfseries Stop\+Analog\+Action\+Momentum} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Analog\+Action\+Handle\+\_\+t e\+Action)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a49edd2e296bc5b10b078f917f7f66277}\label{class_i_steam_controller_a49edd2e296bc5b10b078f917f7f66277}} 
+virtual void {\bfseries Trigger\+Haptic\+Pulse} (Controller\+Handle\+\_\+t controller\+Handle, E\+Steam\+Controller\+Pad e\+Target\+Pad, unsigned short us\+Duration\+Micro\+Sec)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a699227db6a69bfe20777c911ff53aaef}\label{class_i_steam_controller_a699227db6a69bfe20777c911ff53aaef}} 
+virtual void {\bfseries Trigger\+Repeated\+Haptic\+Pulse} (Controller\+Handle\+\_\+t controller\+Handle, E\+Steam\+Controller\+Pad e\+Target\+Pad, unsigned short us\+Duration\+Micro\+Sec, unsigned short us\+Off\+Micro\+Sec, unsigned short un\+Repeat, unsigned int n\+Flags)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_abc8f7971fa55b678dfa68e7de3b5d29b}\label{class_i_steam_controller_abc8f7971fa55b678dfa68e7de3b5d29b}} 
+virtual void {\bfseries Trigger\+Vibration} (Controller\+Handle\+\_\+t controller\+Handle, unsigned short us\+Left\+Speed, unsigned short us\+Right\+Speed)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a9c1034646ca337fd536d482a02fdf92d}\label{class_i_steam_controller_a9c1034646ca337fd536d482a02fdf92d}} 
+virtual void {\bfseries Set\+L\+E\+D\+Color} (Controller\+Handle\+\_\+t controller\+Handle, uint8 n\+ColorR, uint8 n\+ColorG, uint8 n\+ColorB, unsigned int n\+Flags)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a532449ca5edb68d66acc0dd81eca464e}\label{class_i_steam_controller_a532449ca5edb68d66acc0dd81eca464e}} 
+virtual int {\bfseries Get\+Gamepad\+Index\+For\+Controller} (Controller\+Handle\+\_\+t ul\+Controller\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a2d68c7ac856f9a60202cebcea97d5c66}\label{class_i_steam_controller_a2d68c7ac856f9a60202cebcea97d5c66}} 
+virtual Controller\+Handle\+\_\+t {\bfseries Get\+Controller\+For\+Gamepad\+Index} (int n\+Index)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a1a854b3f6b61c3dcf8e99d5246cd7eb2}\label{class_i_steam_controller_a1a854b3f6b61c3dcf8e99d5246cd7eb2}} 
+virtual \hyperlink{struct_controller_motion_data__t}{Controller\+Motion\+Data\+\_\+t} {\bfseries Get\+Motion\+Data} (Controller\+Handle\+\_\+t controller\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a59e47713e11840315a96cda3e45e61fe}\label{class_i_steam_controller_a59e47713e11840315a96cda3e45e61fe}} 
+virtual bool {\bfseries Show\+Digital\+Action\+Origins} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Digital\+Action\+Handle\+\_\+t digital\+Action\+Handle, float fl\+Scale, float fl\+X\+Position, float fl\+Y\+Position)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a07af89602431105c5b20ec126b90a8dd}\label{class_i_steam_controller_a07af89602431105c5b20ec126b90a8dd}} 
+virtual bool {\bfseries Show\+Analog\+Action\+Origins} (Controller\+Handle\+\_\+t controller\+Handle, Controller\+Analog\+Action\+Handle\+\_\+t analog\+Action\+Handle, float fl\+Scale, float fl\+X\+Position, float fl\+Y\+Position)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a2665be513c4364a65703a9f9c4d7bdc6}\label{class_i_steam_controller_a2665be513c4364a65703a9f9c4d7bdc6}} 
+virtual const char $\ast$ {\bfseries Get\+String\+For\+Action\+Origin} (E\+Controller\+Action\+Origin e\+Origin)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_controller_a329c7bc4076991b21015e727d6fd54be}\label{class_i_steam_controller_a329c7bc4076991b21015e727d6fd54be}} 
+virtual const char $\ast$ {\bfseries Get\+Glyph\+For\+Action\+Origin} (E\+Controller\+Action\+Origin e\+Origin)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 349 pliku isteamcontroller.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamcontroller.\+h\end{DoxyCompactItemize}

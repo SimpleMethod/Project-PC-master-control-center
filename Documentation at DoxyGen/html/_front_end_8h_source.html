@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC Master Control Center: Plik ÅºrÃ³dÅ‚owy C:/Users/Pathfinder/Projekt_cpp/Pre-Alpha Relase/PC_Master_Control_Center/FrontEnd.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC Master Control Center
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_front_end_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">FrontEnd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FrontEnd_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FrontEnd_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;BackEnd.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespace_front_end_space.html">   17</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_front_end_space.html">FrontEndSpace</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_front_end_space_1_1_front_end.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_front_end_space_1_1_front_end.html">FrontEnd</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> Leds_Color[11]={10,34,58,82,106,130,154,178,202,226,250};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> DLCisInstalated;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    AppId_t iddlc;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QString langtext;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> signal_led,signal_mainpage,signal_rightsidebar,send_led,signal_oled,signal_keypad,count;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QString signal_mainpage_comport_string;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> signal_mainpage_comport_int;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QString COMPORT1,COMPORT2,<a class="code" href="class_o_l_e_d.html">OLED</a>,NameOfArray;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> init_led=0;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> init_oled=0;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a34862f8e576914d06430af6b69e0bd11">FrontEnd</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_front_end_space_1_1_front_end.html#aff724e4666bfe62874ccb2cca78a7316">setsteamnick</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_front_end_space_1_1_front_end.html#addd3e353025e289f3c4459ba31509b92">setslangtext</a>();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_front_end_space_1_1_front_end.html#a22a63f3d5d496883ff44f8cd67aa4803">setslcomportname</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a8a5435d7eafbd875f277cc388d821fa2">checkdlc</a>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#ac318233ef4c7e9cb4a2535c3e616b084">initialization_QML</a>();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a3297ab537801620510042bc090f57388">initialization_QML_MAIN</a>();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#ad34026be0b78307a93d7438fb0366a49">initialization_QML_RIGHTBAR</a>();</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a9d9c153b4dccf230a2a674008c89bf58">initialization_QML_LED</a>();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#aab9bd39c5661dd230c540acd1c55829f">initialization_QML_OLED</a>();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;signals:</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a4e5b30b73f05767648e40d7a6975309b">sendSteamNick</a>(<span class="keywordtype">int</span> count);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#ad9fc5527da64900461e6eb2fa1328824">sendDLCInstalled</a>(<span class="keywordtype">int</span> count);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a14f87e260a6124690b950b8f5c5386bb">sendLangTextLed</a>(<span class="keywordtype">int</span> signal_led);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a62105794115a8df067985de358570358">sendLangTextRightSidebar</a>(<span class="keywordtype">int</span> signal_rightsidebar);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#ab3f7bd7a1edbf77329068f95edef900e">sendCOMPort</a>(<span class="keywordtype">int</span> signal_mainpage_comport_int);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a9d0313700deb9def1493a4705dc70ea3">sendLangTextOled</a>(<span class="keywordtype">int</span> signal_oled);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#a471196c0419065d1969e1e64b06e2cfe">receiveFromOledPage</a>(<span class="keywordtype">int</span> option,QString OLED);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_front_end_space_1_1_front_end.html#aa0d0691268086bcbd37570cc3c4c0be3">receiveFromLedPage</a>(<span class="keywordtype">int</span> option,<span class="keywordtype">int</span> value);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif // FrontEnd_H</span></div><div class="ttc" id="class_front_end_space_1_1_front_end_html_a8a5435d7eafbd875f277cc388d821fa2"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a8a5435d7eafbd875f277cc388d821fa2">FrontEndSpace::FrontEnd::checkdlc</a></div><div class="ttdeci">Q_INVOKABLE bool checkdlc()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00038">FrontEnd.cpp:38</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a34862f8e576914d06430af6b69e0bd11"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a34862f8e576914d06430af6b69e0bd11">FrontEndSpace::FrontEnd::FrontEnd</a></div><div class="ttdeci">FrontEnd(QObject *parent=nullptr)</div><div class="ttdoc">UÅ¼ywamy aby zapobiec nie jawnej konwersji typu. </div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00005">FrontEnd.cpp:5</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_addd3e353025e289f3c4459ba31509b92"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#addd3e353025e289f3c4459ba31509b92">FrontEndSpace::FrontEnd::setslangtext</a></div><div class="ttdeci">Q_INVOKABLE QString setslangtext()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00044">FrontEnd.cpp:44</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a4e5b30b73f05767648e40d7a6975309b"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a4e5b30b73f05767648e40d7a6975309b">FrontEndSpace::FrontEnd::sendSteamNick</a></div><div class="ttdeci">void sendSteamNick(int count)</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a9d0313700deb9def1493a4705dc70ea3"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a9d0313700deb9def1493a4705dc70ea3">FrontEndSpace::FrontEnd::sendLangTextOled</a></div><div class="ttdeci">void sendLangTextOled(int signal_oled)</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html">FrontEndSpace::FrontEnd</a></div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8h_source.html#l00019">FrontEnd.h:19</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a62105794115a8df067985de358570358"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a62105794115a8df067985de358570358">FrontEndSpace::FrontEnd::sendLangTextRightSidebar</a></div><div class="ttdeci">void sendLangTextRightSidebar(int signal_rightsidebar)</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a471196c0419065d1969e1e64b06e2cfe"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a471196c0419065d1969e1e64b06e2cfe">FrontEndSpace::FrontEnd::receiveFromOledPage</a></div><div class="ttdeci">void receiveFromOledPage(int option, QString OLED)</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00022">FrontEnd.cpp:22</a></div></div>
+<div class="ttc" id="class_o_l_e_d_html"><div class="ttname"><a href="class_o_l_e_d.html">OLED</a></div><div class="ttdoc">Klasa zajmuj¹ca siê konfiguracj¹ wyœwietlacza OLED, dziêki jej mamy podstawowe mo¿liwoœci obs³ugi wyœwi...</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_aab9bd39c5661dd230c540acd1c55829f"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#aab9bd39c5661dd230c540acd1c55829f">FrontEndSpace::FrontEnd::initialization_QML_OLED</a></div><div class="ttdeci">Q_INVOKABLE void initialization_QML_OLED()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00158">FrontEnd.cpp:158</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a9d9c153b4dccf230a2a674008c89bf58"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a9d9c153b4dccf230a2a674008c89bf58">FrontEndSpace::FrontEnd::initialization_QML_LED</a></div><div class="ttdeci">Q_INVOKABLE void initialization_QML_LED()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00136">FrontEnd.cpp:136</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_aff724e4666bfe62874ccb2cca78a7316"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#aff724e4666bfe62874ccb2cca78a7316">FrontEndSpace::FrontEnd::setsteamnick</a></div><div class="ttdeci">Q_INVOKABLE QString setsteamnick()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00034">FrontEnd.cpp:34</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_ab3f7bd7a1edbf77329068f95edef900e"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#ab3f7bd7a1edbf77329068f95edef900e">FrontEndSpace::FrontEnd::sendCOMPort</a></div><div class="ttdeci">void sendCOMPort(int signal_mainpage_comport_int)</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_ad9fc5527da64900461e6eb2fa1328824"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#ad9fc5527da64900461e6eb2fa1328824">FrontEndSpace::FrontEnd::sendDLCInstalled</a></div><div class="ttdeci">void sendDLCInstalled(int count)</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a22a63f3d5d496883ff44f8cd67aa4803"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a22a63f3d5d496883ff44f8cd67aa4803">FrontEndSpace::FrontEnd::setslcomportname</a></div><div class="ttdeci">Q_INVOKABLE QString setslcomportname()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00048">FrontEnd.cpp:48</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_ad34026be0b78307a93d7438fb0366a49"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#ad34026be0b78307a93d7438fb0366a49">FrontEndSpace::FrontEnd::initialization_QML_RIGHTBAR</a></div><div class="ttdeci">Q_INVOKABLE void initialization_QML_RIGHTBAR()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00098">FrontEnd.cpp:98</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a14f87e260a6124690b950b8f5c5386bb"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a14f87e260a6124690b950b8f5c5386bb">FrontEndSpace::FrontEnd::sendLangTextLed</a></div><div class="ttdeci">void sendLangTextLed(int signal_led)</div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_a3297ab537801620510042bc090f57388"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#a3297ab537801620510042bc090f57388">FrontEndSpace::FrontEnd::initialization_QML_MAIN</a></div><div class="ttdeci">Q_INVOKABLE void initialization_QML_MAIN()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00057">FrontEnd.cpp:57</a></div></div>
+<div class="ttc" id="namespace_front_end_space_html"><div class="ttname"><a href="namespace_front_end_space.html">FrontEndSpace</a></div><div class="ttdoc">Przestrzeni nazw zajmujÄ…ca siÄ™ Front-Endem aplikacji. Jest to klasa zajmujÄ…ca siÄ™ obsÅ‚ugÄ… aplikacji o...</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8h_source.html#l00017">FrontEnd.h:17</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_ac318233ef4c7e9cb4a2535c3e616b084"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#ac318233ef4c7e9cb4a2535c3e616b084">FrontEndSpace::FrontEnd::initialization_QML</a></div><div class="ttdeci">Q_INVOKABLE void initialization_QML()</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00052">FrontEnd.cpp:52</a></div></div>
+<div class="ttc" id="class_front_end_space_1_1_front_end_html_aa0d0691268086bcbd37570cc3c4c0be3"><div class="ttname"><a href="class_front_end_space_1_1_front_end.html#aa0d0691268086bcbd37570cc3c4c0be3">FrontEndSpace::FrontEnd::receiveFromLedPage</a></div><div class="ttdeci">void receiveFromLedPage(int option, int value)</div><div class="ttdef"><b>Definition:</b> <a href="_front_end_8cpp_source.html#l00010">FrontEnd.cpp:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d4cf0c629a02a0e52bab8a9e407a03d8.html">Projekt_cpp</a></li><li class="navelem"><a class="el" href="dir_b7bc0eac6848bd7f4ffab3bda14d6167.html">Pre-Alpha Relase</a></li><li class="navelem"><a class="el" href="dir_9968b0add0a932db8b4dbc993213e28e.html">PC_Master_Control_Center</a></li><li class="navelem"><b>FrontEnd.h</b></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

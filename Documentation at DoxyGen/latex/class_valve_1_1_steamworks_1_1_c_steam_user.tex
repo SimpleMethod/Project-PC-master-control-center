@@ -1,0 +1,116 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+C\+Steam\+User}
+\label{class_valve_1_1_steamworks_1_1_c_steam_user}\index{Valve.\+Steamworks.\+C\+Steam\+User@{Valve.\+Steamworks.\+C\+Steam\+User}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+C\+Steam\+User\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_c_steam_user}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_ab0511020b27d41d255b3f561919e9c61}\label{class_valve_1_1_steamworks_1_1_c_steam_user_ab0511020b27d41d255b3f561919e9c61}} 
+{\bfseries C\+Steam\+User} (Int\+Ptr Steam\+User)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a8ef616bb07361eadaace0f9f5dc712fb}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a8ef616bb07361eadaace0f9f5dc712fb}} 
+override Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a5e058c6559ad19e1964b162066064094}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a5e058c6559ad19e1964b162066064094}} 
+override uint {\bfseries Get\+H\+Steam\+User} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a1c02870163bb4ac81ce464ac377decde}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a1c02870163bb4ac81ce464ac377decde}} 
+override bool {\bfseries B\+Logged\+On} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a6b173b42056b04d25f68c6f9f23958ae}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a6b173b42056b04d25f68c6f9f23958ae}} 
+override ulong {\bfseries Get\+Steam\+ID} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a0774feba5896b7407cc818b756f9694f}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a0774feba5896b7407cc818b756f9694f}} 
+override int {\bfseries Initiate\+Game\+Connection} (Int\+Ptr p\+Auth\+Blob, int cb\+Max\+Auth\+Blob, ulong steam\+I\+D\+Game\+Server, uint un\+I\+P\+Server, char us\+Port\+Server, bool b\+Secure)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a1c041a5393b810a3e85000487fe70a39}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a1c041a5393b810a3e85000487fe70a39}} 
+override void {\bfseries Terminate\+Game\+Connection} (uint un\+I\+P\+Server, char us\+Port\+Server)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a2441ca19321274e6f4b2b08ca010687c}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a2441ca19321274e6f4b2b08ca010687c}} 
+override void {\bfseries Track\+App\+Usage\+Event} (ulong game\+ID, int e\+App\+Usage\+Event, string pch\+Extra\+Info)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a662b9e336f3ac5ba1432de76e1defc72}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a662b9e336f3ac5ba1432de76e1defc72}} 
+override bool {\bfseries Get\+User\+Data\+Folder} (string pch\+Buffer, int cub\+Buffer)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a317a656c6f517478ad5e8b8849e9451f}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a317a656c6f517478ad5e8b8849e9451f}} 
+override void {\bfseries Start\+Voice\+Recording} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_aaaa40d7ed3e5782685fa82e65aa7349a}\label{class_valve_1_1_steamworks_1_1_c_steam_user_aaaa40d7ed3e5782685fa82e65aa7349a}} 
+override void {\bfseries Stop\+Voice\+Recording} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a4e73fee9b69d4d6b66e16a105d869262}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a4e73fee9b69d4d6b66e16a105d869262}} 
+override uint {\bfseries Get\+Available\+Voice} (ref uint pcb\+Compressed, ref uint pcb\+Uncompressed\+\_\+\+Deprecated, uint n\+Uncompressed\+Voice\+Desired\+Sample\+Rate\+\_\+\+Deprecated)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_aae3486a6c64e431811b57dde4a5fe0dc}\label{class_valve_1_1_steamworks_1_1_c_steam_user_aae3486a6c64e431811b57dde4a5fe0dc}} 
+override uint {\bfseries Get\+Voice} (bool b\+Want\+Compressed, Int\+Ptr p\+Dest\+Buffer, uint cb\+Dest\+Buffer\+Size, ref uint n\+Bytes\+Written, bool b\+Want\+Uncompressed\+\_\+\+Deprecated, Int\+Ptr p\+Uncompressed\+Dest\+Buffer\+\_\+\+Deprecated, uint cb\+Uncompressed\+Dest\+Buffer\+Size\+\_\+\+Deprecated, ref uint n\+Uncompress\+Bytes\+Written\+\_\+\+Deprecated, uint n\+Uncompressed\+Voice\+Desired\+Sample\+Rate\+\_\+\+Deprecated)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_ac7468e07cdbd3ddb4965e296023a3164}\label{class_valve_1_1_steamworks_1_1_c_steam_user_ac7468e07cdbd3ddb4965e296023a3164}} 
+override uint {\bfseries Decompress\+Voice} (Int\+Ptr p\+Compressed, uint cb\+Compressed, Int\+Ptr p\+Dest\+Buffer, uint cb\+Dest\+Buffer\+Size, ref uint n\+Bytes\+Written, uint n\+Desired\+Sample\+Rate)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a94685c26852ffaf27f904b5ee918d7ee}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a94685c26852ffaf27f904b5ee918d7ee}} 
+override uint {\bfseries Get\+Voice\+Optimal\+Sample\+Rate} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a67bb601b9c856e3cb1bd28a803b18857}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a67bb601b9c856e3cb1bd28a803b18857}} 
+override uint {\bfseries Get\+Auth\+Session\+Ticket} (Int\+Ptr p\+Ticket, int cb\+Max\+Ticket, ref uint pcb\+Ticket)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_ab79fc2c8f0496ba038f05652bc36f5ec}\label{class_valve_1_1_steamworks_1_1_c_steam_user_ab79fc2c8f0496ba038f05652bc36f5ec}} 
+override uint {\bfseries Begin\+Auth\+Session} (Int\+Ptr p\+Auth\+Ticket, int cb\+Auth\+Ticket, ulong steam\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_adbccafcdfbfe71e0a9616017bd77cd34}\label{class_valve_1_1_steamworks_1_1_c_steam_user_adbccafcdfbfe71e0a9616017bd77cd34}} 
+override void {\bfseries End\+Auth\+Session} (ulong steam\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_af90f369761d824ba1fb909dbd2508bd6}\label{class_valve_1_1_steamworks_1_1_c_steam_user_af90f369761d824ba1fb909dbd2508bd6}} 
+override void {\bfseries Cancel\+Auth\+Ticket} (uint h\+Auth\+Ticket)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a4c1e0ad2d6a66c66381a446677748a86}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a4c1e0ad2d6a66c66381a446677748a86}} 
+override uint {\bfseries User\+Has\+License\+For\+App} (ulong steam\+ID, uint app\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_ad96fbcf987252459e5d520239fedb51c}\label{class_valve_1_1_steamworks_1_1_c_steam_user_ad96fbcf987252459e5d520239fedb51c}} 
+override bool {\bfseries B\+Is\+Behind\+N\+AT} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a45765098145f8be39e449aee794d4f86}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a45765098145f8be39e449aee794d4f86}} 
+override void {\bfseries Advertise\+Game} (ulong steam\+I\+D\+Game\+Server, uint un\+I\+P\+Server, char us\+Port\+Server)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_af1641c9be19e0c15d12d84d71ce20ef2}\label{class_valve_1_1_steamworks_1_1_c_steam_user_af1641c9be19e0c15d12d84d71ce20ef2}} 
+override ulong {\bfseries Request\+Encrypted\+App\+Ticket} (Int\+Ptr p\+Data\+To\+Include, int cb\+Data\+To\+Include)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_aa0b3b591add13dab591f02a98ca526d4}\label{class_valve_1_1_steamworks_1_1_c_steam_user_aa0b3b591add13dab591f02a98ca526d4}} 
+override bool {\bfseries Get\+Encrypted\+App\+Ticket} (Int\+Ptr p\+Ticket, int cb\+Max\+Ticket, ref uint pcb\+Ticket)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_af52d1bf61b5a87ac40dd7bbd1c5bcc58}\label{class_valve_1_1_steamworks_1_1_c_steam_user_af52d1bf61b5a87ac40dd7bbd1c5bcc58}} 
+override int {\bfseries Get\+Game\+Badge\+Level} (int n\+Series, bool b\+Foil)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a54b14e144c97f9da511b82c3c3517f90}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a54b14e144c97f9da511b82c3c3517f90}} 
+override int {\bfseries Get\+Player\+Steam\+Level} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a9a728ef0d5e5da864218f7e6d47d6bad}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a9a728ef0d5e5da864218f7e6d47d6bad}} 
+override ulong {\bfseries Request\+Store\+Auth\+U\+RL} (string pch\+Redirect\+U\+RL)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_a1cd8cd579ff44ce8b5fd06cece8f0fee}\label{class_valve_1_1_steamworks_1_1_c_steam_user_a1cd8cd579ff44ce8b5fd06cece8f0fee}} 
+override bool {\bfseries B\+Is\+Phone\+Verified} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_aa2e9ec4ef2ce98b34362fba85f26cc73}\label{class_valve_1_1_steamworks_1_1_c_steam_user_aa2e9ec4ef2ce98b34362fba85f26cc73}} 
+override bool {\bfseries B\+Is\+Two\+Factor\+Enabled} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_aaac4fe71e5d6a0773fbbb58326ac73ef}\label{class_valve_1_1_steamworks_1_1_c_steam_user_aaac4fe71e5d6a0773fbbb58326ac73ef}} 
+override bool {\bfseries B\+Is\+Phone\+Identifying} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_c_steam_user_af7135c38474c4121b1b5e8a133441cd7}\label{class_valve_1_1_steamworks_1_1_c_steam_user_af7135c38474c4121b1b5e8a133441cd7}} 
+override bool {\bfseries B\+Is\+Phone\+Requiring\+Verification} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 2766 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

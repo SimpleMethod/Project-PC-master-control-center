@@ -1,0 +1,140 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+I\+Steam\+Matchmaking}
+\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking}\index{Valve.\+Steamworks.\+I\+Steam\+Matchmaking@{Valve.\+Steamworks.\+I\+Steam\+Matchmaking}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+I\+Steam\+Matchmaking\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_i_steam_matchmaking}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a1b10a8497ff482326048828354633f03}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a1b10a8497ff482326048828354633f03}} 
+abstract Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa2c7b2884617c61ad02ded321d7b62e1}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa2c7b2884617c61ad02ded321d7b62e1}} 
+abstract int {\bfseries Get\+Favorite\+Game\+Count} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a9bb901ec55d3d053ec1b45f325445802}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a9bb901ec55d3d053ec1b45f325445802}} 
+abstract bool {\bfseries Get\+Favorite\+Game} (int i\+Game, ref uint pn\+App\+ID, ref uint pn\+IP, ref char pn\+Conn\+Port, ref char pn\+Query\+Port, ref uint pun\+Flags, ref uint p\+R\+Time32\+Last\+Played\+On\+Server)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a771af0c2d597fd008f06a7d9eb0ab5f4}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a771af0c2d597fd008f06a7d9eb0ab5f4}} 
+abstract int {\bfseries Add\+Favorite\+Game} (uint n\+App\+ID, uint n\+IP, char n\+Conn\+Port, char n\+Query\+Port, uint un\+Flags, uint r\+Time32\+Last\+Played\+On\+Server)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a0f339f13e108fbed2239487fbe680b86}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a0f339f13e108fbed2239487fbe680b86}} 
+abstract bool {\bfseries Remove\+Favorite\+Game} (uint n\+App\+ID, uint n\+IP, char n\+Conn\+Port, char n\+Query\+Port, uint un\+Flags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a75e3bbd72148a817b2c644970ac66c5d}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a75e3bbd72148a817b2c644970ac66c5d}} 
+abstract ulong {\bfseries Request\+Lobby\+List} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7c1bed67d911ea47b6d8b410b2e36f19}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7c1bed67d911ea47b6d8b410b2e36f19}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+String\+Filter} (string pch\+Key\+To\+Match, string pch\+Value\+To\+Match, uint e\+Comparison\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a81b89263ff569f73baaa372f137a8f07}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a81b89263ff569f73baaa372f137a8f07}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+Numerical\+Filter} (string pch\+Key\+To\+Match, int n\+Value\+To\+Match, uint e\+Comparison\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a81cf3e05b88731f20d3879586e98a29b}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a81cf3e05b88731f20d3879586e98a29b}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+Near\+Value\+Filter} (string pch\+Key\+To\+Match, int n\+Value\+To\+Be\+Close\+To)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a71378a53d362ea6d618d7cb090c1095d}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a71378a53d362ea6d618d7cb090c1095d}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+Filter\+Slots\+Available} (int n\+Slots\+Available)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a2891d8cd94f25ffa533b11753dec4008}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a2891d8cd94f25ffa533b11753dec4008}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+Distance\+Filter} (uint e\+Lobby\+Distance\+Filter)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a12681ea090a46c171dca3479545b91a6}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a12681ea090a46c171dca3479545b91a6}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+Result\+Count\+Filter} (int c\+Max\+Results)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a54fe1f635b5e6d592a06faff52ce3df6}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a54fe1f635b5e6d592a06faff52ce3df6}} 
+abstract void {\bfseries Add\+Request\+Lobby\+List\+Compatible\+Members\+Filter} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a760332baefc766d8d82d5bec89bdbc7b}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a760332baefc766d8d82d5bec89bdbc7b}} 
+abstract ulong {\bfseries Get\+Lobby\+By\+Index} (int i\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a53fa7cfbec4cabb5b98a67fe932c3ab5}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a53fa7cfbec4cabb5b98a67fe932c3ab5}} 
+abstract ulong {\bfseries Create\+Lobby} (uint e\+Lobby\+Type, int c\+Max\+Members)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aaa8703ea4e40e3a23edd8881f828a455}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aaa8703ea4e40e3a23edd8881f828a455}} 
+abstract ulong {\bfseries Join\+Lobby} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aac62c6dfe4a84f9ab54cc3c2b9a84e49}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aac62c6dfe4a84f9ab54cc3c2b9a84e49}} 
+abstract void {\bfseries Leave\+Lobby} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a45facdfabfd56030979e8fbb50b5e6c7}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a45facdfabfd56030979e8fbb50b5e6c7}} 
+abstract bool {\bfseries Invite\+User\+To\+Lobby} (ulong steam\+I\+D\+Lobby, ulong steam\+I\+D\+Invitee)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a71acc626dbe4ecf812fdbe6c47b9cdc7}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a71acc626dbe4ecf812fdbe6c47b9cdc7}} 
+abstract int {\bfseries Get\+Num\+Lobby\+Members} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a9b258de9592d2a3911c3c83cdb83a4bf}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a9b258de9592d2a3911c3c83cdb83a4bf}} 
+abstract ulong {\bfseries Get\+Lobby\+Member\+By\+Index} (ulong steam\+I\+D\+Lobby, int i\+Member)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7d9a66e6f55a1792d741f1444fb901c4}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7d9a66e6f55a1792d741f1444fb901c4}} 
+abstract string {\bfseries Get\+Lobby\+Data} (ulong steam\+I\+D\+Lobby, string pch\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aadce862e0242b1738d45bed4749bf2f8}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aadce862e0242b1738d45bed4749bf2f8}} 
+abstract bool {\bfseries Set\+Lobby\+Data} (ulong steam\+I\+D\+Lobby, string pch\+Key, string pch\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7990565d56a4a0b88c219759fa9ba98c}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7990565d56a4a0b88c219759fa9ba98c}} 
+abstract int {\bfseries Get\+Lobby\+Data\+Count} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a14891917d2f464e84f874f1c39169955}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a14891917d2f464e84f874f1c39169955}} 
+abstract bool {\bfseries Get\+Lobby\+Data\+By\+Index} (ulong steam\+I\+D\+Lobby, int i\+Lobby\+Data, string pch\+Key, int cch\+Key\+Buffer\+Size, string pch\+Value, int cch\+Value\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa1fa5686af31f7eac9d2855ab172acde}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa1fa5686af31f7eac9d2855ab172acde}} 
+abstract bool {\bfseries Delete\+Lobby\+Data} (ulong steam\+I\+D\+Lobby, string pch\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a032e962fc5fc1df63614290e10a1eae7}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a032e962fc5fc1df63614290e10a1eae7}} 
+abstract string {\bfseries Get\+Lobby\+Member\+Data} (ulong steam\+I\+D\+Lobby, ulong steam\+I\+D\+User, string pch\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aeff40f91b8c1960e5011e6452c4c53f5}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aeff40f91b8c1960e5011e6452c4c53f5}} 
+abstract void {\bfseries Set\+Lobby\+Member\+Data} (ulong steam\+I\+D\+Lobby, string pch\+Key, string pch\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a8ebd7b15662e681dd52b19f108d72759}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a8ebd7b15662e681dd52b19f108d72759}} 
+abstract bool {\bfseries Send\+Lobby\+Chat\+Msg} (ulong steam\+I\+D\+Lobby, Int\+Ptr pv\+Msg\+Body, int cub\+Msg\+Body)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa218bd1f15e69745ece416dd3d4ea564}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa218bd1f15e69745ece416dd3d4ea564}} 
+abstract int {\bfseries Get\+Lobby\+Chat\+Entry} (ulong steam\+I\+D\+Lobby, int i\+Chat\+ID, out \hyperlink{struct_valve_1_1_steamworks_1_1_c_steam_i_d}{C\+Steam\+ID} p\+Steam\+I\+D\+User, Int\+Ptr pv\+Data, int cub\+Data, ref uint pe\+Chat\+Entry\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa288e2ee744dcecb1571f7a1ca30151e}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_aa288e2ee744dcecb1571f7a1ca30151e}} 
+abstract bool {\bfseries Request\+Lobby\+Data} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a1df874959a5adf99a569c4928830de87}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a1df874959a5adf99a569c4928830de87}} 
+abstract void {\bfseries Set\+Lobby\+Game\+Server} (ulong steam\+I\+D\+Lobby, uint un\+Game\+Server\+IP, char un\+Game\+Server\+Port, ulong steam\+I\+D\+Game\+Server)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a8884bd6aed07bd995f11837b9f6f63dd}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a8884bd6aed07bd995f11837b9f6f63dd}} 
+abstract bool {\bfseries Get\+Lobby\+Game\+Server} (ulong steam\+I\+D\+Lobby, ref uint pun\+Game\+Server\+IP, ref char pun\+Game\+Server\+Port, out \hyperlink{struct_valve_1_1_steamworks_1_1_c_steam_i_d}{C\+Steam\+ID} psteam\+I\+D\+Game\+Server)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a0256112144a894e1fb29af8934ae7090}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a0256112144a894e1fb29af8934ae7090}} 
+abstract bool {\bfseries Set\+Lobby\+Member\+Limit} (ulong steam\+I\+D\+Lobby, int c\+Max\+Members)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a49689e5ad1af7d6e264982d9c3dcb174}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a49689e5ad1af7d6e264982d9c3dcb174}} 
+abstract int {\bfseries Get\+Lobby\+Member\+Limit} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_ae58e3667786495a325785ffc48dbe408}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_ae58e3667786495a325785ffc48dbe408}} 
+abstract bool {\bfseries Set\+Lobby\+Type} (ulong steam\+I\+D\+Lobby, uint e\+Lobby\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_acb3142f585be8ffe25fe264896e61864}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_acb3142f585be8ffe25fe264896e61864}} 
+abstract bool {\bfseries Set\+Lobby\+Joinable} (ulong steam\+I\+D\+Lobby, bool b\+Lobby\+Joinable)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_ab180f538d1c2062a6e315d4b39d2ddb6}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_ab180f538d1c2062a6e315d4b39d2ddb6}} 
+abstract ulong {\bfseries Get\+Lobby\+Owner} (ulong steam\+I\+D\+Lobby)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7bf3b87a95ee0b8493d88f4955d2df91}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a7bf3b87a95ee0b8493d88f4955d2df91}} 
+abstract bool {\bfseries Set\+Lobby\+Owner} (ulong steam\+I\+D\+Lobby, ulong steam\+I\+D\+New\+Owner)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a2610b64c2285e656a044ee7ac0f6fb12}\label{class_valve_1_1_steamworks_1_1_i_steam_matchmaking_a2610b64c2285e656a044ee7ac0f6fb12}} 
+abstract bool {\bfseries Set\+Linked\+Lobby} (ulong steam\+I\+D\+Lobby, ulong steam\+I\+D\+Lobby\+Dependent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 1884 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

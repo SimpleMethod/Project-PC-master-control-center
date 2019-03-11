@@ -1,0 +1,248 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+I\+Steam\+U\+GC}
+\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c}\index{Valve.\+Steamworks.\+I\+Steam\+U\+GC@{Valve.\+Steamworks.\+I\+Steam\+U\+GC}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+I\+Steam\+U\+GC\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_i_steam_u_g_c}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6354f35fd2711469cfea942f8886ebbf}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6354f35fd2711469cfea942f8886ebbf}} 
+abstract Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_adcfb45f898276a6479ec0f0cd53c4ded}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_adcfb45f898276a6479ec0f0cd53c4ded}} 
+abstract ulong {\bfseries Create\+Query\+User\+U\+G\+C\+Request} (uint un\+Account\+ID, uint e\+List\+Type, uint e\+Matching\+U\+G\+C\+Type, uint e\+Sort\+Order, uint n\+Creator\+App\+ID, uint n\+Consumer\+App\+ID, uint un\+Page)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a7244207ccb170f9024987de342d49ff2}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a7244207ccb170f9024987de342d49ff2}} 
+abstract ulong {\bfseries Create\+Query\+All\+U\+G\+C\+Request} (uint e\+Query\+Type, uint e\+Matchinge\+Matching\+U\+G\+C\+Type\+File\+Type, uint n\+Creator\+App\+ID, uint n\+Consumer\+App\+ID, uint un\+Page)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a2d56ea26dd0132ce857ca82b0bb604d6}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a2d56ea26dd0132ce857ca82b0bb604d6}} 
+abstract ulong {\bfseries Create\+Query\+U\+G\+C\+Details\+Request} (ref ulong pvec\+Published\+File\+ID, uint un\+Num\+Published\+File\+I\+Ds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_afc4e4e5f52ea628c0a80e1ea361a6933}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_afc4e4e5f52ea628c0a80e1ea361a6933}} 
+abstract ulong {\bfseries Send\+Query\+U\+G\+C\+Request} (ulong handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5eaaa1368abb8d890874ebc2a6d942f1}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5eaaa1368abb8d890874ebc2a6d942f1}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Result} (ulong handle, uint index, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_u_g_c_details__t}{Steam\+U\+G\+C\+Details\+\_\+t} p\+Details)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_abe3456d64c7beb701b36e37ec5f10d9c}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_abe3456d64c7beb701b36e37ec5f10d9c}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Preview\+U\+RL} (ulong handle, uint index, out string pch\+U\+RL)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1b880ec071deb9c125da1cdfea02b791}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1b880ec071deb9c125da1cdfea02b791}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Metadata} (ulong handle, uint index, out string pch\+Metadata)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a8df37156fe1feb67a21076f2750be29e}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a8df37156fe1feb67a21076f2750be29e}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Children} (ulong handle, uint index, ref ulong pvec\+Published\+File\+ID, uint c\+Max\+Entries)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a710365d8762597ea4d23c593626f9364}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a710365d8762597ea4d23c593626f9364}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Statistic} (ulong handle, uint index, uint e\+Stat\+Type, ref ulong p\+Stat\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a50725c7b13708a78b87c2de3d6c15453}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a50725c7b13708a78b87c2de3d6c15453}} 
+abstract uint {\bfseries Get\+Query\+U\+G\+C\+Num\+Additional\+Previews} (ulong handle, uint index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5befb876873f5361e00f16269a65e73c}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5befb876873f5361e00f16269a65e73c}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Additional\+Preview} (ulong handle, uint index, uint preview\+Index, out string pch\+U\+R\+L\+Or\+Video\+ID, out string pch\+Original\+File\+Name, uint cch\+Original\+File\+Name\+Size, ref uint p\+Preview\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a2bead6b375e18678c54acd30acde3128}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a2bead6b375e18678c54acd30acde3128}} 
+abstract uint {\bfseries Get\+Query\+U\+G\+C\+Num\+Key\+Value\+Tags} (ulong handle, uint index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5c8f40c55a213405a692f5769ea47f52}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5c8f40c55a213405a692f5769ea47f52}} 
+abstract bool {\bfseries Get\+Query\+U\+G\+C\+Key\+Value\+Tag} (ulong handle, uint index, uint key\+Value\+Tag\+Index, out string pch\+Key, out string pch\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aaac1edef3b58b4a7c9ea2f70ab640699}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aaac1edef3b58b4a7c9ea2f70ab640699}} 
+abstract bool {\bfseries Release\+Query\+U\+G\+C\+Request} (ulong handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_afd02491f5e314ac3b99a1326e377f569}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_afd02491f5e314ac3b99a1326e377f569}} 
+abstract bool {\bfseries Add\+Required\+Tag} (ulong handle, string p\+Tag\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_acd075382a6786ae99d2c9e5aec72a5f0}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_acd075382a6786ae99d2c9e5aec72a5f0}} 
+abstract bool {\bfseries Add\+Excluded\+Tag} (ulong handle, string p\+Tag\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a9f9bcd9aa8faccd045a7da65223d61de}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a9f9bcd9aa8faccd045a7da65223d61de}} 
+abstract bool {\bfseries Set\+Return\+Only\+I\+Ds} (ulong handle, bool b\+Return\+Only\+I\+Ds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aeaf5498705eae39845d5c3553d283930}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aeaf5498705eae39845d5c3553d283930}} 
+abstract bool {\bfseries Set\+Return\+Key\+Value\+Tags} (ulong handle, bool b\+Return\+Key\+Value\+Tags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ab8f148d1663f1ecfae61c157b1b901ba}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ab8f148d1663f1ecfae61c157b1b901ba}} 
+abstract bool {\bfseries Set\+Return\+Long\+Description} (ulong handle, bool b\+Return\+Long\+Description)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac17c1fdd4b06e7afdcd7523a7c8ef261}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac17c1fdd4b06e7afdcd7523a7c8ef261}} 
+abstract bool {\bfseries Set\+Return\+Metadata} (ulong handle, bool b\+Return\+Metadata)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a4736772106a0e8b088a9fc139b7a53c9}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a4736772106a0e8b088a9fc139b7a53c9}} 
+abstract bool {\bfseries Set\+Return\+Children} (ulong handle, bool b\+Return\+Children)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ae71dc26b8d33184dbf03ec8d81395284}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ae71dc26b8d33184dbf03ec8d81395284}} 
+abstract bool {\bfseries Set\+Return\+Additional\+Previews} (ulong handle, bool b\+Return\+Additional\+Previews)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a124b3a5013445210006d0393b92f353e}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a124b3a5013445210006d0393b92f353e}} 
+abstract bool {\bfseries Set\+Return\+Total\+Only} (ulong handle, bool b\+Return\+Total\+Only)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ada453f7c1e566f732e70bb24dd615ba7}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ada453f7c1e566f732e70bb24dd615ba7}} 
+abstract bool {\bfseries Set\+Return\+Playtime\+Stats} (ulong handle, uint un\+Days)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6048597323ee9d5848fe4a2676599dc8}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6048597323ee9d5848fe4a2676599dc8}} 
+abstract bool {\bfseries Set\+Language} (ulong handle, string pch\+Language)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ae955eb13c7bc6c6c9037f50e26a80bb8}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ae955eb13c7bc6c6c9037f50e26a80bb8}} 
+abstract bool {\bfseries Set\+Allow\+Cached\+Response} (ulong handle, uint un\+Max\+Age\+Seconds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5e25a55ffd5b5a127ed51ea32b324bd3}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5e25a55ffd5b5a127ed51ea32b324bd3}} 
+abstract bool {\bfseries Set\+Cloud\+File\+Name\+Filter} (ulong handle, string p\+Match\+Cloud\+File\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a351a6ca6d3018e806d0d794416b40046}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a351a6ca6d3018e806d0d794416b40046}} 
+abstract bool {\bfseries Set\+Match\+Any\+Tag} (ulong handle, bool b\+Match\+Any\+Tag)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ae37b4601c179542fec006df348416524}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ae37b4601c179542fec006df348416524}} 
+abstract bool {\bfseries Set\+Search\+Text} (ulong handle, string p\+Search\+Text)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_abe56fcce02e5d2f2ebeed829ffcc777c}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_abe56fcce02e5d2f2ebeed829ffcc777c}} 
+abstract bool {\bfseries Set\+Ranked\+By\+Trend\+Days} (ulong handle, uint un\+Days)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a145feefdc0d09afde80d0f590ee5e23b}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a145feefdc0d09afde80d0f590ee5e23b}} 
+abstract bool {\bfseries Add\+Required\+Key\+Value\+Tag} (ulong handle, string p\+Key, string p\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ad6f931d4eaf5408fe973ec11cc8a1ab5}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ad6f931d4eaf5408fe973ec11cc8a1ab5}} 
+abstract ulong {\bfseries Request\+U\+G\+C\+Details} (ulong n\+Published\+File\+ID, uint un\+Max\+Age\+Seconds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a80d4eb9c577bb96c08d3caf61ec267e4}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a80d4eb9c577bb96c08d3caf61ec267e4}} 
+abstract ulong {\bfseries Create\+Item} (uint n\+Consumer\+App\+Id, uint e\+File\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ace761f860ad25d731128f5f51adc7765}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ace761f860ad25d731128f5f51adc7765}} 
+abstract ulong {\bfseries Start\+Item\+Update} (uint n\+Consumer\+App\+Id, ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1b98a0a29af0665d85fb0daf87387824}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1b98a0a29af0665d85fb0daf87387824}} 
+abstract bool {\bfseries Set\+Item\+Title} (ulong handle, string pch\+Title)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6f03670294cd1e38fe18e196e811c695}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6f03670294cd1e38fe18e196e811c695}} 
+abstract bool {\bfseries Set\+Item\+Description} (ulong handle, string pch\+Description)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a57daaf283f40de7e53d3aa2d8889361e}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a57daaf283f40de7e53d3aa2d8889361e}} 
+abstract bool {\bfseries Set\+Item\+Update\+Language} (ulong handle, string pch\+Language)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a695bcb1ea8d46c66c0a6fbc5d86fb598}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a695bcb1ea8d46c66c0a6fbc5d86fb598}} 
+abstract bool {\bfseries Set\+Item\+Metadata} (ulong handle, string pch\+Meta\+Data)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac7d8de3bd2ba0b2a76de7f7aba42bae7}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac7d8de3bd2ba0b2a76de7f7aba42bae7}} 
+abstract bool {\bfseries Set\+Item\+Visibility} (ulong handle, uint e\+Visibility)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6447178e7f023078842ed48d18755d9b}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6447178e7f023078842ed48d18755d9b}} 
+abstract bool {\bfseries Set\+Item\+Tags} (ulong update\+Handle, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Tags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ab81805a14474b53a9e6aa6e36267ae83}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ab81805a14474b53a9e6aa6e36267ae83}} 
+abstract bool {\bfseries Set\+Item\+Content} (ulong handle, string psz\+Content\+Folder)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1bdd6830092ec68053f454adcb251f39}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1bdd6830092ec68053f454adcb251f39}} 
+abstract bool {\bfseries Set\+Item\+Preview} (ulong handle, string psz\+Preview\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6892ade790740f9279e6dc58d252b4fb}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a6892ade790740f9279e6dc58d252b4fb}} 
+abstract bool {\bfseries Remove\+Item\+Key\+Value\+Tags} (ulong handle, string pch\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a703fd86004e60f37b12e5dd92c0918c1}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a703fd86004e60f37b12e5dd92c0918c1}} 
+abstract bool {\bfseries Add\+Item\+Key\+Value\+Tag} (ulong handle, string pch\+Key, string pch\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a593ceea7c72bd5e0bf73f59318260135}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a593ceea7c72bd5e0bf73f59318260135}} 
+abstract bool {\bfseries Add\+Item\+Preview\+File} (ulong handle, string psz\+Preview\+File, uint type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_afae77ce32657b641328f7f32eaa6de04}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_afae77ce32657b641328f7f32eaa6de04}} 
+abstract bool {\bfseries Add\+Item\+Preview\+Video} (ulong handle, string psz\+Video\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a3c39cd5ad4f969f18642ff225eadbda0}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a3c39cd5ad4f969f18642ff225eadbda0}} 
+abstract bool {\bfseries Update\+Item\+Preview\+File} (ulong handle, uint index, string psz\+Preview\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a855d35ffba92ac3b9d7e80886160e379}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a855d35ffba92ac3b9d7e80886160e379}} 
+abstract bool {\bfseries Update\+Item\+Preview\+Video} (ulong handle, uint index, string psz\+Video\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aa5467343bab38d3d889e6930e4ac8455}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aa5467343bab38d3d889e6930e4ac8455}} 
+abstract bool {\bfseries Remove\+Item\+Preview} (ulong handle, uint index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ad151ceae82360c056b45471ed36c9380}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ad151ceae82360c056b45471ed36c9380}} 
+abstract ulong {\bfseries Submit\+Item\+Update} (ulong handle, string pch\+Change\+Note)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aec8bb0670fbd731cf91098de73970b83}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aec8bb0670fbd731cf91098de73970b83}} 
+abstract uint {\bfseries Get\+Item\+Update\+Progress} (ulong handle, ref ulong pun\+Bytes\+Processed, ref ulong pun\+Bytes\+Total)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a33961ae12f529fca74760cda3121d90c}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a33961ae12f529fca74760cda3121d90c}} 
+abstract ulong {\bfseries Set\+User\+Item\+Vote} (ulong n\+Published\+File\+ID, bool b\+Vote\+Up)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a14a5d58b24d5be46ac507a470d04ed71}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a14a5d58b24d5be46ac507a470d04ed71}} 
+abstract ulong {\bfseries Get\+User\+Item\+Vote} (ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_af7e6516f9df9c739c9c50bfad657ed75}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_af7e6516f9df9c739c9c50bfad657ed75}} 
+abstract ulong {\bfseries Add\+Item\+To\+Favorites} (uint n\+App\+Id, ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a32a3cc2c577b139aa6d8928246dd08eb}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a32a3cc2c577b139aa6d8928246dd08eb}} 
+abstract ulong {\bfseries Remove\+Item\+From\+Favorites} (uint n\+App\+Id, ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a8bd7bf644674a81fb669e9649b6b8e6d}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a8bd7bf644674a81fb669e9649b6b8e6d}} 
+abstract ulong {\bfseries Subscribe\+Item} (ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a645887aef82c1c3b81a589b9c539987d}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a645887aef82c1c3b81a589b9c539987d}} 
+abstract ulong {\bfseries Unsubscribe\+Item} (ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a2b37cba6583198b3182c013d53d5df5d}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a2b37cba6583198b3182c013d53d5df5d}} 
+abstract uint {\bfseries Get\+Num\+Subscribed\+Items} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a7dc288f70f49c9e50aac1ba04098e755}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a7dc288f70f49c9e50aac1ba04098e755}} 
+abstract uint {\bfseries Get\+Subscribed\+Items} (ref ulong pvec\+Published\+File\+ID, uint c\+Max\+Entries)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1db97b2fc1e94014f36630d9e0f9b15a}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1db97b2fc1e94014f36630d9e0f9b15a}} 
+abstract uint {\bfseries Get\+Item\+State} (ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac63683465c6aec2303ec80226535b82c}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac63683465c6aec2303ec80226535b82c}} 
+abstract bool {\bfseries Get\+Item\+Install\+Info} (ulong n\+Published\+File\+ID, ref ulong pun\+Size\+On\+Disk, out string pch\+Folder, ref uint pun\+Time\+Stamp)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac5dac4c1b263437f4915385b864c7229}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac5dac4c1b263437f4915385b864c7229}} 
+abstract bool {\bfseries Get\+Item\+Download\+Info} (ulong n\+Published\+File\+ID, ref ulong pun\+Bytes\+Downloaded, ref ulong pun\+Bytes\+Total)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5f42ab38efdec41a7ea6c02cbb03fb7d}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a5f42ab38efdec41a7ea6c02cbb03fb7d}} 
+abstract bool {\bfseries Download\+Item} (ulong n\+Published\+File\+ID, bool b\+High\+Priority)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a9024ad45aef22bc76d7a85691aaa122c}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a9024ad45aef22bc76d7a85691aaa122c}} 
+abstract bool {\bfseries B\+Init\+Workshop\+For\+Game\+Server} (uint un\+Workshop\+Depot\+ID, string psz\+Folder)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac53524fb531941a66875523c63797fe2}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_ac53524fb531941a66875523c63797fe2}} 
+abstract void {\bfseries Suspend\+Downloads} (bool b\+Suspend)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a44648f144bdbca0d0156557521d408aa}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a44648f144bdbca0d0156557521d408aa}} 
+abstract ulong {\bfseries Start\+Playtime\+Tracking} (ref ulong pvec\+Published\+File\+ID, uint un\+Num\+Published\+File\+I\+Ds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1d4ab9fb41e4adcb5fe0ba4f7e46cb30}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a1d4ab9fb41e4adcb5fe0ba4f7e46cb30}} 
+abstract ulong {\bfseries Stop\+Playtime\+Tracking} (ref ulong pvec\+Published\+File\+ID, uint un\+Num\+Published\+File\+I\+Ds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a12ca173e1c9c58e3d015964396eeb62f}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a12ca173e1c9c58e3d015964396eeb62f}} 
+abstract ulong {\bfseries Stop\+Playtime\+Tracking\+For\+All\+Items} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a4d1900f76b431706926428b9eb093720}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a4d1900f76b431706926428b9eb093720}} 
+abstract ulong {\bfseries Add\+Dependency} (ulong n\+Parent\+Published\+File\+ID, ulong n\+Child\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aa069183b31a33014ed957a5f93f83eba}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_aa069183b31a33014ed957a5f93f83eba}} 
+abstract ulong {\bfseries Remove\+Dependency} (ulong n\+Parent\+Published\+File\+ID, ulong n\+Child\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a9b70961d040f10958eb9deeb4f6868d5}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a9b70961d040f10958eb9deeb4f6868d5}} 
+abstract ulong {\bfseries Add\+App\+Dependency} (ulong n\+Published\+File\+ID, uint n\+App\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a53f8caa054a5a365a36ce328569dffa6}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a53f8caa054a5a365a36ce328569dffa6}} 
+abstract ulong {\bfseries Remove\+App\+Dependency} (ulong n\+Published\+File\+ID, uint n\+App\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a0f1d3ff6ff88fd8bf5be876a5747b0f2}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a0f1d3ff6ff88fd8bf5be876a5747b0f2}} 
+abstract ulong {\bfseries Get\+App\+Dependencies} (ulong n\+Published\+File\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a71367702bdc98639031da5f907532989}\label{class_valve_1_1_steamworks_1_1_i_steam_u_g_c_a71367702bdc98639031da5f907532989}} 
+abstract ulong {\bfseries Delete\+Item} (ulong n\+Published\+File\+ID)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 2298 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

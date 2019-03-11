@@ -1,0 +1,48 @@
+{
+	"LanguageVersion": "polish",
+	"LedPage": {
+		"GroupBox1Title": "Ustawienia diod LED",
+		"GroupBox2Title": "Podgląd diod LED",
+		"ActivationStatus": "Aktywacja diod LED",
+		"CurrentColor": "Aktualny kolor",
+		"SetColor": "Ustawienie koloru", 
+		"LedColor0": "Czerwony",
+		"LedColor1": "Zielony",
+		"LedColor2": "Niebieski",
+		"LedColor3": "Jasno niebieski",
+		"LedColor4": "Żółty",
+		"LedColor5": "Brązowy",
+		"LedColor6": "Turkusowy",
+		"LedColor7": "Zielony inaczej",
+		"Send": "Zmien kolor"
+	},
+	"RightSidebar": {
+		"ButtonMainPage": "Strona główna",
+		"ButtonLEDSettingsPage": "Ustawienia LED",
+		"ButtonKeyPadSettingsPage": "Ustawienia Klawiatury",
+		"ButtonOLEDSettingsPage": "Ustawienia oled",
+		"UnlockedAllDLC": "[\uf1b7] Brak nowych DLC", 
+		"LockedDLC":"Kup pozostale DLC",
+		"DLC1": "Polska nazwa DLC 1",
+		"DLC2": "Polska nazwa DLC 2",
+		"DLC3": "Polska nazwa DLC 3"
+	},
+	"MainPage": {
+		"ControllerLedSetting": "Ustawienia kontrolera LED",
+		"COMPorts": "Port COM",
+		"Status": "Status",
+		"switchoff": "Wyłączone",
+		"switchon": "Włączone", 
+		"ControllerOledSetting":"Ustawienia kontrolera OLED"
+	},
+		"OledPage": {
+		"ControllerOledSetting":"Ustawienia kontrolera OLED",
+		"OperatingMode": "Tryb pracy",
+        "SendButton": "Wyślij",
+		"PlaceholderText": "Podaj tekst do wysłania",
+		"Combobox_1": "Tekst",
+		"Combobox_2": "Graficzny", 
+		"Combobox_3":"Zegar",
+		"DisplayDate": "Wyswietl datę"
+	}
+}

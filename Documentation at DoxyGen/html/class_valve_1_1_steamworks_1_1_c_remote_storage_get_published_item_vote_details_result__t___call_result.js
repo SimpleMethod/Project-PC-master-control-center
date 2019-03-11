@@ -1,0 +1,5 @@
+var class_valve_1_1_steamworks_1_1_c_remote_storage_get_published_item_vote_details_result__t___call_result =
+[
+    [ "CRemoteStorageGetPublishedItemVoteDetailsResult_t_CallResult", "class_valve_1_1_steamworks_1_1_c_remote_storage_get_published_item_vote_details_result__t___call_result.html#a77aabd8f2c86665515a3dffddd972fe7", null ],
+    [ "Set", "class_valve_1_1_steamworks_1_1_c_remote_storage_get_published_item_vote_details_result__t___call_result.html#a5fd3d52047059a02afcf6c63cfdb4b47", null ]
+];

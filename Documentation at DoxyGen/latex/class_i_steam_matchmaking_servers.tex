@@ -1,0 +1,68 @@
+\hypertarget{class_i_steam_matchmaking_servers}{}\section{Dokumentacja klasy I\+Steam\+Matchmaking\+Servers}
+\label{class_i_steam_matchmaking_servers}\index{I\+Steam\+Matchmaking\+Servers@{I\+Steam\+Matchmaking\+Servers}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a5e8c6625f6acec2bed9786e8c7e66c87}\label{class_i_steam_matchmaking_servers_a5e8c6625f6acec2bed9786e8c7e66c87}} 
+virtual H\+Server\+List\+Request {\bfseries Request\+Internet\+Server\+List} (App\+Id\+\_\+t i\+App, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Filters) \hyperlink{struct_match_making_key_value_pair__t}{Match\+Making\+Key\+Value\+Pair\+\_\+t} $\ast$$\ast$ppch\+Filters, uint32 n\+Filters, \hyperlink{class_i_steam_matchmaking_server_list_response}{I\+Steam\+Matchmaking\+Server\+List\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a144360d95efe342d49c4686e8b886c0c}\label{class_i_steam_matchmaking_servers_a144360d95efe342d49c4686e8b886c0c}} 
+virtual H\+Server\+List\+Request {\bfseries Request\+L\+A\+N\+Server\+List} (App\+Id\+\_\+t i\+App, \hyperlink{class_i_steam_matchmaking_server_list_response}{I\+Steam\+Matchmaking\+Server\+List\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a5293c56e50049e1d915103806f479167}\label{class_i_steam_matchmaking_servers_a5293c56e50049e1d915103806f479167}} 
+virtual H\+Server\+List\+Request {\bfseries Request\+Friends\+Server\+List} (App\+Id\+\_\+t i\+App, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Filters) \hyperlink{struct_match_making_key_value_pair__t}{Match\+Making\+Key\+Value\+Pair\+\_\+t} $\ast$$\ast$ppch\+Filters, uint32 n\+Filters, \hyperlink{class_i_steam_matchmaking_server_list_response}{I\+Steam\+Matchmaking\+Server\+List\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a4dafd8c87dc378a8510a348de54efd65}\label{class_i_steam_matchmaking_servers_a4dafd8c87dc378a8510a348de54efd65}} 
+virtual H\+Server\+List\+Request {\bfseries Request\+Favorites\+Server\+List} (App\+Id\+\_\+t i\+App, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Filters) \hyperlink{struct_match_making_key_value_pair__t}{Match\+Making\+Key\+Value\+Pair\+\_\+t} $\ast$$\ast$ppch\+Filters, uint32 n\+Filters, \hyperlink{class_i_steam_matchmaking_server_list_response}{I\+Steam\+Matchmaking\+Server\+List\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_ad9f3ace2d36d6fe92279a949f7195bed}\label{class_i_steam_matchmaking_servers_ad9f3ace2d36d6fe92279a949f7195bed}} 
+virtual H\+Server\+List\+Request {\bfseries Request\+History\+Server\+List} (App\+Id\+\_\+t i\+App, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Filters) \hyperlink{struct_match_making_key_value_pair__t}{Match\+Making\+Key\+Value\+Pair\+\_\+t} $\ast$$\ast$ppch\+Filters, uint32 n\+Filters, \hyperlink{class_i_steam_matchmaking_server_list_response}{I\+Steam\+Matchmaking\+Server\+List\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a4542353031b27c084744b2f37f9981b0}\label{class_i_steam_matchmaking_servers_a4542353031b27c084744b2f37f9981b0}} 
+virtual H\+Server\+List\+Request {\bfseries Request\+Spectator\+Server\+List} (App\+Id\+\_\+t i\+App, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Filters) \hyperlink{struct_match_making_key_value_pair__t}{Match\+Making\+Key\+Value\+Pair\+\_\+t} $\ast$$\ast$ppch\+Filters, uint32 n\+Filters, \hyperlink{class_i_steam_matchmaking_server_list_response}{I\+Steam\+Matchmaking\+Server\+List\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_ae72092159487abf1ded3d83fb2640816}\label{class_i_steam_matchmaking_servers_ae72092159487abf1ded3d83fb2640816}} 
+virtual void {\bfseries Release\+Request} (H\+Server\+List\+Request h\+Server\+List\+Request)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a2d37f8be4ff1b9f502689a491b374a14}\label{class_i_steam_matchmaking_servers_a2d37f8be4ff1b9f502689a491b374a14}} 
+virtual \hyperlink{classgameserveritem__t}{gameserveritem\+\_\+t} $\ast$ {\bfseries Get\+Server\+Details} (H\+Server\+List\+Request h\+Request, int i\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a2eaf7230a4e18b89f557846e0aad17d4}\label{class_i_steam_matchmaking_servers_a2eaf7230a4e18b89f557846e0aad17d4}} 
+virtual void {\bfseries Cancel\+Query} (H\+Server\+List\+Request h\+Request)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a826996705550a86e50938066ab8dc20b}\label{class_i_steam_matchmaking_servers_a826996705550a86e50938066ab8dc20b}} 
+virtual void {\bfseries Refresh\+Query} (H\+Server\+List\+Request h\+Request)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_ab0c2205cb04530db8a0ae6b4a81280b6}\label{class_i_steam_matchmaking_servers_ab0c2205cb04530db8a0ae6b4a81280b6}} 
+virtual bool {\bfseries Is\+Refreshing} (H\+Server\+List\+Request h\+Request)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a655af6286a9ea8a974f48075c8b61d83}\label{class_i_steam_matchmaking_servers_a655af6286a9ea8a974f48075c8b61d83}} 
+virtual int {\bfseries Get\+Server\+Count} (H\+Server\+List\+Request h\+Request)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_aedfd23a77ec6f8e6065270f24adb7dae}\label{class_i_steam_matchmaking_servers_aedfd23a77ec6f8e6065270f24adb7dae}} 
+virtual void {\bfseries Refresh\+Server} (H\+Server\+List\+Request h\+Request, int i\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_a9e87fc564e34c0c45b7a19394c773ec4}\label{class_i_steam_matchmaking_servers_a9e87fc564e34c0c45b7a19394c773ec4}} 
+virtual H\+Server\+Query {\bfseries Ping\+Server} (uint32 un\+IP, uint16 us\+Port, \hyperlink{class_i_steam_matchmaking_ping_response}{I\+Steam\+Matchmaking\+Ping\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_aa33a87b4bb1d3d156ba6b43a673ee61c}\label{class_i_steam_matchmaking_servers_aa33a87b4bb1d3d156ba6b43a673ee61c}} 
+virtual H\+Server\+Query {\bfseries Player\+Details} (uint32 un\+IP, uint16 us\+Port, \hyperlink{class_i_steam_matchmaking_players_response}{I\+Steam\+Matchmaking\+Players\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_aa0aaf1641ec9946412ef006b98852397}\label{class_i_steam_matchmaking_servers_aa0aaf1641ec9946412ef006b98852397}} 
+virtual H\+Server\+Query {\bfseries Server\+Rules} (uint32 un\+IP, uint16 us\+Port, \hyperlink{class_i_steam_matchmaking_rules_response}{I\+Steam\+Matchmaking\+Rules\+Response} $\ast$p\+Request\+Servers\+Response)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_servers_aad4251435d7a4550ef3d4ac389645e8a}\label{class_i_steam_matchmaking_servers_aad4251435d7a4550ef3d4ac389645e8a}} 
+virtual void {\bfseries Cancel\+Server\+Query} (H\+Server\+Query h\+Server\+Query)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 388 pliku isteammatchmaking.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteammatchmaking.\+h\end{DoxyCompactItemize}

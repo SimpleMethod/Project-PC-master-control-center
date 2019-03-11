@@ -1,0 +1,48 @@
+{
+	"LanguageVersion": "english",
+	"LedPage": {
+	    "GroupBox1Title": "Settings LEDs:", 
+		"GroupBox2Title": "Leds preview:", 
+		"ActivationStatus": "Activation LEDs", 
+		"CurrentColor": "Current LEDs color" , 
+		"SetColor": "Color setting", 
+	    "LedColor0": "Red",
+		"LedColor1": "Green",
+		"LedColor2": "Blue",
+		"LedColor3": "Light blue",
+		"LedColor4": "Yellow",
+		"LedColor5": "Brown",
+		"LedColor6": "turquoise",
+		"LedColor7": "Green alternative",
+		"Send": "Change color"
+	},
+	"RightSidebar": {
+		"ButtonMainPage": "Main page",
+		"ButtonLEDSettingsPage": "Leds settings",
+		"ButtonKeyPadSettingsPage": "Keypad settings",
+		"ButtonOLEDSettingsPage": "Oled settings",
+		"UnlockedAllDLC": "[\uf1b7] Unlocked all DLC", 
+		"LockedDLC":"Buy another DLC",
+		"DLC1": "english name of DLC 01",
+		"DLC2": "english name of DLC 03",
+		"DLC3": "english name of DLC 03"
+	},
+		"MainPage": {
+		"ControllerLedSetting": "Information about the LEDs controller",
+		"COMPorts": "Port COM",
+		"Status": "Status",
+		"switchoff": "OFF",
+		"switchon": "ON", 
+		"ControllerOledSetting":"Information about the OLED controller"
+	},
+		"OledPage": {
+		"ControllerOledSetting":"Settings of the OLED controller",
+		"OperatingMode": "Operating mode",
+        "SendButton": "Send",
+		"PlaceholderText": "Enter text to send",
+		"Combobox_1": "Text",
+		"Combobox_2": "Graphic", 
+		"Combobox_3":"Clock",
+		"DisplayDate": "Display date"
+	}
+}

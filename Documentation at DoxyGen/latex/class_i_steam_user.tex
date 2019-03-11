@@ -1,0 +1,104 @@
+\hypertarget{class_i_steam_user}{}\section{Dokumentacja klasy I\+Steam\+User}
+\label{class_i_steam_user}\index{I\+Steam\+User@{I\+Steam\+User}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a17e683a53cb649d324d0614bece5a539}\label{class_i_steam_user_a17e683a53cb649d324d0614bece5a539}} 
+virtual H\+Steam\+User {\bfseries Get\+H\+Steam\+User} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a29e4a5e59dee5867f60732311fad2c4e}\label{class_i_steam_user_a29e4a5e59dee5867f60732311fad2c4e}} 
+virtual bool {\bfseries B\+Logged\+On} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a5a7659a6147a7bd3c0acf4065c3bed36}\label{class_i_steam_user_a5a7659a6147a7bd3c0acf4065c3bed36}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Steam\+ID} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_ab243e44f96ea3070d7973deaa013afbd}\label{class_i_steam_user_ab243e44f96ea3070d7973deaa013afbd}} 
+virtual int {\bfseries Initiate\+Game\+Connection} (void $\ast$p\+Auth\+Blob, int cb\+Max\+Auth\+Blob, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Game\+Server, uint32 un\+I\+P\+Server, uint16 us\+Port\+Server, bool b\+Secure)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a67de2694f5b1abb4b22612ea3a43e46c}\label{class_i_steam_user_a67de2694f5b1abb4b22612ea3a43e46c}} 
+virtual void {\bfseries Terminate\+Game\+Connection} (uint32 un\+I\+P\+Server, uint16 us\+Port\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a4f8099764ca59d6557a6a6174faa3883}\label{class_i_steam_user_a4f8099764ca59d6557a6a6174faa3883}} 
+virtual void {\bfseries Track\+App\+Usage\+Event} (\hyperlink{class_c_game_i_d}{C\+Game\+ID} game\+ID, int e\+App\+Usage\+Event, const char $\ast$pch\+Extra\+Info=\char`\"{}\char`\"{})=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_ad9338e70287a15571c8ffc998e49d338}\label{class_i_steam_user_ad9338e70287a15571c8ffc998e49d338}} 
+virtual bool {\bfseries Get\+User\+Data\+Folder} (char $\ast$pch\+Buffer, int cub\+Buffer)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a7f2e7fa09cf2fc1da25ff8601b917978}\label{class_i_steam_user_a7f2e7fa09cf2fc1da25ff8601b917978}} 
+virtual void {\bfseries Start\+Voice\+Recording} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a8c66f7f9a4b5c81ae16e1db7be286bff}\label{class_i_steam_user_a8c66f7f9a4b5c81ae16e1db7be286bff}} 
+virtual void {\bfseries Stop\+Voice\+Recording} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a83851fd1e3457c3752ddddd9d848ede4}\label{class_i_steam_user_a83851fd1e3457c3752ddddd9d848ede4}} 
+virtual E\+Voice\+Result {\bfseries Get\+Available\+Voice} (uint32 $\ast$pcb\+Compressed, uint32 $\ast$pcb\+Uncompressed\+\_\+\+Deprecated=0, uint32 n\+Uncompressed\+Voice\+Desired\+Sample\+Rate\+\_\+\+Deprecated=0)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a6c7c2894e61f654f37ab0e628be1438b}\label{class_i_steam_user_a6c7c2894e61f654f37ab0e628be1438b}} 
+virtual E\+Voice\+Result {\bfseries Get\+Voice} (bool b\+Want\+Compressed, void $\ast$p\+Dest\+Buffer, uint32 cb\+Dest\+Buffer\+Size, uint32 $\ast$n\+Bytes\+Written, bool b\+Want\+Uncompressed\+\_\+\+Deprecated=false, void $\ast$p\+Uncompressed\+Dest\+Buffer\+\_\+\+Deprecated=0, uint32 cb\+Uncompressed\+Dest\+Buffer\+Size\+\_\+\+Deprecated=0, uint32 $\ast$n\+Uncompress\+Bytes\+Written\+\_\+\+Deprecated=0, uint32 n\+Uncompressed\+Voice\+Desired\+Sample\+Rate\+\_\+\+Deprecated=0)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_ae351f90e7f95f945baeef5d7cf7c6760}\label{class_i_steam_user_ae351f90e7f95f945baeef5d7cf7c6760}} 
+virtual E\+Voice\+Result {\bfseries Decompress\+Voice} (const void $\ast$p\+Compressed, uint32 cb\+Compressed, void $\ast$p\+Dest\+Buffer, uint32 cb\+Dest\+Buffer\+Size, uint32 $\ast$n\+Bytes\+Written, uint32 n\+Desired\+Sample\+Rate)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a7f0b1a2069a471b88559995432ed5a01}\label{class_i_steam_user_a7f0b1a2069a471b88559995432ed5a01}} 
+virtual uint32 {\bfseries Get\+Voice\+Optimal\+Sample\+Rate} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a5ffd1e0131e3a74d961f6014a823a4cc}\label{class_i_steam_user_a5ffd1e0131e3a74d961f6014a823a4cc}} 
+virtual H\+Auth\+Ticket {\bfseries Get\+Auth\+Session\+Ticket} (void $\ast$p\+Ticket, int cb\+Max\+Ticket, uint32 $\ast$pcb\+Ticket)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a43f76c4da6eda398d1838a58f1ec4374}\label{class_i_steam_user_a43f76c4da6eda398d1838a58f1ec4374}} 
+virtual E\+Begin\+Auth\+Session\+Result {\bfseries Begin\+Auth\+Session} (const void $\ast$p\+Auth\+Ticket, int cb\+Auth\+Ticket, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_adc1f5a4bb8630ee630a09625e1abdba1}\label{class_i_steam_user_adc1f5a4bb8630ee630a09625e1abdba1}} 
+virtual void {\bfseries End\+Auth\+Session} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a6c278ab86639cc929816d8f3b7a17a77}\label{class_i_steam_user_a6c278ab86639cc929816d8f3b7a17a77}} 
+virtual void {\bfseries Cancel\+Auth\+Ticket} (H\+Auth\+Ticket h\+Auth\+Ticket)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a925dc981e305be647259d138cfd362f6}\label{class_i_steam_user_a925dc981e305be647259d138cfd362f6}} 
+virtual E\+User\+Has\+License\+For\+App\+Result {\bfseries User\+Has\+License\+For\+App} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID, App\+Id\+\_\+t app\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_acb4dd088859b733337936c9766f7790f}\label{class_i_steam_user_acb4dd088859b733337936c9766f7790f}} 
+virtual bool {\bfseries B\+Is\+Behind\+N\+AT} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a07f6db96869e033a13b13e54f7ce2235}\label{class_i_steam_user_a07f6db96869e033a13b13e54f7ce2235}} 
+virtual void {\bfseries Advertise\+Game} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Game\+Server, uint32 un\+I\+P\+Server, uint16 us\+Port\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a1ac14d72bff3350b59605826992fc176}\label{class_i_steam_user_a1ac14d72bff3350b59605826992fc176}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Request\+Encrypted\+App\+Ticket} (void $\ast$p\+Data\+To\+Include, int cb\+Data\+To\+Include)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a4c5ea66df88fd0527d1a51179638d44a}\label{class_i_steam_user_a4c5ea66df88fd0527d1a51179638d44a}} 
+virtual bool {\bfseries Get\+Encrypted\+App\+Ticket} (void $\ast$p\+Ticket, int cb\+Max\+Ticket, uint32 $\ast$pcb\+Ticket)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_afceb88c7b3241d23d3279650543d5d13}\label{class_i_steam_user_afceb88c7b3241d23d3279650543d5d13}} 
+virtual int {\bfseries Get\+Game\+Badge\+Level} (int n\+Series, bool b\+Foil)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_ae4b393de52cb73b353f8edba83838864}\label{class_i_steam_user_ae4b393de52cb73b353f8edba83838864}} 
+virtual int {\bfseries Get\+Player\+Steam\+Level} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a8e4441998c39deed78c78f14a9ef29b7}\label{class_i_steam_user_a8e4441998c39deed78c78f14a9ef29b7}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Request\+Store\+Auth\+U\+RL} (const char $\ast$pch\+Redirect\+U\+RL)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a26902fbfbde0bbc7583dab7952556995}\label{class_i_steam_user_a26902fbfbde0bbc7583dab7952556995}} 
+virtual bool {\bfseries B\+Is\+Phone\+Verified} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_ab4415d7d98ebc44388c10e4834780f12}\label{class_i_steam_user_ab4415d7d98ebc44388c10e4834780f12}} 
+virtual bool {\bfseries B\+Is\+Two\+Factor\+Enabled} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_ae77fdeee4d4445756ba4172621dfd327}\label{class_i_steam_user_ae77fdeee4d4445756ba4172621dfd327}} 
+virtual bool {\bfseries B\+Is\+Phone\+Identifying} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_user_a8347e6bebb66cbd17e03b7c47df5db14}\label{class_i_steam_user_a8347e6bebb66cbd17e03b7c47df5db14}} 
+virtual bool {\bfseries B\+Is\+Phone\+Requiring\+Verification} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 38 pliku isteamuser.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamuser.\+h\end{DoxyCompactItemize}

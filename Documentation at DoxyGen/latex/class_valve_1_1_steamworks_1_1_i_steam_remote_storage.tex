@@ -1,0 +1,191 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+I\+Steam\+Remote\+Storage}
+\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage}\index{Valve.\+Steamworks.\+I\+Steam\+Remote\+Storage@{Valve.\+Steamworks.\+I\+Steam\+Remote\+Storage}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+I\+Steam\+Remote\+Storage\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_i_steam_remote_storage}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a2823b5a9f48055fb48e53a9795ac22cb}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a2823b5a9f48055fb48e53a9795ac22cb}} 
+abstract Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_abe856b4ccbc1b51c34a68ddb4494edcc}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_abe856b4ccbc1b51c34a68ddb4494edcc}} 
+abstract bool {\bfseries File\+Write} (string pch\+File, Int\+Ptr pv\+Data, int cub\+Data)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a135c82b67bf3104d40b213e460def316}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a135c82b67bf3104d40b213e460def316}} 
+abstract int {\bfseries File\+Read} (string pch\+File, Int\+Ptr pv\+Data, int cub\+Data\+To\+Read)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a053601e8f71636936f0e3f2423f76976}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a053601e8f71636936f0e3f2423f76976}} 
+abstract ulong {\bfseries File\+Write\+Async} (string pch\+File, Int\+Ptr pv\+Data, uint cub\+Data)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a167de1c6bafb97cfa803f1c34cf4a399}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a167de1c6bafb97cfa803f1c34cf4a399}} 
+abstract ulong {\bfseries File\+Read\+Async} (string pch\+File, uint n\+Offset, uint cub\+To\+Read)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a2b601bdc16eda3ed9487a5ba3f061de4}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a2b601bdc16eda3ed9487a5ba3f061de4}} 
+abstract bool {\bfseries File\+Read\+Async\+Complete} (ulong h\+Read\+Call, Int\+Ptr pv\+Buffer, uint cub\+To\+Read)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4286e46a677dedf1807dafc53823a579}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4286e46a677dedf1807dafc53823a579}} 
+abstract bool {\bfseries File\+Forget} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4118a22cf4a4c10622624c4cef928daa}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4118a22cf4a4c10622624c4cef928daa}} 
+abstract bool {\bfseries File\+Delete} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ab3ec77a8b320c470b4e9746215833ccd}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ab3ec77a8b320c470b4e9746215833ccd}} 
+abstract ulong {\bfseries File\+Share} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a8522f36ac7183f00d32b1de81b45a917}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a8522f36ac7183f00d32b1de81b45a917}} 
+abstract bool {\bfseries Set\+Sync\+Platforms} (string pch\+File, uint e\+Remote\+Storage\+Platform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ab1df38082e3d0d76d6e2df1d372e4d2c}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ab1df38082e3d0d76d6e2df1d372e4d2c}} 
+abstract ulong {\bfseries File\+Write\+Stream\+Open} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a5bb3b5a1375508660b3e534fc6759dde}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a5bb3b5a1375508660b3e534fc6759dde}} 
+abstract bool {\bfseries File\+Write\+Stream\+Write\+Chunk} (ulong write\+Handle, Int\+Ptr pv\+Data, int cub\+Data)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a238280d1cf6e8873969744cce95690b6}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a238280d1cf6e8873969744cce95690b6}} 
+abstract bool {\bfseries File\+Write\+Stream\+Close} (ulong write\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a510f61abfdf072eeee35e61acf602e32}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a510f61abfdf072eeee35e61acf602e32}} 
+abstract bool {\bfseries File\+Write\+Stream\+Cancel} (ulong write\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ad8a7e6cf7191644d01114519a11cf776}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ad8a7e6cf7191644d01114519a11cf776}} 
+abstract bool {\bfseries File\+Exists} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a5bf566aa6de45bc2169702fea3beb7af}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a5bf566aa6de45bc2169702fea3beb7af}} 
+abstract bool {\bfseries File\+Persisted} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4c592cddfca279b060e5029f16f50ff3}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4c592cddfca279b060e5029f16f50ff3}} 
+abstract int {\bfseries Get\+File\+Size} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a416cc166148a563e4d05e9f1beddd6c8}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a416cc166148a563e4d05e9f1beddd6c8}} 
+abstract long {\bfseries Get\+File\+Timestamp} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a0bf0c3079854a03694811d583542b7b0}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a0bf0c3079854a03694811d583542b7b0}} 
+abstract uint {\bfseries Get\+Sync\+Platforms} (string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a7a5e87586d697646f4cf396d57cc16d1}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a7a5e87586d697646f4cf396d57cc16d1}} 
+abstract int {\bfseries Get\+File\+Count} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ac5e1b6b74051170da5670c5c95a39b9b}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ac5e1b6b74051170da5670c5c95a39b9b}} 
+abstract string {\bfseries Get\+File\+Name\+And\+Size} (int i\+File, ref int pn\+File\+Size\+In\+Bytes)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a44e7e7bda9d05159c224b7a4f4ecd733}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a44e7e7bda9d05159c224b7a4f4ecd733}} 
+abstract bool {\bfseries Get\+Quota} (ref ulong pn\+Total\+Bytes, ref ulong pu\+Available\+Bytes)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a645aba33ffcad87d1ac5e39daff7a6d1}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a645aba33ffcad87d1ac5e39daff7a6d1}} 
+abstract bool {\bfseries Is\+Cloud\+Enabled\+For\+Account} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a50c5112e82d3c052c2614524d890a12a}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a50c5112e82d3c052c2614524d890a12a}} 
+abstract bool {\bfseries Is\+Cloud\+Enabled\+For\+App} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a02f4208590f0c3ba68a104a684af6cfa}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a02f4208590f0c3ba68a104a684af6cfa}} 
+abstract void {\bfseries Set\+Cloud\+Enabled\+For\+App} (bool b\+Enabled)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_af43ba8d7eaeb954b49d538346be65f94}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_af43ba8d7eaeb954b49d538346be65f94}} 
+abstract ulong {\bfseries U\+G\+C\+Download} (ulong h\+Content, uint un\+Priority)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a98a4c419b5824559b90376d40bc0c92f}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a98a4c419b5824559b90376d40bc0c92f}} 
+abstract bool {\bfseries Get\+U\+G\+C\+Download\+Progress} (ulong h\+Content, ref int pn\+Bytes\+Downloaded, ref int pn\+Bytes\+Expected)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a247888fe6b94dd7cf9ba8ebfa6335ee7}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a247888fe6b94dd7cf9ba8ebfa6335ee7}} 
+abstract bool {\bfseries Get\+U\+G\+C\+Details} (ulong h\+Content, ref uint pn\+App\+ID, System.\+Text.\+String\+Builder ppch\+Name, ref int pn\+File\+Size\+In\+Bytes, out \hyperlink{struct_valve_1_1_steamworks_1_1_c_steam_i_d}{C\+Steam\+ID} p\+Steam\+I\+D\+Owner)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_acfa12f29f0c97dfbe78eeaeb420c6fdc}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_acfa12f29f0c97dfbe78eeaeb420c6fdc}} 
+abstract int {\bfseries U\+G\+C\+Read} (ulong h\+Content, Int\+Ptr pv\+Data, int cub\+Data\+To\+Read, uint c\+Offset, uint e\+Action)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4561683d0198c84b8ca7ffb4d35b6799}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a4561683d0198c84b8ca7ffb4d35b6799}} 
+abstract int {\bfseries Get\+Cached\+U\+G\+C\+Count} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ade524c6d75e5ca67e9b12c6856a9e9d4}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ade524c6d75e5ca67e9b12c6856a9e9d4}} 
+abstract ulong {\bfseries Get\+Cached\+U\+G\+C\+Handle} (int i\+Cached\+Content)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a76077f1c5b097c9dfd14475104c08a00}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a76077f1c5b097c9dfd14475104c08a00}} 
+abstract ulong {\bfseries Publish\+Workshop\+File} (string pch\+File, string pch\+Preview\+File, uint n\+Consumer\+App\+Id, string pch\+Title, string pch\+Description, uint e\+Visibility, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Tags, uint e\+Workshop\+File\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a0d4ef9694c7f06c707c2188c9fa60374}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a0d4ef9694c7f06c707c2188c9fa60374}} 
+abstract ulong {\bfseries Create\+Published\+File\+Update\+Request} (ulong un\+Published\+File\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a244bae1d29d85394ccafbbf8dd737170}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a244bae1d29d85394ccafbbf8dd737170}} 
+abstract bool {\bfseries Update\+Published\+File\+File} (ulong update\+Handle, string pch\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a8e6dc07e62fba8000135189c9d96ca95}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a8e6dc07e62fba8000135189c9d96ca95}} 
+abstract bool {\bfseries Update\+Published\+File\+Preview\+File} (ulong update\+Handle, string pch\+Preview\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a5639093a1284eb20c2ab9b74c34a4fa1}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a5639093a1284eb20c2ab9b74c34a4fa1}} 
+abstract bool {\bfseries Update\+Published\+File\+Title} (ulong update\+Handle, string pch\+Title)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a31ba8eba09adc80ca6c89ec34ac285eb}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a31ba8eba09adc80ca6c89ec34ac285eb}} 
+abstract bool {\bfseries Update\+Published\+File\+Description} (ulong update\+Handle, string pch\+Description)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a3c21560a3cf8ddd057f5e6d42eef4122}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a3c21560a3cf8ddd057f5e6d42eef4122}} 
+abstract bool {\bfseries Update\+Published\+File\+Visibility} (ulong update\+Handle, uint e\+Visibility)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a38818e94485c824f411240816944b3ce}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a38818e94485c824f411240816944b3ce}} 
+abstract bool {\bfseries Update\+Published\+File\+Tags} (ulong update\+Handle, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Tags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a938554afb76445e0e09a94e18460ed1d}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a938554afb76445e0e09a94e18460ed1d}} 
+abstract ulong {\bfseries Commit\+Published\+File\+Update} (ulong update\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a14864fd24318aa4f3cd907bd219a3127}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a14864fd24318aa4f3cd907bd219a3127}} 
+abstract ulong {\bfseries Get\+Published\+File\+Details} (ulong un\+Published\+File\+Id, uint un\+Max\+Seconds\+Old)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_aa8a1fe3fdd3ccc500b3898d3fc88fc78}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_aa8a1fe3fdd3ccc500b3898d3fc88fc78}} 
+abstract ulong {\bfseries Delete\+Published\+File} (ulong un\+Published\+File\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a66fef2863f2efa34128813ac9e51a4e6}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a66fef2863f2efa34128813ac9e51a4e6}} 
+abstract ulong {\bfseries Enumerate\+User\+Published\+Files} (uint un\+Start\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a8cd0c80c658598cb9f3f513292956207}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a8cd0c80c658598cb9f3f513292956207}} 
+abstract ulong {\bfseries Subscribe\+Published\+File} (ulong un\+Published\+File\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a2f0dd4bb467db43353090f0b0867f0be}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a2f0dd4bb467db43353090f0b0867f0be}} 
+abstract ulong {\bfseries Enumerate\+User\+Subscribed\+Files} (uint un\+Start\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a316256e346c24d7384a4136387c17dc7}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a316256e346c24d7384a4136387c17dc7}} 
+abstract ulong {\bfseries Unsubscribe\+Published\+File} (ulong un\+Published\+File\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_acc148cb88789f6f710e61bfe67f30022}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_acc148cb88789f6f710e61bfe67f30022}} 
+abstract bool {\bfseries Update\+Published\+File\+Set\+Change\+Description} (ulong update\+Handle, string pch\+Change\+Description)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a70330fa5e560b4d7113ebc1aed130bf5}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a70330fa5e560b4d7113ebc1aed130bf5}} 
+abstract ulong {\bfseries Get\+Published\+Item\+Vote\+Details} (ulong un\+Published\+File\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ac7d1ff6874a3eae64dfcd8ca951d1e52}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ac7d1ff6874a3eae64dfcd8ca951d1e52}} 
+abstract ulong {\bfseries Update\+User\+Published\+Item\+Vote} (ulong un\+Published\+File\+Id, bool b\+Vote\+Up)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_aeb2be984712de4e15eb923f98fd1d860}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_aeb2be984712de4e15eb923f98fd1d860}} 
+abstract ulong {\bfseries Get\+User\+Published\+Item\+Vote\+Details} (ulong un\+Published\+File\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a10959314e6e75b8f7da4a605fa0f31f1}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a10959314e6e75b8f7da4a605fa0f31f1}} 
+abstract ulong {\bfseries Enumerate\+User\+Shared\+Workshop\+Files} (ulong steam\+Id, uint un\+Start\+Index, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Required\+Tags, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Excluded\+Tags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ac72d3abdbe807aafb4c2e69b3cf267c0}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ac72d3abdbe807aafb4c2e69b3cf267c0}} 
+abstract ulong {\bfseries Publish\+Video} (uint e\+Video\+Provider, string pch\+Video\+Account, string pch\+Video\+Identifier, string pch\+Preview\+File, uint n\+Consumer\+App\+Id, string pch\+Title, string pch\+Description, uint e\+Visibility, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Tags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a37bcae481ec3329285b9efda49df20f1}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_a37bcae481ec3329285b9efda49df20f1}} 
+abstract ulong {\bfseries Set\+User\+Published\+File\+Action} (ulong un\+Published\+File\+Id, uint e\+Action)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_aaf73bf4617e9834146924c813aaecdb3}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_aaf73bf4617e9834146924c813aaecdb3}} 
+abstract ulong {\bfseries Enumerate\+Published\+Files\+By\+User\+Action} (uint e\+Action, uint un\+Start\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ababa473d5722150ac7f8d979722a6a1f}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_ababa473d5722150ac7f8d979722a6a1f}} 
+abstract ulong {\bfseries Enumerate\+Published\+Workshop\+Files} (uint e\+Enumeration\+Type, uint un\+Start\+Index, uint un\+Count, uint un\+Days, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+Tags, ref \hyperlink{struct_valve_1_1_steamworks_1_1_steam_param_string_array__t}{Steam\+Param\+String\+Array\+\_\+t} p\+User\+Tags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_adef9287cf9911bfe98cfada28b0d0715}\label{class_valve_1_1_steamworks_1_1_i_steam_remote_storage_adef9287cf9911bfe98cfada28b0d0715}} 
+abstract ulong {\bfseries U\+G\+C\+Download\+To\+Location} (ulong h\+Content, string pch\+Location, uint un\+Priority)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 1986 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

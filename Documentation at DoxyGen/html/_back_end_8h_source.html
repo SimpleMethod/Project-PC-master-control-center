@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC Master Control Center: Plik źródłowy C:/Users/Pathfinder/Projekt_cpp/Pre-Alpha Relase/PC_Master_Control_Center/BackEnd.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC Master Control Center
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_back_end_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">BackEnd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BackEnd_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BackEnd_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;librarycollection.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;FrontEnd.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespace_back_end_space.html">   17</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_back_end_space.html">BackEndSpace</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_back_end_space_1_1_back_end.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_back_end_space_1_1_back_end.html">BackEnd</a>: <span class="keyword">public</span> QObject</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_back_end_space_1_1_back_end.html#ab6fe52b22e676d3809bcea4f94960a91">BackEnd</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_back_end_space_1_1_back_end.html#a04f69b715de1c65b21873a46b70fcc27">CreateFile</a>(QString file);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_back_end_space_1_1_back_end.html#ab7c89f258fb3afaa6b2ef9d16b009560">CheckFileExist</a>(QString file);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_back_end_space_1_1_back_end.html#a8008a4eb621a34d14f6ab9612c9e7e41">CheckDLCisInstalled</a>(AppId_t ID);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_back_end_space_1_1_back_end.html#a9e8a3b46de916f38288dbcdcb4ae8c85">SteamLang</a>();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_back_end_space_1_1_back_end.html#a3a85c4416c934c36b89aed4e371c82a8">SelectLanguage</a>(QString LanguageName);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_back_end_space_1_1_back_end.html#a1c2234acf04382bdaf5adf2921a0ae65">SelectSettingFile</a>(QString LanguageName);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Q_INVOKABLE QJsonDocument <a class="code" href="class_back_end_space_1_1_back_end.html#ad74f93f446a7bea2878efabf9246cda4">OpenJsonFile</a>(QString filename);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_back_end_space_1_1_back_end.html#a6d55511e3ef074926f1729631fb7f047">SelectFromJson</a>(QString SearchName);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_back_end_space_1_1_back_end.html#ad0ad4e5408150784a6a0195776474c56">SelectFromArrayJson</a>(QString NameOfArray, QString SearchName);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_back_end_space_1_1_back_end.html#a6f9b97532b4b944b460093cf2376778b">ScanCOMPort</a>(QString ProductID);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_back_end_space_1_1_back_end.html#a1eb19f81437255ea4bf5cc1651f1047c">InitSendMessageToPort</a>(QString ComPort, QString message);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> <a class="code" href="class_back_end_space_1_1_back_end.html#a99031e7e8e436c26cc8c49ea73084f1b">SendMessageToPort</a>(QString message);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    QJsonDocument RawJsonData;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QSerialPort *SerialPort;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QString signal_mainpage_comport_string,description;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // BackEnd_H</span></div><div class="ttc" id="class_back_end_space_1_1_back_end_html_a6f9b97532b4b944b460093cf2376778b"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a6f9b97532b4b944b460093cf2376778b">BackEndSpace::BackEnd::ScanCOMPort</a></div><div class="ttdeci">Q_INVOKABLE QString ScanCOMPort(QString ProductID)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00115">BackEnd.cpp:115</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_ab7c89f258fb3afaa6b2ef9d16b009560"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#ab7c89f258fb3afaa6b2ef9d16b009560">BackEndSpace::BackEnd::CheckFileExist</a></div><div class="ttdeci">Q_INVOKABLE bool CheckFileExist(QString file)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00034">BackEnd.cpp:34</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_ab6fe52b22e676d3809bcea4f94960a91"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#ab6fe52b22e676d3809bcea4f94960a91">BackEndSpace::BackEnd::BackEnd</a></div><div class="ttdeci">BackEnd(QObject *parent=nullptr)</div><div class="ttdoc">Stworzenie obiektu dla QT. </div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00003">BackEnd.cpp:3</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a8008a4eb621a34d14f6ab9612c9e7e41"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a8008a4eb621a34d14f6ab9612c9e7e41">BackEndSpace::BackEnd::CheckDLCisInstalled</a></div><div class="ttdeci">Q_INVOKABLE bool CheckDLCisInstalled(AppId_t ID)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00047">BackEnd.cpp:47</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_ad0ad4e5408150784a6a0195776474c56"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#ad0ad4e5408150784a6a0195776474c56">BackEndSpace::BackEnd::SelectFromArrayJson</a></div><div class="ttdeci">Q_INVOKABLE QString SelectFromArrayJson(QString NameOfArray, QString SearchName)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00104">BackEnd.cpp:104</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a1c2234acf04382bdaf5adf2921a0ae65"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a1c2234acf04382bdaf5adf2921a0ae65">BackEndSpace::BackEnd::SelectSettingFile</a></div><div class="ttdeci">Q_INVOKABLE void SelectSettingFile(QString LanguageName)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00075">BackEnd.cpp:75</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_ad74f93f446a7bea2878efabf9246cda4"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#ad74f93f446a7bea2878efabf9246cda4">BackEndSpace::BackEnd::OpenJsonFile</a></div><div class="ttdeci">Q_INVOKABLE QJsonDocument OpenJsonFile(QString filename)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00080">BackEnd.cpp:80</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a99031e7e8e436c26cc8c49ea73084f1b"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a99031e7e8e436c26cc8c49ea73084f1b">BackEndSpace::BackEnd::SendMessageToPort</a></div><div class="ttdeci">Q_INVOKABLE void SendMessageToPort(QString message)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00150">BackEnd.cpp:150</a></div></div>
+<div class="ttc" id="namespace_back_end_space_html"><div class="ttname"><a href="namespace_back_end_space.html">BackEndSpace</a></div><div class="ttdoc">Przestrzeni nazw zajmująca się Back-Endem aplikacji. Jest to klasa zajmująca się obsługą aplikacji od...</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8h_source.html#l00017">BackEnd.h:17</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a9e8a3b46de916f38288dbcdcb4ae8c85"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a9e8a3b46de916f38288dbcdcb4ae8c85">BackEndSpace::BackEnd::SteamLang</a></div><div class="ttdeci">Q_INVOKABLE QString SteamLang()</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00062">BackEnd.cpp:62</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a3a85c4416c934c36b89aed4e371c82a8"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a3a85c4416c934c36b89aed4e371c82a8">BackEndSpace::BackEnd::SelectLanguage</a></div><div class="ttdeci">Q_INVOKABLE void SelectLanguage(QString LanguageName)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00069">BackEnd.cpp:69</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html">BackEndSpace::BackEnd</a></div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8h_source.html#l00019">BackEnd.h:19</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a1eb19f81437255ea4bf5cc1651f1047c"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a1eb19f81437255ea4bf5cc1651f1047c">BackEndSpace::BackEnd::InitSendMessageToPort</a></div><div class="ttdeci">Q_INVOKABLE void InitSendMessageToPort(QString ComPort, QString message)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00136">BackEnd.cpp:136</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a6d55511e3ef074926f1729631fb7f047"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a6d55511e3ef074926f1729631fb7f047">BackEndSpace::BackEnd::SelectFromJson</a></div><div class="ttdeci">Q_INVOKABLE QString SelectFromJson(QString SearchName)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00097">BackEnd.cpp:97</a></div></div>
+<div class="ttc" id="class_back_end_space_1_1_back_end_html_a04f69b715de1c65b21873a46b70fcc27"><div class="ttname"><a href="class_back_end_space_1_1_back_end.html#a04f69b715de1c65b21873a46b70fcc27">BackEndSpace::BackEnd::CreateFile</a></div><div class="ttdeci">Q_INVOKABLE bool CreateFile(QString file)</div><div class="ttdef"><b>Definition:</b> <a href="_back_end_8cpp_source.html#l00008">BackEnd.cpp:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d4cf0c629a02a0e52bab8a9e407a03d8.html">Projekt_cpp</a></li><li class="navelem"><a class="el" href="dir_b7bc0eac6848bd7f4ffab3bda14d6167.html">Pre-Alpha Relase</a></li><li class="navelem"><a class="el" href="dir_9968b0add0a932db8b4dbc993213e28e.html">PC_Master_Control_Center</a></li><li class="navelem"><b>BackEnd.h</b></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

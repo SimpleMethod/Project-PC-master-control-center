@@ -1,0 +1,63 @@
+\hypertarget{class_d_s1307}{}\section{Dokumentacja klasy D\+S1307}
+\label{class_d_s1307}\index{D\+S1307@{D\+S1307}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_s1307_a0c5026cdfc7b99c4b86d5706823d06f5}\label{class_d_s1307_a0c5026cdfc7b99c4b86d5706823d06f5}} 
+bool {\bfseries begin} (void)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a41f8a39e0873497f2c52a22a7ee4b035}\label{class_d_s1307_a41f8a39e0873497f2c52a22a7ee4b035}} 
+void {\bfseries set\+Date\+Time} (uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)
+\item 
+\mbox{\Hypertarget{class_d_s1307_aa57b265cf323b83e075aeacdd8090255}\label{class_d_s1307_aa57b265cf323b83e075aeacdd8090255}} 
+void {\bfseries set\+Date\+Time} (uint32\+\_\+t t)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a5fcb3534f8e78b9708bdcdb9f9172a77}\label{class_d_s1307_a5fcb3534f8e78b9708bdcdb9f9172a77}} 
+void {\bfseries set\+Date\+Time} (const char $\ast$date, const char $\ast$time)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a4ecdf443aebb087395092fe75478fbfd}\label{class_d_s1307_a4ecdf443aebb087395092fe75478fbfd}} 
+\hyperlink{struct_r_t_c_date_time}{R\+T\+C\+Date\+Time} {\bfseries get\+Date\+Time} (void)
+\item 
+\mbox{\Hypertarget{class_d_s1307_ae9fc5a21eaad48a15cb13068c153e1a1}\label{class_d_s1307_ae9fc5a21eaad48a15cb13068c153e1a1}} 
+uint8\+\_\+t {\bfseries is\+Ready} (void)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a6c39c52cd1b0a895f2acaff6a548e0da}\label{class_d_s1307_a6c39c52cd1b0a895f2acaff6a548e0da}} 
+uint8\+\_\+t {\bfseries read\+Byte} (uint8\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a24660dcf3ede47d572e6608d2148feb9}\label{class_d_s1307_a24660dcf3ede47d572e6608d2148feb9}} 
+uint8\+\_\+t {\bfseries write\+Byte} (uint8\+\_\+t offset, uint8\+\_\+t data)
+\item 
+\mbox{\Hypertarget{class_d_s1307_acd017bd5e0f87e851b69a3cb46a56468}\label{class_d_s1307_acd017bd5e0f87e851b69a3cb46a56468}} 
+void {\bfseries read\+Memory} (uint8\+\_\+t offset, uint8\+\_\+t $\ast$buff, uint8\+\_\+t size)
+\item 
+\mbox{\Hypertarget{class_d_s1307_ab7cc5b6d0304517ab9a080f1104539a6}\label{class_d_s1307_ab7cc5b6d0304517ab9a080f1104539a6}} 
+void {\bfseries write\+Memory} (uint8\+\_\+t offset, uint8\+\_\+t $\ast$buff, uint8\+\_\+t size)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a0180e471e904e98da268be098ce315ae}\label{class_d_s1307_a0180e471e904e98da268be098ce315ae}} 
+void {\bfseries clear\+Memory} (void)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a1da88aa31f0809be83e906b7f4cffd6d}\label{class_d_s1307_a1da88aa31f0809be83e906b7f4cffd6d}} 
+ds1307\+\_\+sqw\+Out\+\_\+t {\bfseries get\+Output} (void)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a52652a667340e30b1b1f010041de8ffc}\label{class_d_s1307_a52652a667340e30b1b1f010041de8ffc}} 
+void {\bfseries set\+Output} (ds1307\+\_\+sqw\+Out\+\_\+t mode)
+\item 
+\mbox{\Hypertarget{class_d_s1307_ae413d40f19c971bb60f0d4d0355d1fef}\label{class_d_s1307_ae413d40f19c971bb60f0d4d0355d1fef}} 
+void {\bfseries set\+Output} (bool mode)
+\item 
+\mbox{\Hypertarget{class_d_s1307_a6ecedf79557dd1d12cb1fd7b942f3204}\label{class_d_s1307_a6ecedf79557dd1d12cb1fd7b942f3204}} 
+char $\ast$ {\bfseries date\+Format} (const char $\ast$date\+Format, \hyperlink{struct_r_t_c_date_time}{R\+T\+C\+Date\+Time} dt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 61 pliku D\+S1307.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/\+L\+C\+D/D\+S1307.\+h\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/\+L\+C\+D/D\+S1307.\+cpp\end{DoxyCompactItemize}

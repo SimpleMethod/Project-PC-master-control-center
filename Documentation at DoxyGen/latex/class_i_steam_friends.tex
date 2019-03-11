@@ -1,0 +1,227 @@
+\hypertarget{class_i_steam_friends}{}\section{Dokumentacja klasy I\+Steam\+Friends}
+\label{class_i_steam_friends}\index{I\+Steam\+Friends@{I\+Steam\+Friends}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a72b5269acb1134b148827644ed401ee5}\label{class_i_steam_friends_a72b5269acb1134b148827644ed401ee5}} 
+virtual const char $\ast$ {\bfseries Get\+Persona\+Name} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a6bd31942dd75ba2ccc11b9ab2fed5b01}\label{class_i_steam_friends_a6bd31942dd75ba2ccc11b9ab2fed5b01}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Set\+Persona\+Name} (const char $\ast$pch\+Persona\+Name)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a09e87434f6f5d1d9e037c3673d53ab59}\label{class_i_steam_friends_a09e87434f6f5d1d9e037c3673d53ab59}} 
+virtual E\+Persona\+State {\bfseries Get\+Persona\+State} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_abbb75008d56eec2f81ce361476d3f7f2}\label{class_i_steam_friends_abbb75008d56eec2f81ce361476d3f7f2}} 
+virtual int {\bfseries Get\+Friend\+Count} (int i\+Friend\+Flags)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ab9b45dfe53f34f301ecc6b12efed0a5e}\label{class_i_steam_friends_ab9b45dfe53f34f301ecc6b12efed0a5e}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Friend\+By\+Index} (int i\+Friend, int i\+Friend\+Flags)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a44b9f74602d60cd1a526947a517e5c4a}\label{class_i_steam_friends_a44b9f74602d60cd1a526947a517e5c4a}} 
+virtual E\+Friend\+Relationship {\bfseries Get\+Friend\+Relationship} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a5b36ac050fd54ca8c9a2fc7c3f2d6e33}\label{class_i_steam_friends_a5b36ac050fd54ca8c9a2fc7c3f2d6e33}} 
+virtual E\+Persona\+State {\bfseries Get\+Friend\+Persona\+State} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a2bfbd1689cf78511bda6ee3b753ec773}\label{class_i_steam_friends_a2bfbd1689cf78511bda6ee3b753ec773}} 
+virtual const char $\ast$ {\bfseries Get\+Friend\+Persona\+Name} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a7a2c2b3994169056d50ef805393648ab}\label{class_i_steam_friends_a7a2c2b3994169056d50ef805393648ab}} 
+virtual bool {\bfseries Get\+Friend\+Game\+Played} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, O\+U\+T\+\_\+\+S\+T\+R\+U\+CT() \hyperlink{struct_friend_game_info__t}{Friend\+Game\+Info\+\_\+t} $\ast$p\+Friend\+Game\+Info)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a57fa398ce9edb552da199821f3598077}\label{class_i_steam_friends_a57fa398ce9edb552da199821f3598077}} 
+virtual const char $\ast$ {\bfseries Get\+Friend\+Persona\+Name\+History} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, int i\+Persona\+Name)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a922c14f329d09c0f4aa251b5900e475a}\label{class_i_steam_friends_a922c14f329d09c0f4aa251b5900e475a}} 
+virtual int {\bfseries Get\+Friend\+Steam\+Level} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a9ea8988ff44219141dec56deb123d3cd}\label{class_i_steam_friends_a9ea8988ff44219141dec56deb123d3cd}} 
+virtual const char $\ast$ {\bfseries Get\+Player\+Nickname} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Player)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a6dc3d91e79c8efcc5666640eeaa988d8}\label{class_i_steam_friends_a6dc3d91e79c8efcc5666640eeaa988d8}} 
+virtual int {\bfseries Get\+Friends\+Group\+Count} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a1a6e422dac40f8f15242a6a45c752d2f}\label{class_i_steam_friends_a1a6e422dac40f8f15242a6a45c752d2f}} 
+virtual Friends\+Group\+I\+D\+\_\+t {\bfseries Get\+Friends\+Group\+I\+D\+By\+Index} (int i\+FG)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a54c2657d4d5e27f47069e64aaeda2f53}\label{class_i_steam_friends_a54c2657d4d5e27f47069e64aaeda2f53}} 
+virtual const char $\ast$ {\bfseries Get\+Friends\+Group\+Name} (Friends\+Group\+I\+D\+\_\+t friends\+Group\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a6fe9e93a63c5d8007eec7c65482ad397}\label{class_i_steam_friends_a6fe9e93a63c5d8007eec7c65482ad397}} 
+virtual int {\bfseries Get\+Friends\+Group\+Members\+Count} (Friends\+Group\+I\+D\+\_\+t friends\+Group\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_af941cfe1efee3d4ddd639fa65d640a4d}\label{class_i_steam_friends_af941cfe1efee3d4ddd639fa65d640a4d}} 
+virtual void {\bfseries Get\+Friends\+Group\+Members\+List} (Friends\+Group\+I\+D\+\_\+t friends\+Group\+ID, O\+U\+T\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+A\+LL(n\+Members\+Count, Get\+Friends\+Group\+Members\+Count, friends\+Group\+ID) \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$p\+Out\+Steam\+I\+D\+Members, int n\+Members\+Count)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a5eea1d17e8fd797dcee6920b61761e1c}\label{class_i_steam_friends_a5eea1d17e8fd797dcee6920b61761e1c}} 
+virtual bool {\bfseries Has\+Friend} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, int i\+Friend\+Flags)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ad4bca073b32157360056818bf2bb8da7}\label{class_i_steam_friends_ad4bca073b32157360056818bf2bb8da7}} 
+virtual int {\bfseries Get\+Clan\+Count} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a7be8e489ca359b4e9c665f62de5de6e3}\label{class_i_steam_friends_a7be8e489ca359b4e9c665f62de5de6e3}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Clan\+By\+Index} (int i\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a2562ee2c900eb411257ad744d2829843}\label{class_i_steam_friends_a2562ee2c900eb411257ad744d2829843}} 
+virtual const char $\ast$ {\bfseries Get\+Clan\+Name} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ad5457bd8e8bb800347e9d98691bc5ea9}\label{class_i_steam_friends_ad5457bd8e8bb800347e9d98691bc5ea9}} 
+virtual const char $\ast$ {\bfseries Get\+Clan\+Tag} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a9c1140ebd30409abe8eb2d396c41a08b}\label{class_i_steam_friends_a9c1140ebd30409abe8eb2d396c41a08b}} 
+virtual bool {\bfseries Get\+Clan\+Activity\+Counts} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan, int $\ast$pn\+Online, int $\ast$pn\+In\+Game, int $\ast$pn\+Chatting)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a2b708e391d8eb233790482892a4b2558}\label{class_i_steam_friends_a2b708e391d8eb233790482892a4b2558}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Download\+Clan\+Activity\+Counts} (A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(c\+Clans\+To\+Request) \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$psteam\+I\+D\+Clans, int c\+Clans\+To\+Request)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_affdd9c69c64cd4725d86ff591a1cd8b4}\label{class_i_steam_friends_affdd9c69c64cd4725d86ff591a1cd8b4}} 
+virtual int {\bfseries Get\+Friend\+Count\+From\+Source} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Source)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a0fd81e3ab7aa52018dfce8ccdd5c611a}\label{class_i_steam_friends_a0fd81e3ab7aa52018dfce8ccdd5c611a}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Friend\+From\+Source\+By\+Index} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Source, int i\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ac52308fb74d4b3fe72a29d896eceb2c1}\label{class_i_steam_friends_ac52308fb74d4b3fe72a29d896eceb2c1}} 
+virtual bool {\bfseries Is\+User\+In\+Source} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+User, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Source)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ac6de0a382cf904b81aba7a2ecdf45d1e}\label{class_i_steam_friends_ac6de0a382cf904b81aba7a2ecdf45d1e}} 
+virtual void {\bfseries Set\+In\+Game\+Voice\+Speaking} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+User, bool b\+Speaking)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a6fef6a8e1f6a4b54e46392b8066a2bc1}\label{class_i_steam_friends_a6fef6a8e1f6a4b54e46392b8066a2bc1}} 
+virtual void {\bfseries Activate\+Game\+Overlay} (const char $\ast$pch\+Dialog)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_abdf45d1ba2d1daffc0d09bf6ac1565a7}\label{class_i_steam_friends_abdf45d1ba2d1daffc0d09bf6ac1565a7}} 
+virtual void {\bfseries Activate\+Game\+Overlay\+To\+User} (const char $\ast$pch\+Dialog, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a4bc559ed248ea4738d5a08fdf134e26a}\label{class_i_steam_friends_a4bc559ed248ea4738d5a08fdf134e26a}} 
+virtual void {\bfseries Activate\+Game\+Overlay\+To\+Web\+Page} (const char $\ast$pch\+U\+RL)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a13c43e63a8e92cd113032a8934953d09}\label{class_i_steam_friends_a13c43e63a8e92cd113032a8934953d09}} 
+virtual void {\bfseries Activate\+Game\+Overlay\+To\+Store} (App\+Id\+\_\+t n\+App\+ID, E\+Overlay\+To\+Store\+Flag e\+Flag)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a9a1585d9277f80b9dd22f268b2b16f73}\label{class_i_steam_friends_a9a1585d9277f80b9dd22f268b2b16f73}} 
+virtual void {\bfseries Set\+Played\+With} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+User\+Played\+With)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_acabecb72f25302d9909519788d193f13}\label{class_i_steam_friends_acabecb72f25302d9909519788d193f13}} 
+virtual void {\bfseries Activate\+Game\+Overlay\+Invite\+Dialog} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_afa940165783547227f489fea9b0623cf}\label{class_i_steam_friends_afa940165783547227f489fea9b0623cf}} 
+virtual int {\bfseries Get\+Small\+Friend\+Avatar} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a16c65f939af9f28ff82e4920bf08b85b}\label{class_i_steam_friends_a16c65f939af9f28ff82e4920bf08b85b}} 
+virtual int {\bfseries Get\+Medium\+Friend\+Avatar} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a63fc9433e7db6607e576a2337a92a35d}\label{class_i_steam_friends_a63fc9433e7db6607e576a2337a92a35d}} 
+virtual int {\bfseries Get\+Large\+Friend\+Avatar} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a7361d0c70a8f3bfafef904f031ab2672}\label{class_i_steam_friends_a7361d0c70a8f3bfafef904f031ab2672}} 
+virtual bool {\bfseries Request\+User\+Information} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+User, bool b\+Require\+Name\+Only)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a86559d74486ea2615531b17ae0fed9d3}\label{class_i_steam_friends_a86559d74486ea2615531b17ae0fed9d3}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Request\+Clan\+Officer\+List} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_aa7dc090b7d3f5fe7091c0768df42e08a}\label{class_i_steam_friends_aa7dc090b7d3f5fe7091c0768df42e08a}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Clan\+Owner} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a7ff70728ac9a7d20ec96dc27255a7cd9}\label{class_i_steam_friends_a7ff70728ac9a7d20ec96dc27255a7cd9}} 
+virtual int {\bfseries Get\+Clan\+Officer\+Count} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a79bf6ec72ccc6209a73c81755735ce8c}\label{class_i_steam_friends_a79bf6ec72ccc6209a73c81755735ce8c}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Clan\+Officer\+By\+Index} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan, int i\+Officer)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_af4146ae496bb10eb92e13c198dfffb39}\label{class_i_steam_friends_af4146ae496bb10eb92e13c198dfffb39}} 
+virtual uint32 {\bfseries Get\+User\+Restrictions} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a07752feeb6241be20afa797b7c1be1c2}\label{class_i_steam_friends_a07752feeb6241be20afa797b7c1be1c2}} 
+virtual bool {\bfseries Set\+Rich\+Presence} (const char $\ast$pch\+Key, const char $\ast$pch\+Value)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a54dac8e99746df4d7e84d12e5c5216d5}\label{class_i_steam_friends_a54dac8e99746df4d7e84d12e5c5216d5}} 
+virtual void {\bfseries Clear\+Rich\+Presence} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a899948624d194f9941393910d85568dd}\label{class_i_steam_friends_a899948624d194f9941393910d85568dd}} 
+virtual const char $\ast$ {\bfseries Get\+Friend\+Rich\+Presence} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, const char $\ast$pch\+Key)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a5ec526f9066bdf9a81dce11b449f7476}\label{class_i_steam_friends_a5ec526f9066bdf9a81dce11b449f7476}} 
+virtual int {\bfseries Get\+Friend\+Rich\+Presence\+Key\+Count} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a62314a0684def333acdab19bf88e1ff5}\label{class_i_steam_friends_a62314a0684def333acdab19bf88e1ff5}} 
+virtual const char $\ast$ {\bfseries Get\+Friend\+Rich\+Presence\+Key\+By\+Index} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, int i\+Key)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a1812fcaa2a5a567c241aa5c20daab530}\label{class_i_steam_friends_a1812fcaa2a5a567c241aa5c20daab530}} 
+virtual void {\bfseries Request\+Friend\+Rich\+Presence} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_af28a1938dd5d1460f0cf5a9755f60a86}\label{class_i_steam_friends_af28a1938dd5d1460f0cf5a9755f60a86}} 
+virtual bool {\bfseries Invite\+User\+To\+Game} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, const char $\ast$pch\+Connect\+String)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a80597cb86daf3562602d254754a867f7}\label{class_i_steam_friends_a80597cb86daf3562602d254754a867f7}} 
+virtual int {\bfseries Get\+Coplay\+Friend\+Count} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a896aad4f362b4d107dbf248cc9dd0fc7}\label{class_i_steam_friends_a896aad4f362b4d107dbf248cc9dd0fc7}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Coplay\+Friend} (int i\+Coplay\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a8cc2fdf1cca9a23cc2c81960cbc84f8f}\label{class_i_steam_friends_a8cc2fdf1cca9a23cc2c81960cbc84f8f}} 
+virtual int {\bfseries Get\+Friend\+Coplay\+Time} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a166e14738d6123a0f6c2f6fdab67377c}\label{class_i_steam_friends_a166e14738d6123a0f6c2f6fdab67377c}} 
+virtual App\+Id\+\_\+t {\bfseries Get\+Friend\+Coplay\+Game} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a2308b85c4d82575ebcf88e0a2a37a030}\label{class_i_steam_friends_a2308b85c4d82575ebcf88e0a2a37a030}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Join\+Clan\+Chat\+Room} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ac3aacc8799c95d30fe1c2c95d1747365}\label{class_i_steam_friends_ac3aacc8799c95d30fe1c2c95d1747365}} 
+virtual bool {\bfseries Leave\+Clan\+Chat\+Room} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a424c2a4680fab3b327523cde6895a57c}\label{class_i_steam_friends_a424c2a4680fab3b327523cde6895a57c}} 
+virtual int {\bfseries Get\+Clan\+Chat\+Member\+Count} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a840cbfc191ba1d174b6dfae497b3251b}\label{class_i_steam_friends_a840cbfc191ba1d174b6dfae497b3251b}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Chat\+Member\+By\+Index} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan, int i\+User)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ac66f8ad646a2b5cc58fe90ba8c3ba021}\label{class_i_steam_friends_ac66f8ad646a2b5cc58fe90ba8c3ba021}} 
+virtual bool {\bfseries Send\+Clan\+Chat\+Message} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan\+Chat, const char $\ast$pch\+Text)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a64a3d35df1e2ede7844e21957b6984cd}\label{class_i_steam_friends_a64a3d35df1e2ede7844e21957b6984cd}} 
+virtual int {\bfseries Get\+Clan\+Chat\+Message} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan\+Chat, int i\+Message, void $\ast$prgch\+Text, int cch\+Text\+Max, E\+Chat\+Entry\+Type $\ast$pe\+Chat\+Entry\+Type, O\+U\+T\+\_\+\+S\+T\+R\+U\+CT() \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$psteamid\+Chatter)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a6256d1c58f3fd7e1600bf900faf43593}\label{class_i_steam_friends_a6256d1c58f3fd7e1600bf900faf43593}} 
+virtual bool {\bfseries Is\+Clan\+Chat\+Admin} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan\+Chat, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+User)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a782a7437f023b4b154d40e52679e977c}\label{class_i_steam_friends_a782a7437f023b4b154d40e52679e977c}} 
+virtual bool {\bfseries Is\+Clan\+Chat\+Window\+Open\+In\+Steam} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan\+Chat)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ac58ad29248636f3bdeab222a54edb2e5}\label{class_i_steam_friends_ac58ad29248636f3bdeab222a54edb2e5}} 
+virtual bool {\bfseries Open\+Clan\+Chat\+Window\+In\+Steam} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan\+Chat)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_affe719351751ef5b2bca280986580101}\label{class_i_steam_friends_affe719351751ef5b2bca280986580101}} 
+virtual bool {\bfseries Close\+Clan\+Chat\+Window\+In\+Steam} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Clan\+Chat)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_af24d827dae47dfd01349c4810c03c5eb}\label{class_i_steam_friends_af24d827dae47dfd01349c4810c03c5eb}} 
+virtual bool {\bfseries Set\+Listen\+For\+Friends\+Messages} (bool b\+Intercept\+Enabled)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a48a60a4d7a4277bbc573928717b6a13d}\label{class_i_steam_friends_a48a60a4d7a4277bbc573928717b6a13d}} 
+virtual bool {\bfseries Reply\+To\+Friend\+Message} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, const char $\ast$pch\+Msg\+To\+Send)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_ada1434b498ff7e1a6cb320ca8ba78c05}\label{class_i_steam_friends_ada1434b498ff7e1a6cb320ca8ba78c05}} 
+virtual int {\bfseries Get\+Friend\+Message} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Friend, int i\+Message\+ID, void $\ast$pv\+Data, int cub\+Data, E\+Chat\+Entry\+Type $\ast$pe\+Chat\+Entry\+Type)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a9f5c823932e64a147f2be3ed0b99638f}\label{class_i_steam_friends_a9f5c823932e64a147f2be3ed0b99638f}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Get\+Follower\+Count} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_aeda9f2b90c4ccb21cfa5d63cf614aa2c}\label{class_i_steam_friends_aeda9f2b90c4ccb21cfa5d63cf614aa2c}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Is\+Following} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_friends_a726945d52b0d104d81577a994c11e15d}\label{class_i_steam_friends_a726945d52b0d104d81577a994c11e15d}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Enumerate\+Following\+List} (uint32 un\+Start\+Index)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 162 pliku isteamfriends.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamfriends.\+h\end{DoxyCompactItemize}

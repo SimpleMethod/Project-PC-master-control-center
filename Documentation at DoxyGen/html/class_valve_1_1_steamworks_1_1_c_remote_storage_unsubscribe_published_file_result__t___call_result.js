@@ -1,0 +1,5 @@
+var class_valve_1_1_steamworks_1_1_c_remote_storage_unsubscribe_published_file_result__t___call_result =
+[
+    [ "CRemoteStorageUnsubscribePublishedFileResult_t_CallResult", "class_valve_1_1_steamworks_1_1_c_remote_storage_unsubscribe_published_file_result__t___call_result.html#a14cc9fd3a7561f4436049512a28398be", null ],
+    [ "Set", "class_valve_1_1_steamworks_1_1_c_remote_storage_unsubscribe_published_file_result__t___call_result.html#a2c161c5251f1d5adf0956ffc5fb55972", null ]
+];

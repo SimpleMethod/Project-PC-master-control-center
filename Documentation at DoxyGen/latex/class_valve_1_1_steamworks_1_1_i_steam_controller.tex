@@ -1,0 +1,104 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+I\+Steam\+Controller}
+\label{class_valve_1_1_steamworks_1_1_i_steam_controller}\index{Valve.\+Steamworks.\+I\+Steam\+Controller@{Valve.\+Steamworks.\+I\+Steam\+Controller}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+I\+Steam\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_i_steam_controller}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ae044b24127646d292bd403cb6a14fa4b}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ae044b24127646d292bd403cb6a14fa4b}} 
+abstract Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_acd1b398fb59d81ccaf85f0a5dab79a38}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_acd1b398fb59d81ccaf85f0a5dab79a38}} 
+abstract bool {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a144f9f2c93d9b5d3113c7fb5c3e857dd}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a144f9f2c93d9b5d3113c7fb5c3e857dd}} 
+abstract bool {\bfseries Shutdown} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a480c84be1fd08cb012b587a537c04345}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a480c84be1fd08cb012b587a537c04345}} 
+abstract void {\bfseries Run\+Frame} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a02db521e542c5c611c35a1cdcd96e404}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a02db521e542c5c611c35a1cdcd96e404}} 
+abstract int {\bfseries Get\+Connected\+Controllers} (ref ulong handles\+Out)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a8958152c3c263ec8bc4d1d356ff07fb3}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a8958152c3c263ec8bc4d1d356ff07fb3}} 
+abstract bool {\bfseries Show\+Binding\+Panel} (ulong controller\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_abb2aa51f6f5cd7a87025c829d79d0073}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_abb2aa51f6f5cd7a87025c829d79d0073}} 
+abstract ulong {\bfseries Get\+Action\+Set\+Handle} (string psz\+Action\+Set\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ab1a03842c9b245c3383dac4940c42fdf}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ab1a03842c9b245c3383dac4940c42fdf}} 
+abstract void {\bfseries Activate\+Action\+Set} (ulong controller\+Handle, ulong action\+Set\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ab98138768daa19517b97621675a171d1}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ab98138768daa19517b97621675a171d1}} 
+abstract ulong {\bfseries Get\+Current\+Action\+Set} (ulong controller\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ac185580630bf2cbb335c0556ccb3f271}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ac185580630bf2cbb335c0556ccb3f271}} 
+abstract ulong {\bfseries Get\+Digital\+Action\+Handle} (string psz\+Action\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a62e79ac1b4ceb7988e19eaf9cfb800c1}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a62e79ac1b4ceb7988e19eaf9cfb800c1}} 
+abstract \hyperlink{struct_valve_1_1_steamworks_1_1_controller_digital_action_data__t}{Controller\+Digital\+Action\+Data\+\_\+t} {\bfseries Get\+Digital\+Action\+Data} (ulong controller\+Handle, ulong digital\+Action\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ac5e207258619f4addd9afa715661600c}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ac5e207258619f4addd9afa715661600c}} 
+abstract int {\bfseries Get\+Digital\+Action\+Origins} (ulong controller\+Handle, ulong action\+Set\+Handle, ulong digital\+Action\+Handle, ref uint origins\+Out)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a83af467131b89cfeb94ac8c8884e67b8}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a83af467131b89cfeb94ac8c8884e67b8}} 
+abstract ulong {\bfseries Get\+Analog\+Action\+Handle} (string psz\+Action\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_aff8922184097ae0213767e26c8a2d087}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_aff8922184097ae0213767e26c8a2d087}} 
+abstract \hyperlink{struct_valve_1_1_steamworks_1_1_controller_analog_action_data__t}{Controller\+Analog\+Action\+Data\+\_\+t} {\bfseries Get\+Analog\+Action\+Data} (ulong controller\+Handle, ulong analog\+Action\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a523734354e7f0f1e2b14c6660c7f804d}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a523734354e7f0f1e2b14c6660c7f804d}} 
+abstract int {\bfseries Get\+Analog\+Action\+Origins} (ulong controller\+Handle, ulong action\+Set\+Handle, ulong analog\+Action\+Handle, ref uint origins\+Out)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a4ce1f56bc001e19941d10d729529250f}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a4ce1f56bc001e19941d10d729529250f}} 
+abstract void {\bfseries Stop\+Analog\+Action\+Momentum} (ulong controller\+Handle, ulong e\+Action)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ab8b9b4cb73dda569fd4c90358fb02d92}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ab8b9b4cb73dda569fd4c90358fb02d92}} 
+abstract void {\bfseries Trigger\+Haptic\+Pulse} (ulong controller\+Handle, uint e\+Target\+Pad, char us\+Duration\+Micro\+Sec)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a4ad2ce18513e9ff1f0012062cb217ff9}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a4ad2ce18513e9ff1f0012062cb217ff9}} 
+abstract void {\bfseries Trigger\+Repeated\+Haptic\+Pulse} (ulong controller\+Handle, uint e\+Target\+Pad, char us\+Duration\+Micro\+Sec, char us\+Off\+Micro\+Sec, char un\+Repeat, uint n\+Flags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a7821953dbf8bee56c9c3808059e5877b}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a7821953dbf8bee56c9c3808059e5877b}} 
+abstract void {\bfseries Trigger\+Vibration} (ulong controller\+Handle, char us\+Left\+Speed, char us\+Right\+Speed)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ad54f56fedbee0e54b0903eb000b80ac4}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ad54f56fedbee0e54b0903eb000b80ac4}} 
+abstract void {\bfseries Set\+L\+E\+D\+Color} (ulong controller\+Handle, byte n\+ColorR, byte n\+ColorG, byte n\+ColorB, uint n\+Flags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ac9f6bc6ba50a5fae14bbf16a195ee7a7}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ac9f6bc6ba50a5fae14bbf16a195ee7a7}} 
+abstract int {\bfseries Get\+Gamepad\+Index\+For\+Controller} (ulong ul\+Controller\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_abf0f8a574d5382f2f64c8cec8d6fe0e5}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_abf0f8a574d5382f2f64c8cec8d6fe0e5}} 
+abstract ulong {\bfseries Get\+Controller\+For\+Gamepad\+Index} (int n\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a920fc888d3d9aba9c11cb2f3ec6168ba}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a920fc888d3d9aba9c11cb2f3ec6168ba}} 
+abstract \hyperlink{struct_valve_1_1_steamworks_1_1_controller_motion_data__t}{Controller\+Motion\+Data\+\_\+t} {\bfseries Get\+Motion\+Data} (ulong controller\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a8b1753c6378d1c4ab043ad1cc10c3ad5}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a8b1753c6378d1c4ab043ad1cc10c3ad5}} 
+abstract bool {\bfseries Show\+Digital\+Action\+Origins} (ulong controller\+Handle, ulong digital\+Action\+Handle, float fl\+Scale, float fl\+X\+Position, float fl\+Y\+Position)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_ad63136fac005637f242bc194765b0928}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_ad63136fac005637f242bc194765b0928}} 
+abstract bool {\bfseries Show\+Analog\+Action\+Origins} (ulong controller\+Handle, ulong analog\+Action\+Handle, float fl\+Scale, float fl\+X\+Position, float fl\+Y\+Position)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a83e569505a9f6e99dcd296b45d113900}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a83e569505a9f6e99dcd296b45d113900}} 
+abstract string {\bfseries Get\+String\+For\+Action\+Origin} (uint e\+Origin)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_controller_a3460875410af6cb201135d08ac47fa31}\label{class_valve_1_1_steamworks_1_1_i_steam_controller_a3460875410af6cb201135d08ac47fa31}} 
+abstract string {\bfseries Get\+Glyph\+For\+Action\+Origin} (uint e\+Origin)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 2266 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

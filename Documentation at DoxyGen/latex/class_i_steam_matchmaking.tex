@@ -1,0 +1,131 @@
+\hypertarget{class_i_steam_matchmaking}{}\section{Dokumentacja klasy I\+Steam\+Matchmaking}
+\label{class_i_steam_matchmaking}\index{I\+Steam\+Matchmaking@{I\+Steam\+Matchmaking}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a6be9442319d642a4d73270b81db845f8}\label{class_i_steam_matchmaking_a6be9442319d642a4d73270b81db845f8}} 
+virtual int {\bfseries Get\+Favorite\+Game\+Count} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a81aa9e83108de1baa3944f24a470e96e}\label{class_i_steam_matchmaking_a81aa9e83108de1baa3944f24a470e96e}} 
+virtual bool {\bfseries Get\+Favorite\+Game} (int i\+Game, App\+Id\+\_\+t $\ast$pn\+App\+ID, uint32 $\ast$pn\+IP, uint16 $\ast$pn\+Conn\+Port, uint16 $\ast$pn\+Query\+Port, uint32 $\ast$pun\+Flags, uint32 $\ast$p\+R\+Time32\+Last\+Played\+On\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_aedae56e457b44270b6bc3a1e8558fee7}\label{class_i_steam_matchmaking_aedae56e457b44270b6bc3a1e8558fee7}} 
+virtual int {\bfseries Add\+Favorite\+Game} (App\+Id\+\_\+t n\+App\+ID, uint32 n\+IP, uint16 n\+Conn\+Port, uint16 n\+Query\+Port, uint32 un\+Flags, uint32 r\+Time32\+Last\+Played\+On\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a598b028a11268947068416171fec6181}\label{class_i_steam_matchmaking_a598b028a11268947068416171fec6181}} 
+virtual bool {\bfseries Remove\+Favorite\+Game} (App\+Id\+\_\+t n\+App\+ID, uint32 n\+IP, uint16 n\+Conn\+Port, uint16 n\+Query\+Port, uint32 un\+Flags)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_ab11d5a805d6b00605fa60f28d1a6de4b}\label{class_i_steam_matchmaking_ab11d5a805d6b00605fa60f28d1a6de4b}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Request\+Lobby\+List} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_aa001d585efefb54852f5569726232947}\label{class_i_steam_matchmaking_aa001d585efefb54852f5569726232947}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+String\+Filter} (const char $\ast$pch\+Key\+To\+Match, const char $\ast$pch\+Value\+To\+Match, E\+Lobby\+Comparison e\+Comparison\+Type)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a9b3409ec2ef08baaeb025009def84acd}\label{class_i_steam_matchmaking_a9b3409ec2ef08baaeb025009def84acd}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+Numerical\+Filter} (const char $\ast$pch\+Key\+To\+Match, int n\+Value\+To\+Match, E\+Lobby\+Comparison e\+Comparison\+Type)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a6977bdd1ce695749985c61668c3e4758}\label{class_i_steam_matchmaking_a6977bdd1ce695749985c61668c3e4758}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+Near\+Value\+Filter} (const char $\ast$pch\+Key\+To\+Match, int n\+Value\+To\+Be\+Close\+To)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a9575334e8b8368a4d4ac15174bc251ca}\label{class_i_steam_matchmaking_a9575334e8b8368a4d4ac15174bc251ca}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+Filter\+Slots\+Available} (int n\+Slots\+Available)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a3531dd34afff30653f000770a8b5ba67}\label{class_i_steam_matchmaking_a3531dd34afff30653f000770a8b5ba67}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+Distance\+Filter} (E\+Lobby\+Distance\+Filter e\+Lobby\+Distance\+Filter)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a7af4082331b6a35ceee7450c7b00f21f}\label{class_i_steam_matchmaking_a7af4082331b6a35ceee7450c7b00f21f}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+Result\+Count\+Filter} (int c\+Max\+Results)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_aa2bcffc943566ee3c03b593cca4e0a22}\label{class_i_steam_matchmaking_aa2bcffc943566ee3c03b593cca4e0a22}} 
+virtual void {\bfseries Add\+Request\+Lobby\+List\+Compatible\+Members\+Filter} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_ae22f461db3ff301594791b0171ed3631}\label{class_i_steam_matchmaking_ae22f461db3ff301594791b0171ed3631}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Lobby\+By\+Index} (int i\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a2c291ead7d67a5df0cceb77a88a6d0a9}\label{class_i_steam_matchmaking_a2c291ead7d67a5df0cceb77a88a6d0a9}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Create\+Lobby} (E\+Lobby\+Type e\+Lobby\+Type, int c\+Max\+Members)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a8dc517d730ddaa8311816244ceeac287}\label{class_i_steam_matchmaking_a8dc517d730ddaa8311816244ceeac287}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Join\+Lobby} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a2a13b13352f6df85977dff74c4ddcd5d}\label{class_i_steam_matchmaking_a2a13b13352f6df85977dff74c4ddcd5d}} 
+virtual void {\bfseries Leave\+Lobby} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a08c063280445302f22b028986f51cb24}\label{class_i_steam_matchmaking_a08c063280445302f22b028986f51cb24}} 
+virtual bool {\bfseries Invite\+User\+To\+Lobby} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Invitee)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_aac140a79a6024335b3779cfd68f6d925}\label{class_i_steam_matchmaking_aac140a79a6024335b3779cfd68f6d925}} 
+virtual int {\bfseries Get\+Num\+Lobby\+Members} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_af482f04ee3661cce04ad736b596cd0bd}\label{class_i_steam_matchmaking_af482f04ee3661cce04ad736b596cd0bd}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Lobby\+Member\+By\+Index} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, int i\+Member)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a4a06e468689eae616b1d7c42a7a974e1}\label{class_i_steam_matchmaking_a4a06e468689eae616b1d7c42a7a974e1}} 
+virtual const char $\ast$ {\bfseries Get\+Lobby\+Data} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, const char $\ast$pch\+Key)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a70674d1431d8213b0401ac85b0e9ff12}\label{class_i_steam_matchmaking_a70674d1431d8213b0401ac85b0e9ff12}} 
+virtual bool {\bfseries Set\+Lobby\+Data} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, const char $\ast$pch\+Key, const char $\ast$pch\+Value)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_ab97a7c5766d3b6d412ac472b21aef311}\label{class_i_steam_matchmaking_ab97a7c5766d3b6d412ac472b21aef311}} 
+virtual int {\bfseries Get\+Lobby\+Data\+Count} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a023c45bec3f3aec3934254440b87b1ed}\label{class_i_steam_matchmaking_a023c45bec3f3aec3934254440b87b1ed}} 
+virtual bool {\bfseries Get\+Lobby\+Data\+By\+Index} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, int i\+Lobby\+Data, char $\ast$pch\+Key, int cch\+Key\+Buffer\+Size, char $\ast$pch\+Value, int cch\+Value\+Buffer\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a1cfc86681d82aee096417445c3c267f9}\label{class_i_steam_matchmaking_a1cfc86681d82aee096417445c3c267f9}} 
+virtual bool {\bfseries Delete\+Lobby\+Data} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, const char $\ast$pch\+Key)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_abb257e70af749cd2f0df597bb42a524b}\label{class_i_steam_matchmaking_abb257e70af749cd2f0df597bb42a524b}} 
+virtual const char $\ast$ {\bfseries Get\+Lobby\+Member\+Data} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+User, const char $\ast$pch\+Key)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_ad3c5489202c48de93c220f6ed4a33984}\label{class_i_steam_matchmaking_ad3c5489202c48de93c220f6ed4a33984}} 
+virtual void {\bfseries Set\+Lobby\+Member\+Data} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, const char $\ast$pch\+Key, const char $\ast$pch\+Value)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a2313c8f7e00721028a06fc5b02086328}\label{class_i_steam_matchmaking_a2313c8f7e00721028a06fc5b02086328}} 
+virtual bool {\bfseries Send\+Lobby\+Chat\+Msg} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, const void $\ast$pv\+Msg\+Body, int cub\+Msg\+Body)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_ac3b95d7676fea362221864d0b351b627}\label{class_i_steam_matchmaking_ac3b95d7676fea362221864d0b351b627}} 
+virtual int {\bfseries Get\+Lobby\+Chat\+Entry} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, int i\+Chat\+ID, O\+U\+T\+\_\+\+S\+T\+R\+U\+CT() \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$p\+Steam\+I\+D\+User, void $\ast$pv\+Data, int cub\+Data, E\+Chat\+Entry\+Type $\ast$pe\+Chat\+Entry\+Type)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_ac2a3833252fac7c6104697d0cbf3b55a}\label{class_i_steam_matchmaking_ac2a3833252fac7c6104697d0cbf3b55a}} 
+virtual bool {\bfseries Request\+Lobby\+Data} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a661394f63eb32200983d537e3d5c0053}\label{class_i_steam_matchmaking_a661394f63eb32200983d537e3d5c0053}} 
+virtual void {\bfseries Set\+Lobby\+Game\+Server} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, uint32 un\+Game\+Server\+IP, uint16 un\+Game\+Server\+Port, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Game\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a07494e80748d60c2ff2e42b360c07037}\label{class_i_steam_matchmaking_a07494e80748d60c2ff2e42b360c07037}} 
+virtual bool {\bfseries Get\+Lobby\+Game\+Server} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, uint32 $\ast$pun\+Game\+Server\+IP, uint16 $\ast$pun\+Game\+Server\+Port, O\+U\+T\+\_\+\+S\+T\+R\+U\+CT() \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$psteam\+I\+D\+Game\+Server)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a94cdc2b5934ac9d9ef1e46cff99567b6}\label{class_i_steam_matchmaking_a94cdc2b5934ac9d9ef1e46cff99567b6}} 
+virtual bool {\bfseries Set\+Lobby\+Member\+Limit} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, int c\+Max\+Members)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a3960497e79085ce68298e1ca4df3db8b}\label{class_i_steam_matchmaking_a3960497e79085ce68298e1ca4df3db8b}} 
+virtual int {\bfseries Get\+Lobby\+Member\+Limit} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a9d85958d0c5e4b297ddfc5e1002f7c71}\label{class_i_steam_matchmaking_a9d85958d0c5e4b297ddfc5e1002f7c71}} 
+virtual bool {\bfseries Set\+Lobby\+Type} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, E\+Lobby\+Type e\+Lobby\+Type)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a129730d6f22fa5846353eb6ef9b0884b}\label{class_i_steam_matchmaking_a129730d6f22fa5846353eb6ef9b0884b}} 
+virtual bool {\bfseries Set\+Lobby\+Joinable} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, bool b\+Lobby\+Joinable)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a265ce1a6914a06cb686fd03c2cbca392}\label{class_i_steam_matchmaking_a265ce1a6914a06cb686fd03c2cbca392}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+Lobby\+Owner} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a48d0d64252c77988d56230ebc592d4b9}\label{class_i_steam_matchmaking_a48d0d64252c77988d56230ebc592d4b9}} 
+virtual bool {\bfseries Set\+Lobby\+Owner} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+New\+Owner)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_matchmaking_a0d78ede35fb2a3faffa229d69ac3dadc}\label{class_i_steam_matchmaking_a0d78ede35fb2a3faffa229d69ac3dadc}} 
+virtual bool {\bfseries Set\+Linked\+Lobby} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Lobby\+Dependent)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 57 pliku isteammatchmaking.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteammatchmaking.\+h\end{DoxyCompactItemize}

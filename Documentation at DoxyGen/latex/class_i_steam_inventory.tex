@@ -1,0 +1,92 @@
+\hypertarget{class_i_steam_inventory}{}\section{Dokumentacja klasy I\+Steam\+Inventory}
+\label{class_i_steam_inventory}\index{I\+Steam\+Inventory@{I\+Steam\+Inventory}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a67b326d7d928ce691411dcc2f09d37ab}\label{class_i_steam_inventory_a67b326d7d928ce691411dcc2f09d37ab}} 
+virtual E\+Result {\bfseries Get\+Result\+Status} (Steam\+Inventory\+Result\+\_\+t result\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_ac7b781c85de22e1bc790f36c99ecc231}\label{class_i_steam_inventory_ac7b781c85de22e1bc790f36c99ecc231}} 
+virtual bool {\bfseries Get\+Result\+Items} (Steam\+Inventory\+Result\+\_\+t result\+Handle, O\+U\+T\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(pun\+Out\+Items\+Array\+Size, Output array) \hyperlink{struct_steam_item_details__t}{Steam\+Item\+Details\+\_\+t} $\ast$p\+Out\+Items\+Array, uint32 $\ast$pun\+Out\+Items\+Array\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_ac0149c1fc8b814d5d4d2019350efd01b}\label{class_i_steam_inventory_ac0149c1fc8b814d5d4d2019350efd01b}} 
+virtual bool {\bfseries Get\+Result\+Item\+Property} (Steam\+Inventory\+Result\+\_\+t result\+Handle, uint32 un\+Item\+Index, const char $\ast$pch\+Property\+Name, O\+U\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+C\+O\+U\+NT(pun\+Value\+Buffer\+Size\+Out) char $\ast$pch\+Value\+Buffer, uint32 $\ast$pun\+Value\+Buffer\+Size\+Out)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a62db5aaa59d5f3dc61b8bed315fcdf3a}\label{class_i_steam_inventory_a62db5aaa59d5f3dc61b8bed315fcdf3a}} 
+virtual uint32 {\bfseries Get\+Result\+Timestamp} (Steam\+Inventory\+Result\+\_\+t result\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a4a21657324ec103d90e5748e76192e3a}\label{class_i_steam_inventory_a4a21657324ec103d90e5748e76192e3a}} 
+virtual bool {\bfseries Check\+Result\+Steam\+ID} (Steam\+Inventory\+Result\+\_\+t result\+Handle, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Expected)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a66443e508312e8475d88a6de80da180b}\label{class_i_steam_inventory_a66443e508312e8475d88a6de80da180b}} 
+virtual void {\bfseries Destroy\+Result} (Steam\+Inventory\+Result\+\_\+t result\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a55ee62875c7d7c667bcdf730e70512ac}\label{class_i_steam_inventory_a55ee62875c7d7c667bcdf730e70512ac}} 
+virtual bool {\bfseries Get\+All\+Items} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_aa4b1ae2e6c436e0524aad80556195389}\label{class_i_steam_inventory_aa4b1ae2e6c436e0524aad80556195389}} 
+virtual bool {\bfseries Get\+Items\+By\+ID} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Count\+Instance\+I\+Ds) const Steam\+Item\+Instance\+I\+D\+\_\+t $\ast$p\+Instance\+I\+Ds, uint32 un\+Count\+Instance\+I\+Ds)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a5d58eca15c7a41b277a5c08bb59534a6}\label{class_i_steam_inventory_a5d58eca15c7a41b277a5c08bb59534a6}} 
+virtual bool {\bfseries Serialize\+Result} (Steam\+Inventory\+Result\+\_\+t result\+Handle, O\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT(pun\+Out\+Buffer\+Size) void $\ast$p\+Out\+Buffer, uint32 $\ast$pun\+Out\+Buffer\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a678f007cac45a1683f2916881dabf9cb}\label{class_i_steam_inventory_a678f007cac45a1683f2916881dabf9cb}} 
+virtual bool {\bfseries Deserialize\+Result} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Out\+Result\+Handle, B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT(pun\+Out\+Buffer\+Size) const void $\ast$p\+Buffer, uint32 un\+Buffer\+Size, bool b\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+M\+U\+S\+T\+\_\+\+B\+E\+\_\+\+F\+A\+L\+SE=false)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a9acdb37fd35757ad54105f8766557868}\label{class_i_steam_inventory_a9acdb37fd35757ad54105f8766557868}} 
+virtual bool {\bfseries Generate\+Items} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Length) const Steam\+Item\+Def\+\_\+t $\ast$p\+Array\+Item\+Defs, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Length) const uint32 $\ast$pun\+Array\+Quantity, uint32 un\+Array\+Length)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a41e365e48e9c3f1a01737d9d10fc974f}\label{class_i_steam_inventory_a41e365e48e9c3f1a01737d9d10fc974f}} 
+{\bfseries M\+E\+T\+H\+O\+D\+\_\+\+D\+E\+SC} (Grant\+Promo\+Items() checks the list of promotional items for which the user may be eligible and grants the items(one time only).) virtual bool Grant\+Promo\+Items(Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_ae5625ecc3c2e08f563231a4290f35dd8}\label{class_i_steam_inventory_ae5625ecc3c2e08f563231a4290f35dd8}} 
+virtual bool {\bfseries Add\+Promo\+Item} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, Steam\+Item\+Def\+\_\+t item\+Def)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a608aa5b19aa356579a1f3e6540e6a317}\label{class_i_steam_inventory_a608aa5b19aa356579a1f3e6540e6a317}} 
+virtual bool {\bfseries Add\+Promo\+Items} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Length) const Steam\+Item\+Def\+\_\+t $\ast$p\+Array\+Item\+Defs, uint32 un\+Array\+Length)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a00be78e3a87ded4d32568e67e20d2c52}\label{class_i_steam_inventory_a00be78e3a87ded4d32568e67e20d2c52}} 
+virtual bool {\bfseries Consume\+Item} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, Steam\+Item\+Instance\+I\+D\+\_\+t item\+Consume, uint32 un\+Quantity)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a0b03243926fd83d436275b640ae1965e}\label{class_i_steam_inventory_a0b03243926fd83d436275b640ae1965e}} 
+virtual bool {\bfseries Exchange\+Items} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Generate\+Length) const Steam\+Item\+Def\+\_\+t $\ast$p\+Array\+Generate, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Generate\+Length) const uint32 $\ast$pun\+Array\+Generate\+Quantity, uint32 un\+Array\+Generate\+Length, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Destroy\+Length) const Steam\+Item\+Instance\+I\+D\+\_\+t $\ast$p\+Array\+Destroy, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(un\+Array\+Destroy\+Length) const uint32 $\ast$pun\+Array\+Destroy\+Quantity, uint32 un\+Array\+Destroy\+Length)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_ad0a8c94ef54e9199d752ffd91c0d671b}\label{class_i_steam_inventory_ad0a8c94ef54e9199d752ffd91c0d671b}} 
+virtual bool {\bfseries Transfer\+Item\+Quantity} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, Steam\+Item\+Instance\+I\+D\+\_\+t item\+Id\+Source, uint32 un\+Quantity, Steam\+Item\+Instance\+I\+D\+\_\+t item\+Id\+Dest)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_aa10315154a5f1e44468dadd2c30b392e}\label{class_i_steam_inventory_aa10315154a5f1e44468dadd2c30b392e}} 
+virtual void {\bfseries Send\+Item\+Drop\+Heartbeat} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a65c5ebcab08c5955cfc561de40819eaa}\label{class_i_steam_inventory_a65c5ebcab08c5955cfc561de40819eaa}} 
+virtual bool {\bfseries Trigger\+Item\+Drop} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, Steam\+Item\+Def\+\_\+t drop\+List\+Definition)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_af2a4c2333150d56f310b7710b7c15bc6}\label{class_i_steam_inventory_af2a4c2333150d56f310b7710b7c15bc6}} 
+virtual bool {\bfseries Trade\+Items} (Steam\+Inventory\+Result\+\_\+t $\ast$p\+Result\+Handle, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Trade\+Partner, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Array\+Give\+Length) const Steam\+Item\+Instance\+I\+D\+\_\+t $\ast$p\+Array\+Give, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Array\+Give\+Length) const uint32 $\ast$p\+Array\+Give\+Quantity, uint32 n\+Array\+Give\+Length, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Array\+Get\+Length) const Steam\+Item\+Instance\+I\+D\+\_\+t $\ast$p\+Array\+Get, A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(n\+Array\+Get\+Length) const uint32 $\ast$p\+Array\+Get\+Quantity, uint32 n\+Array\+Get\+Length)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a44c3026d0d474f98bcd27d9fb9996744}\label{class_i_steam_inventory_a44c3026d0d474f98bcd27d9fb9996744}} 
+virtual bool {\bfseries Load\+Item\+Definitions} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a8bdb71b0614f22096b1cece7c3c326bc}\label{class_i_steam_inventory_a8bdb71b0614f22096b1cece7c3c326bc}} 
+virtual bool {\bfseries Get\+Item\+Definition\+I\+Ds} (O\+U\+T\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(pun\+Item\+Def\+I\+Ds\+Array\+Size, List of item definition I\+Ds) Steam\+Item\+Def\+\_\+t $\ast$p\+Item\+Def\+I\+Ds, D\+E\+SC(Size of array is passed in and actual size used is returned in this param) uint32 $\ast$pun\+Item\+Def\+I\+Ds\+Array\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_afe262b1238ba71fa3a0119163f021894}\label{class_i_steam_inventory_afe262b1238ba71fa3a0119163f021894}} 
+virtual bool {\bfseries Get\+Item\+Definition\+Property} (Steam\+Item\+Def\+\_\+t i\+Definition, const char $\ast$pch\+Property\+Name, O\+U\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+C\+O\+U\+NT(pun\+Value\+Buffer\+Size\+Out) char $\ast$pch\+Value\+Buffer, uint32 $\ast$pun\+Value\+Buffer\+Size\+Out)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a3dc3b836ba00239710c7b19d63717823}\label{class_i_steam_inventory_a3dc3b836ba00239710c7b19d63717823}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Request\+Eligible\+Promo\+Item\+Definitions\+I\+Ds} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_inventory_a04a88553c0ef58b5bc713c68faa024dd}\label{class_i_steam_inventory_a04a88553c0ef58b5bc713c68faa024dd}} 
+virtual bool {\bfseries Get\+Eligible\+Promo\+Item\+Definition\+I\+Ds} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+ID, O\+U\+T\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+O\+U\+NT(pun\+Item\+Def\+I\+Ds\+Array\+Size, List of item definition I\+Ds) Steam\+Item\+Def\+\_\+t $\ast$p\+Item\+Def\+I\+Ds, D\+E\+SC(Size of array is passed in and actual size used is returned in this param) uint32 $\ast$pun\+Item\+Def\+I\+Ds\+Array\+Size)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 68 pliku isteaminventory.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteaminventory.\+h\end{DoxyCompactItemize}

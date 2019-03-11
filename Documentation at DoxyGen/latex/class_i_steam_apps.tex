@@ -1,0 +1,95 @@
+\hypertarget{class_i_steam_apps}{}\section{Dokumentacja klasy I\+Steam\+Apps}
+\label{class_i_steam_apps}\index{I\+Steam\+Apps@{I\+Steam\+Apps}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a46b1314886cad0fc36b86a2e417c1932}\label{class_i_steam_apps_a46b1314886cad0fc36b86a2e417c1932}} 
+virtual bool {\bfseries B\+Is\+Subscribed} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_abf824c3b654c953f11518de5afc2e6ab}\label{class_i_steam_apps_abf824c3b654c953f11518de5afc2e6ab}} 
+virtual bool {\bfseries B\+Is\+Low\+Violence} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a3c090ea4660143a30c76ee3571122afa}\label{class_i_steam_apps_a3c090ea4660143a30c76ee3571122afa}} 
+virtual bool {\bfseries B\+Is\+Cybercafe} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a0a3eeb3fbc774390d8652605527dadac}\label{class_i_steam_apps_a0a3eeb3fbc774390d8652605527dadac}} 
+virtual bool {\bfseries B\+Is\+V\+A\+C\+Banned} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ada18d64c49d8139f85f00ee5cfc03d1b}\label{class_i_steam_apps_ada18d64c49d8139f85f00ee5cfc03d1b}} 
+virtual const char $\ast$ {\bfseries Get\+Current\+Game\+Language} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a3ecdf69a129d1f58d8d1e11b38e534eb}\label{class_i_steam_apps_a3ecdf69a129d1f58d8d1e11b38e534eb}} 
+virtual const char $\ast$ {\bfseries Get\+Available\+Game\+Languages} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a08d3b10f8c23035283448541211e9774}\label{class_i_steam_apps_a08d3b10f8c23035283448541211e9774}} 
+virtual bool {\bfseries B\+Is\+Subscribed\+App} (App\+Id\+\_\+t app\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a183d85a7b9c38ec921e980d2ecce2dac}\label{class_i_steam_apps_a183d85a7b9c38ec921e980d2ecce2dac}} 
+virtual bool {\bfseries B\+Is\+Dlc\+Installed} (App\+Id\+\_\+t app\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ac1c6be2c2d7337812994ddb4d8c04bf0}\label{class_i_steam_apps_ac1c6be2c2d7337812994ddb4d8c04bf0}} 
+virtual uint32 {\bfseries Get\+Earliest\+Purchase\+Unix\+Time} (App\+Id\+\_\+t n\+App\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a513d6e5bb54c2885557f104279c02672}\label{class_i_steam_apps_a513d6e5bb54c2885557f104279c02672}} 
+virtual bool {\bfseries B\+Is\+Subscribed\+From\+Free\+Weekend} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ac8002fc5232fc1d28d88a95b925e2a72}\label{class_i_steam_apps_ac8002fc5232fc1d28d88a95b925e2a72}} 
+virtual int {\bfseries Get\+D\+L\+C\+Count} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a5ec35d2fc8a3966d003cc653c3fe8c4a}\label{class_i_steam_apps_a5ec35d2fc8a3966d003cc653c3fe8c4a}} 
+virtual bool {\bfseries B\+Get\+D\+L\+C\+Data\+By\+Index} (int i\+D\+LC, App\+Id\+\_\+t $\ast$p\+App\+ID, bool $\ast$pb\+Available, char $\ast$pch\+Name, int cch\+Name\+Buffer\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a534d0b9be923296863471570cab33ba1}\label{class_i_steam_apps_a534d0b9be923296863471570cab33ba1}} 
+virtual void {\bfseries Install\+D\+LC} (App\+Id\+\_\+t n\+App\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_abf17987da1339b115f719a29020cefdb}\label{class_i_steam_apps_abf17987da1339b115f719a29020cefdb}} 
+virtual void {\bfseries Uninstall\+D\+LC} (App\+Id\+\_\+t n\+App\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a0d2c29431c950b9b0dc3ee7749b65e4e}\label{class_i_steam_apps_a0d2c29431c950b9b0dc3ee7749b65e4e}} 
+virtual void {\bfseries Request\+App\+Proof\+Of\+Purchase\+Key} (App\+Id\+\_\+t n\+App\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a22f4f5850142d0db3f2c897863cbeead}\label{class_i_steam_apps_a22f4f5850142d0db3f2c897863cbeead}} 
+virtual bool {\bfseries Get\+Current\+Beta\+Name} (char $\ast$pch\+Name, int cch\+Name\+Buffer\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ac9b871437aa6525bfc09913962fd4ac9}\label{class_i_steam_apps_ac9b871437aa6525bfc09913962fd4ac9}} 
+virtual bool {\bfseries Mark\+Content\+Corrupt} (bool b\+Missing\+Files\+Only)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ad99e47bcc0d1901f9b48ceb9fa3e5817}\label{class_i_steam_apps_ad99e47bcc0d1901f9b48ceb9fa3e5817}} 
+virtual uint32 {\bfseries Get\+Installed\+Depots} (App\+Id\+\_\+t app\+ID, Depot\+Id\+\_\+t $\ast$pvec\+Depots, uint32 c\+Max\+Depots)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a86c5be43cca3fa093e598eb57b42597f}\label{class_i_steam_apps_a86c5be43cca3fa093e598eb57b42597f}} 
+virtual uint32 {\bfseries Get\+App\+Install\+Dir} (App\+Id\+\_\+t app\+ID, char $\ast$pch\+Folder, uint32 cch\+Folder\+Buffer\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_afb81b0d67c2922fd2b873d9e5b5d14b3}\label{class_i_steam_apps_afb81b0d67c2922fd2b873d9e5b5d14b3}} 
+virtual bool {\bfseries B\+Is\+App\+Installed} (App\+Id\+\_\+t app\+ID)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ae0a88dea59c107a672a6f094bd0d4918}\label{class_i_steam_apps_ae0a88dea59c107a672a6f094bd0d4918}} 
+virtual \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} {\bfseries Get\+App\+Owner} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a1059376db03a5a9770261c9f84673bab}\label{class_i_steam_apps_a1059376db03a5a9770261c9f84673bab}} 
+virtual const char $\ast$ {\bfseries Get\+Launch\+Query\+Param} (const char $\ast$pch\+Key)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_acc1761598473891e65deecd0d0ec504c}\label{class_i_steam_apps_acc1761598473891e65deecd0d0ec504c}} 
+virtual bool {\bfseries Get\+Dlc\+Download\+Progress} (App\+Id\+\_\+t n\+App\+ID, uint64 $\ast$pun\+Bytes\+Downloaded, uint64 $\ast$pun\+Bytes\+Total)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a0216a1584a17fd771bddc64a453052b8}\label{class_i_steam_apps_a0216a1584a17fd771bddc64a453052b8}} 
+virtual int {\bfseries Get\+App\+Build\+Id} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_a1e2da11ac1323d3eee78c65bf81c563c}\label{class_i_steam_apps_a1e2da11ac1323d3eee78c65bf81c563c}} 
+virtual void {\bfseries Request\+All\+Proof\+Of\+Purchase\+Keys} ()=0
+\item 
+\mbox{\Hypertarget{class_i_steam_apps_ab561e30095784ddfa7a128353a55716d}\label{class_i_steam_apps_ab561e30095784ddfa7a128353a55716d}} 
+virtual Steam\+A\+P\+I\+Call\+\_\+t {\bfseries Get\+File\+Details} (const char $\ast$psz\+File\+Name)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 19 pliku isteamapps.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamapps.\+h\end{DoxyCompactItemize}

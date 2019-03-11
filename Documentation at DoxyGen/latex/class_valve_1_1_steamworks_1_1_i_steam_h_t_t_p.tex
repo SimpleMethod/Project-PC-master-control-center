@@ -1,0 +1,101 @@
+\hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p}{}\section{Dokumentacja klasy Valve.\+Steamworks.\+I\+Steam\+H\+T\+TP}
+\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p}\index{Valve.\+Steamworks.\+I\+Steam\+H\+T\+TP@{Valve.\+Steamworks.\+I\+Steam\+H\+T\+TP}}
+Diagram dziedziczenia dla Valve.\+Steamworks.\+I\+Steam\+H\+T\+TP\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a4860af724b6982ddc4e2a6bbacb333e5}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a4860af724b6982ddc4e2a6bbacb333e5}} 
+abstract Int\+Ptr {\bfseries Get\+Int\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a2e886d1dc6b51b8dcf7824d30dd5d526}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a2e886d1dc6b51b8dcf7824d30dd5d526}} 
+abstract uint {\bfseries Create\+H\+T\+T\+P\+Request} (uint e\+H\+T\+T\+P\+Request\+Method, string pch\+Absolute\+U\+RL)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a99579808fe80cd66dad111dafc9db130}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a99579808fe80cd66dad111dafc9db130}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Context\+Value} (uint h\+Request, ulong ul\+Context\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_ad0a025bbb725a139e6ca38a690a92984}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_ad0a025bbb725a139e6ca38a690a92984}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Network\+Activity\+Timeout} (uint h\+Request, uint un\+Timeout\+Seconds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aa39cf6a78678862ed3ffb8ca55293b6e}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aa39cf6a78678862ed3ffb8ca55293b6e}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Header\+Value} (uint h\+Request, string pch\+Header\+Name, string pch\+Header\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a34772dec6721b108e289be06be296ad8}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a34772dec6721b108e289be06be296ad8}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Get\+Or\+Post\+Parameter} (uint h\+Request, string pch\+Param\+Name, string pch\+Param\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aea9cbcd6efb34f5fd8aa1da317fa4356}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aea9cbcd6efb34f5fd8aa1da317fa4356}} 
+abstract bool {\bfseries Send\+H\+T\+T\+P\+Request} (uint h\+Request, ref ulong p\+Call\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a648a5e8e58125e9e31a1ebb5bb08506c}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a648a5e8e58125e9e31a1ebb5bb08506c}} 
+abstract bool {\bfseries Send\+H\+T\+T\+P\+Request\+And\+Stream\+Response} (uint h\+Request, ref ulong p\+Call\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aeedc029de0626593c1642723eb697110}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aeedc029de0626593c1642723eb697110}} 
+abstract bool {\bfseries Defer\+H\+T\+T\+P\+Request} (uint h\+Request)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_ab851e87f31ac556fe562813f56a0d23c}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_ab851e87f31ac556fe562813f56a0d23c}} 
+abstract bool {\bfseries Prioritize\+H\+T\+T\+P\+Request} (uint h\+Request)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_adbf0dbd3e35ffc691d3dda06ccac00a6}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_adbf0dbd3e35ffc691d3dda06ccac00a6}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Response\+Header\+Size} (uint h\+Request, string pch\+Header\+Name, ref uint un\+Response\+Header\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_af39c4cde56d629cfce6fbe2aaefd224e}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_af39c4cde56d629cfce6fbe2aaefd224e}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Response\+Header\+Value} (uint h\+Request, string pch\+Header\+Name, Int\+Ptr p\+Header\+Value\+Buffer, uint un\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a11ef4ed524479aebd51eda1f51f7eaae}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a11ef4ed524479aebd51eda1f51f7eaae}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Response\+Body\+Size} (uint h\+Request, ref uint un\+Body\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_ae6bce94268b0487f9e27c5d1de6859c7}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_ae6bce94268b0487f9e27c5d1de6859c7}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Response\+Body\+Data} (uint h\+Request, Int\+Ptr p\+Body\+Data\+Buffer, uint un\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_afab00e3e6e32350ac2266271fa18ca49}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_afab00e3e6e32350ac2266271fa18ca49}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Streaming\+Response\+Body\+Data} (uint h\+Request, uint c\+Offset, Int\+Ptr p\+Body\+Data\+Buffer, uint un\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a06a078758d648454c8cc789c199976b9}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a06a078758d648454c8cc789c199976b9}} 
+abstract bool {\bfseries Release\+H\+T\+T\+P\+Request} (uint h\+Request)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a468e5fcaebdf637f301b398ab617c189}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a468e5fcaebdf637f301b398ab617c189}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Download\+Progress\+Pct} (uint h\+Request, ref float pfl\+Percent\+Out)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a8e337468e847388bed731a172f63ef4b}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a8e337468e847388bed731a172f63ef4b}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Raw\+Post\+Body} (uint h\+Request, string pch\+Content\+Type, Int\+Ptr pub\+Body, uint un\+Body\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a4dee39a058db0d38f41569591ef1387e}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a4dee39a058db0d38f41569591ef1387e}} 
+abstract uint {\bfseries Create\+Cookie\+Container} (bool b\+Allow\+Responses\+To\+Modify)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aae333bc60a83754bb18b5c1d15514ab0}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aae333bc60a83754bb18b5c1d15514ab0}} 
+abstract bool {\bfseries Release\+Cookie\+Container} (uint h\+Cookie\+Container)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aab78173a82cbfd0a989e7457c6d1632c}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aab78173a82cbfd0a989e7457c6d1632c}} 
+abstract bool {\bfseries Set\+Cookie} (uint h\+Cookie\+Container, string pch\+Host, string pch\+Url, string pch\+Cookie)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a6633d485f3eb8d28a04fb114ab3ece6d}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a6633d485f3eb8d28a04fb114ab3ece6d}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Cookie\+Container} (uint h\+Request, uint h\+Cookie\+Container)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_af4d1e0c5b5a9ebe1bfcf67687a0a8fb2}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_af4d1e0c5b5a9ebe1bfcf67687a0a8fb2}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+User\+Agent\+Info} (uint h\+Request, string pch\+User\+Agent\+Info)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a86be9aa92c1c154b8ad8060a2ef18e74}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a86be9aa92c1c154b8ad8060a2ef18e74}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Requires\+Verified\+Certificate} (uint h\+Request, bool b\+Require\+Verified\+Certificate)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aa9a51b12b02d224c5bcbd09754f8801a}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_aa9a51b12b02d224c5bcbd09754f8801a}} 
+abstract bool {\bfseries Set\+H\+T\+T\+P\+Request\+Absolute\+Timeout\+MS} (uint h\+Request, uint un\+Milliseconds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a38784cab3c8be214ee6e835fea17c3f5}\label{class_valve_1_1_steamworks_1_1_i_steam_h_t_t_p_a38784cab3c8be214ee6e835fea17c3f5}} 
+abstract bool {\bfseries Get\+H\+T\+T\+P\+Request\+Was\+Timed\+Out} (uint h\+Request, ref bool pb\+Was\+Timed\+Out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 2224 pliku steam\+\_\+api\+\_\+interop.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/steam\+\_\+api\+\_\+interop.\+cs\end{DoxyCompactItemize}

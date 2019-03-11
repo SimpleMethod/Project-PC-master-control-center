@@ -1,0 +1,25 @@
+var struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context =
+[
+    [ "m_pController", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#add2e8ff27870f059c34a2435e4177bc8", null ],
+    [ "m_pSteamAppList", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a328aefff27317d395e82a146bd0153b8", null ],
+    [ "m_pSteamApps", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a6e83c10638d00aab1701c6978bac0d2f", null ],
+    [ "m_pSteamClient", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a729873cd1da0db2780102afeff178a7b", null ],
+    [ "m_pSteamFriends", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a569a296b7a600aabf289d1e03f368c27", null ],
+    [ "m_pSteamHTMLSurface", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#ab23262685f5c5d12b8a45ca9ebfdb1e7", null ],
+    [ "m_pSteamHTTP", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a568e2eea2bbb1f40105be66a3997d8a4", null ],
+    [ "m_pSteamInventory", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a8f2c7a17c310219b5944acb92caa17bb", null ],
+    [ "m_pSteamMatchmaking", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#ab173ff7ae728ffc2a95cbf49ca439ca3", null ],
+    [ "m_pSteamMatchmakingServers", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#aac1cd896b238bc3a40799960f5b5b253", null ],
+    [ "m_pSteamMusic", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#adb1ea8a12ae3246055bde67fe5fb74ab", null ],
+    [ "m_pSteamMusicRemote", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a4adb9dee4d9bb64c9a5bdcc75bc0e0cf", null ],
+    [ "m_pSteamNetworking", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a6bafcfb09bd03c9a00e79afb8dce32eb", null ],
+    [ "m_pSteamParentalSettings", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a0027b83f04a52e78f4967ec2646979a7", null ],
+    [ "m_pSteamRemoteStorage", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#adaf436d0ef9138db95c2ba6bceaf9f90", null ],
+    [ "m_pSteamScreenshots", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a0894ad6a8231f8066dd280771cbfc2a6", null ],
+    [ "m_pSteamUGC", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a635df2a5d03eb694372dadcb2f38e938", null ],
+    [ "m_pSteamUnifiedMessages", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#aa65a6eb145f4a65be57ee99a944c184c", null ],
+    [ "m_pSteamUser", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#ad9423fe4dabf6ee498b1cc87f1e3e715", null ],
+    [ "m_pSteamUserStats", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a48cb26866eea4e01d638a723a185ae52", null ],
+    [ "m_pSteamUtils", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#aea35e3d24e3a71078fc32462d9ec002a", null ],
+    [ "m_pSteamVideo", "struct_valve_1_1_steamworks_1_1_c_steam_a_p_i_context.html#a5f4a5ff627d565c6d969febff09afef0", null ]
+];

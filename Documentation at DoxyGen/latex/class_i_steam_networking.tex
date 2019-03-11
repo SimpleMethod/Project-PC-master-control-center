@@ -1,0 +1,83 @@
+\hypertarget{class_i_steam_networking}{}\section{Dokumentacja klasy I\+Steam\+Networking}
+\label{class_i_steam_networking}\index{I\+Steam\+Networking@{I\+Steam\+Networking}}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a133b68cf61ed66ad1ab615413bd69d7a}\label{class_i_steam_networking_a133b68cf61ed66ad1ab615413bd69d7a}} 
+virtual bool {\bfseries Send\+P2\+P\+Packet} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Remote, const void $\ast$pub\+Data, uint32 cub\+Data, E\+P2\+P\+Send e\+P2\+P\+Send\+Type, int n\+Channel=0)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a414d0488d95bd4540c2752d45c05a14e}\label{class_i_steam_networking_a414d0488d95bd4540c2752d45c05a14e}} 
+virtual bool {\bfseries Is\+P2\+P\+Packet\+Available} (uint32 $\ast$pcub\+Msg\+Size, int n\+Channel=0)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a171241063c2e7f0d0aad97ba286f52c4}\label{class_i_steam_networking_a171241063c2e7f0d0aad97ba286f52c4}} 
+virtual bool {\bfseries Read\+P2\+P\+Packet} (void $\ast$pub\+Dest, uint32 cub\+Dest, uint32 $\ast$pcub\+Msg\+Size, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$psteam\+I\+D\+Remote, int n\+Channel=0)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a9d25d344ffcb1c53e367ff810f36b79c}\label{class_i_steam_networking_a9d25d344ffcb1c53e367ff810f36b79c}} 
+virtual bool {\bfseries Accept\+P2\+P\+Session\+With\+User} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Remote)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a7d6845b453e676fc9e476c1d94b3d725}\label{class_i_steam_networking_a7d6845b453e676fc9e476c1d94b3d725}} 
+virtual bool {\bfseries Close\+P2\+P\+Session\+With\+User} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Remote)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a5e17571ca6b0a4d99c93d0f55293acb5}\label{class_i_steam_networking_a5e17571ca6b0a4d99c93d0f55293acb5}} 
+virtual bool {\bfseries Close\+P2\+P\+Channel\+With\+User} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Remote, int n\+Channel)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_af78aecf5a699774a72f1440b1b32a7ad}\label{class_i_steam_networking_af78aecf5a699774a72f1440b1b32a7ad}} 
+virtual bool {\bfseries Get\+P2\+P\+Session\+State} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Remote, \hyperlink{struct_p2_p_session_state__t}{P2\+P\+Session\+State\+\_\+t} $\ast$p\+Connection\+State)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a374e6634e1561faada8a7e3d057b2803}\label{class_i_steam_networking_a374e6634e1561faada8a7e3d057b2803}} 
+virtual bool {\bfseries Allow\+P2\+P\+Packet\+Relay} (bool b\+Allow)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_abf79b7d6e2a497f1b72d25df40cc5f4c}\label{class_i_steam_networking_abf79b7d6e2a497f1b72d25df40cc5f4c}} 
+virtual S\+Net\+Listen\+Socket\+\_\+t {\bfseries Create\+Listen\+Socket} (int n\+Virtual\+P2\+P\+Port, uint32 n\+IP, uint16 n\+Port, bool b\+Allow\+Use\+Of\+Packet\+Relay)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a6fd47853762ab39910616544cedc13e4}\label{class_i_steam_networking_a6fd47853762ab39910616544cedc13e4}} 
+virtual S\+Net\+Socket\+\_\+t {\bfseries Create\+P2\+P\+Connection\+Socket} (\hyperlink{class_c_steam_i_d}{C\+Steam\+ID} steam\+I\+D\+Target, int n\+Virtual\+Port, int n\+Timeout\+Sec, bool b\+Allow\+Use\+Of\+Packet\+Relay)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a5a9ce6ba68b44aed70a7221ef97a0783}\label{class_i_steam_networking_a5a9ce6ba68b44aed70a7221ef97a0783}} 
+virtual S\+Net\+Socket\+\_\+t {\bfseries Create\+Connection\+Socket} (uint32 n\+IP, uint16 n\+Port, int n\+Timeout\+Sec)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_abdbfec12b11db46d7b61a88c8df81bd5}\label{class_i_steam_networking_abdbfec12b11db46d7b61a88c8df81bd5}} 
+virtual bool {\bfseries Destroy\+Socket} (S\+Net\+Socket\+\_\+t h\+Socket, bool b\+Notify\+Remote\+End)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_ade35fbe2b04ff79e7ad536d8a7c4f2d3}\label{class_i_steam_networking_ade35fbe2b04ff79e7ad536d8a7c4f2d3}} 
+virtual bool {\bfseries Destroy\+Listen\+Socket} (S\+Net\+Listen\+Socket\+\_\+t h\+Socket, bool b\+Notify\+Remote\+End)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a88151472eeed9395e0352eaa198375e9}\label{class_i_steam_networking_a88151472eeed9395e0352eaa198375e9}} 
+virtual bool {\bfseries Send\+Data\+On\+Socket} (S\+Net\+Socket\+\_\+t h\+Socket, void $\ast$pub\+Data, uint32 cub\+Data, bool b\+Reliable)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a3c8584b744d21f9090fa1266da4ee820}\label{class_i_steam_networking_a3c8584b744d21f9090fa1266da4ee820}} 
+virtual bool {\bfseries Is\+Data\+Available\+On\+Socket} (S\+Net\+Socket\+\_\+t h\+Socket, uint32 $\ast$pcub\+Msg\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_ae1f443372f7f153951e9d0e39c1a643b}\label{class_i_steam_networking_ae1f443372f7f153951e9d0e39c1a643b}} 
+virtual bool {\bfseries Retrieve\+Data\+From\+Socket} (S\+Net\+Socket\+\_\+t h\+Socket, void $\ast$pub\+Dest, uint32 cub\+Dest, uint32 $\ast$pcub\+Msg\+Size)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a061e82b63b61aa51169c00c5d2fe21f3}\label{class_i_steam_networking_a061e82b63b61aa51169c00c5d2fe21f3}} 
+virtual bool {\bfseries Is\+Data\+Available} (S\+Net\+Listen\+Socket\+\_\+t h\+Listen\+Socket, uint32 $\ast$pcub\+Msg\+Size, S\+Net\+Socket\+\_\+t $\ast$ph\+Socket)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_aad639c6d6b67bf041650788787108752}\label{class_i_steam_networking_aad639c6d6b67bf041650788787108752}} 
+virtual bool {\bfseries Retrieve\+Data} (S\+Net\+Listen\+Socket\+\_\+t h\+Listen\+Socket, void $\ast$pub\+Dest, uint32 cub\+Dest, uint32 $\ast$pcub\+Msg\+Size, S\+Net\+Socket\+\_\+t $\ast$ph\+Socket)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_af970cbc561c07dfb36262ebdfd2e40df}\label{class_i_steam_networking_af970cbc561c07dfb36262ebdfd2e40df}} 
+virtual bool {\bfseries Get\+Socket\+Info} (S\+Net\+Socket\+\_\+t h\+Socket, \hyperlink{class_c_steam_i_d}{C\+Steam\+ID} $\ast$p\+Steam\+I\+D\+Remote, int $\ast$pe\+Socket\+Status, uint32 $\ast$pun\+I\+P\+Remote, uint16 $\ast$pun\+Port\+Remote)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a79f181bd4900cdfd53dbad9ef6c666c3}\label{class_i_steam_networking_a79f181bd4900cdfd53dbad9ef6c666c3}} 
+virtual bool {\bfseries Get\+Listen\+Socket\+Info} (S\+Net\+Listen\+Socket\+\_\+t h\+Listen\+Socket, uint32 $\ast$pn\+IP, uint16 $\ast$pn\+Port)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_ab71b58659a1c62bd021c22679ed37c9a}\label{class_i_steam_networking_ab71b58659a1c62bd021c22679ed37c9a}} 
+virtual E\+S\+Net\+Socket\+Connection\+Type {\bfseries Get\+Socket\+Connection\+Type} (S\+Net\+Socket\+\_\+t h\+Socket)=0
+\item 
+\mbox{\Hypertarget{class_i_steam_networking_a9536c5df8fe1b06194b12e1e7a589e95}\label{class_i_steam_networking_a9536c5df8fe1b06194b12e1e7a589e95}} 
+virtual int {\bfseries Get\+Max\+Packet\+Size} (S\+Net\+Socket\+\_\+t h\+Socket)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 126 pliku isteamnetworking.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pathfinder/\+Projekt\+\_\+cpp/\+Pre-\/\+Alpha Relase/\+P\+C\+\_\+\+Master\+\_\+\+Control\+\_\+\+Center/isteamnetworking.\+h\end{DoxyCompactItemize}
